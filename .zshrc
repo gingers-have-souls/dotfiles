@@ -80,6 +80,7 @@ alias jsf='python -m json.tool'
 alias ll='ls -lah'
 alias ls='ls --color'
 alias n="nvim"
+alias cdsz="du -d 1 -h"
 
 # Theming section  
 autoload -U compinit colors zcalc
