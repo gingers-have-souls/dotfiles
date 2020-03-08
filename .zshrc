@@ -28,8 +28,8 @@ zstyle ':completion:*' rehash true                        # automatically find n
 # Speed up completions
 zstyle ':completion:*' accept-exact '*(N)'
 zstyle ':completion:*' use-cache on
-zstyle ':completion:*' cache-path ~/.zsh/cache
-HISTFILE=~/.zhistory
+zstyle ':completion:*' cache-path $HOME/.zsh/cache
+HISTFILE=$HOME/.zhistory
 HISTSIZE=1000
 SAVEHIST=500
 export EDITOR=/usr/bin/nvim
