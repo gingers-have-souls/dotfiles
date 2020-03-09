@@ -1,5 +1,8 @@
 # Dotfiles
 My i3 rice.
+
+![Screenshot](/screenshot.png)
+
 Necessary programs (Manjaro Linux package names in no particular order):
  - zsh
  - zsh-history-substring-search
