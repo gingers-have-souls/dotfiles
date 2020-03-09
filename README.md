@@ -13,6 +13,7 @@ Necessary programs (Manjaro Linux package names in no particular order):
  - python-ueberzug (images in vifm)
  - xorg-xmodmap (I remap caps lock to backspace)
  - i3-gaps
+ - python-i3ipc (interprocess communication, allows us to do things like "fibonacci" tiling and the button that shows all windows in the scratchpad)
  - polybar (the nice looking thing at the top of the screen)
  - xwallpaper
  - xorg-xbacklight (for screen brightness)
