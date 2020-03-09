@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Copied from seebye from here
+# (https://www.reddit.com/r/linux/comments/aviu08/ueberzug_v1810_released/)
+
+readonly ID_PREVIEW="preview"
+
+if [ -e "$FIFO_UEBERZUG" ]; then
+    if [[ "$1" == "draw" ]]; then
+        declare -p -A cmd=([action]=add [identifier]="$ID_PREVIEW"
+                           [x]="$2" [y]="$3" [width]="$4" [scaler]=fit_contain [height]="$5" \
+                           [path]="${PWD}/$6") \
+            > "$FIFO_UEBERZUG"
+    else
+        declare -p -A cmd=([action]=remove [identifier]="$ID_PREVIEW") \
+            > "$FIFO_UEBERZUG"
+    fi
+fi
