@@ -1,3 +1,7 @@
+# vim:foldmethod=marker
+
+# Citing my sources {{{
+
 # Most of this is copied from the manjaro-zsh-config
 # The vim stuff and the cursor shape stuff are
 # copied from Luke Smith's void linux rice
@@ -9,6 +13,86 @@
 # and something from the vifm wiki
 # https://wiki.vifm.info/index.php/How_to_set_shell_working_directory_after_leaving_Vifm
 
+# }}}
+
+# Just a few pieces of wisdom I had to figure out {{{
+
+# A few of these may seem a bit obvious but after the
+# numerous idiotic mistakes I made, I'm hoping someone
+# avoids the fate that awaited me.
+
+# 1. HISTSIZE, SAVEHIST, and HISTFILE {{{
+# zsh deals with history in two ways: an internal
+# history list and a history file. For this there are
+# two important variables. HISTSIZE and SAVEHIST. As
+# you can see below, HISTSIZE is the maximum number
+# of events in the internal history list and SAVEHIST
+# is the maximum number of events in the history file.
+# Also of note is HISTFILE, which is the file in which
+# the history is saved. In this case it is ~/.zhistory.
+# }}}
+
+# 2. When and where zsh actually saves and loads events {{{
+# When zsh first opens, it loads events from the
+# history file into its internal history list.
+# Events in the internal history list can be accessed
+# by pressing the up and down keys (in this configuration
+# there's also a plugin that allows you to search through
+# your internal history list for matches rather than just
+# showing the previous one). Each and every instance of
+# zsh has a different internal history list, but there is
+# only ever one history file. How does this work? Well,
+# zsh only writes to the history file when it is killed
+# or closed. The option appendhistory is important
+# because if you have multiple instances, then you're going
+# to have different histories. The ones they had all loaded
+# from the history file previously will match up and won't
+# be a problem, but the more recent ones won't. When each
+# instance is exited, its internal history list would
+# replace the history file, and the ones from other
+# instances would be erased and overwritten. appendhistory
+# appends the history instead of overwriting it, allowing
+# us to keep all our history even if we have multiple
+# concurrent instances of zsh.
+# }}}
+
+# 3. Duplicated history events {{{
+# This is the part that really messed me up.
+# The setting that takes care of duplicate
+# history events in this config file is
+# histignorealldups. This means that if the
+# command entered matches an older command
+# in the history list, delete that older
+# command from the history list No matter
+# how many times you press the up key,there
+# will only ever be one copy of each command
+# in the history list. For the history file,
+# this setting is a bit strange. If you
+# kill zsh by pressing mod4+q, zsh does
+# not remove duplicates from the history
+# file (file, not list!). However, if
+# you type in "exit", it will. Other
+# interesting behaviour is that setting
+# SAVEHIST to 1 then killing zsh will save
+# new history to the history file (without
+# removing duplicates from the history file
+# of course), setting SAVEHIST to 0 then
+# killing the zsh will save no new history,
+# but typing in "exit" for either of these
+# will trim the history file to whatever
+# SAVEHIST is set to (1 and 0, respectively).
+# }}}
+
+# Final notes/tl;dr: {{{
+# As long as you keep in mind the difference
+# between history list and history file and
+# how and when each is created and/or saved,
+# you'll probably avoid all the dumb stuff I did.
+# Have fun configuring!
+# }}}
+
+# }}}
+
 ## Options section
 #setopt correct          # Auto correct mistakes
 setopt extendedglob      # Extended globbing. Allows using regular expressions with *
@@ -17,10 +101,10 @@ setopt rcexpandparam     # Array expension with parameters
 setopt nocheckjobs       # Don't warn about running processes when exiting
 setopt numericglobsort   # Sort filenames numerically when it makes sense
 setopt nobeep            # No beep
-setopt appendhistory     # Append history to the history file instead of overwriting it (allows unlimited history file)
-setopt histignorealldups # If a new command in the history list is a duplicate, remove the older one (also acts like HIST_EXPIRE_DUPS_FIRST when the history file is full which won't happen in this case due to appendhistory
+setopt appendhistory     # Append history to the history file instead of overwriting it, allows multiple sessions to not overwrite each other when they exit
+setopt histignorealldups # If a new command in the history list (or the history file) is a duplicate, remove the older one
 setopt histignorespace   # Dont't save a command to the history file if there's a space before it
-setopt autocd            # if only directory path is entered, cd there.
+setopt autocd            # if only directory path is entered, cd there
 
 LS_COLORS='rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:';
 export LS_COLORS
@@ -28,13 +112,13 @@ export LS_COLORS
 zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' # Case insensitive tab completion
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"   # Colored completion (different colors for dirs/files/etc)
-zstyle ':completion:*' rehash true                        # automatically find new executables in path 
+zstyle ':completion:*' rehash true                        # automatically find new executables in path
 # Speed up completions
 zstyle ':completion:*' accept-exact '*(N)'
 
 HISTFILE=$HOME/.zhistory
-HISTSIZE=5000 # Max number of history events in memory/internal history list
-SAVEHIST=1 # Normally the max number of events in the history file but because of appendhistory it does nothing unless it's set to 0 in which case no history is recorded
+HISTSIZE=1000000 # Max number of history events in memory/internal history list
+SAVEHIST=1000000 # Max number of events in the history file
 export EDITOR=/usr/bin/nvim
 WORDCHARS=${WORDCHARS//\/[&.;]} # Don't consider certain characters part of the word
 
@@ -76,7 +160,7 @@ bindkey -M menuselect 'k' vi-up-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 
-## Alias section 
+## Alias section
 alias cp="cp -i"      # Confirm before overwriting something
 alias config='git --git-dir=$HOME/dotfiles --work-tree=$HOME'
 alias jsf='python -m json.tool'
@@ -85,7 +169,7 @@ alias ls='ls --color'
 alias n="nvim"
 alias cdsz="du -d 1 -h"
 
-# Theming section  
+# Theming section
 autoload -U compinit colors zcalc
 compinit -d
 
