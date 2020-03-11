@@ -12,14 +12,16 @@
 # https://www.reddit.com/r/linux/comments/aviu08/ueberzug_v1810_released/
 # and something from the vifm wiki
 # https://wiki.vifm.info/index.php/How_to_set_shell_working_directory_after_leaving_Vifm
+# The X window title setting is modified from
+# http://blog.pengyifan.com/how-to-set-terminal-title-dynamically-to-the-current-working-directory/
 
 # }}}
 
 # Just a few pieces of wisdom I had to figure out {{{
 
 # A few of these may seem a bit obvious but after the
-# numerous idiotic mistakes I made, I'm hoping someone
-# avoids the fate that awaited me.
+# numerous idiotic mistakes I made, I'm hoping that
+# this helps someone avoid the same fate as me.
 
 # 1. HISTSIZE, SAVEHIST, and HISTFILE {{{
 # zsh deals with history in two ways: an internal
@@ -63,7 +65,7 @@
 # histignorealldups. This means that if the
 # command entered matches an older command
 # in the history list, delete that older
-# command from the history list No matter
+# command from the history list. No matter
 # how many times you press the up key,there
 # will only ever be one copy of each command
 # in the history list. For the history file,
@@ -288,3 +290,11 @@ zle -N zle-line-init
 echo -ne '\e[5 q'
 # Use beam shape cursor for each new prompt.
 preexec() { echo -ne '\e[5 q' ;}
+
+# Sets X window title
+case $TERM in
+	xterm*) # if it's a terminal in X
+		precmd () {print -Pn "\e]0;$USER@$(hostname):%~\a"} 
+# \e]0; = beginnig, \a = end, %~ is current directory
+		;;
+esac
