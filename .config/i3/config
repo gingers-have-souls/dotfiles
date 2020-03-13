@@ -18,7 +18,13 @@ set $mod Mod4
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 font pango:Bitstream Vera Sans Mono 8
 
-for_window [class=.*] border none
+default_border pixel 1
+
+# class                 border  backgr. text    indicator child_border
+client.focused          #696969 #000000 #696969 #696969   #696969
+client.focused_inactive #696969 #000000 #696969 #000000   #000000
+client.unfocused        #696969 #000000 #696969 #000000   #000000
+
 gaps inner 20
 exec --no-startup-id picom
 exec --no-startup-id polybar example
