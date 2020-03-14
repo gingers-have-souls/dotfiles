@@ -382,7 +382,8 @@ warn-temperature = 60
 #format = <ramp> <label>
 format = 🌡 <label>
 format-underline = #f50a4d
-format-warn = <ramp> <label-warn>
+#format-warn = <ramp> <label-warn>
+format-warn = 🌡 <label-warn>
 format-warn-underline = ${self.format-underline}
 
 label = %temperature-c%
