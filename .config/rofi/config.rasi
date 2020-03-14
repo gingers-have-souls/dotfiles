@@ -1,5 +1,6 @@
 configuration {
 	terminal: "termite";
+	sidebar-mode: true;
 	font: "BitstreamVeraSansMono 25";
 	display-drun: "Applications: ";
 	display-run: "Run: ";
@@ -7,4 +8,4 @@ configuration {
 	display-window: "Window: ";
 	show-icons: true;
 }
-@import "sidebar.rasi"
+@import "arthur.rasi"
