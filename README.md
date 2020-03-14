@@ -18,6 +18,7 @@ Necessary programs (Manjaro Linux package names in no particular order):
  - xwallpaper
  - xorg-xbacklight (for screen brightness)
  - xss-lock (screensaver that locks the screen when suspend is entered)
+ - i3lock (screen locker)
  - pulseaudio (for volume control)
  - rofi (application launcher and window switcher that is also used for the emoji search script)
  - ttf-bitstream-vera (what the DejaVu fonts are based off of, which means it's basically identical but without any extra emojis or the like)
