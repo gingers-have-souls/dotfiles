@@ -9,7 +9,7 @@ Necessary programs (Manjaro Linux package names in no particular order):
  - zsh-syntax-highlighting
  - termite
  - neovim (technically optional, but it's one of the aliases)
- - vifm (file manager)
+ - vifm (file manager, type ":view" to enable previews)
  - python-ueberzug (images in vifm)
  - xorg-xmodmap (I remap caps lock to backspace)
  - i3-gaps
@@ -26,6 +26,7 @@ Necessary programs (Manjaro Linux package names in no particular order):
  - Apple Color Emojis (download them off a friend's Mac then put it in /usr/share/fonts/Apple-Color-Emoji/ then run fc-cache and you should be set
  - Unicode Power Symbols (download them from https://unicodepowersymbol.com/font/ and I don't think the format matters although I used ttf, then place it in /usr/share/fonts/IEC-symbols-Unicode and run fc-cache)
  - xdotool (part of the emojisearch script (alt+e) that allows us to paste the emoji instead of just copying it to clipboard)
+ - xclip (the part of emojisearch that copies it to the clipboard before pasting it)
  - dunst (notifications)
  - picom (compositor for transparency)
  - xorg-xinit (for startx, not sure why this isn't a dependency of i3)
