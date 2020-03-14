@@ -60,10 +60,10 @@ font-1 = applecoloremoji;
 font-2 = IECsymbolsUnicode:pixelsize=20;1
 font-3 = SourceCodePro:pixelsize=20;1
 
-modules-left = bspwm i3 scratchpad wlan xkeyboard filesystem xbacklight
+modules-left = bspwm i3 scratchpad wlan eth xkeyboard filesystem xbacklight
 modules-center = xwindow
 ;modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
-modules-right = pulseaudio eth memory cpu battery temperature date powermenu
+modules-right = pulseaudio memory cpu battery temperature date powermenu
 
 tray-position = right
 tray-padding = 2

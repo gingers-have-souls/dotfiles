@@ -27,3 +27,6 @@ Necessary programs (Manjaro Linux package names in no particular order):
  - xdotool (part of the emojisearch script (alt+e) that allows us to paste the emoji instead of just copying it to clipboard)
  - dunst (notifications)
  - picom (compositor for transparency)
+ - xorg-xinit (for startx, not sure why this isn't a dependency of i3)
+ - xorg-server (xorg base package, not sure why this isn't a dependency of i3)
+ - xf86-video-intel (this makes the polybar backlight thing and backlight buttons work)
