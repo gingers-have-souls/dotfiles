@@ -35,7 +35,7 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 bindsym $mod+Shift+x exec i3lock -i $HOME/.config/backgrounds/scaledcartoonspace.png
 
-bindsym mod1+e exec $HOME/.config/i3/scripts/emojisearch.sh
+bindsym mod1+e exec $HOME/.config/rofi/scripts/emojisearch.sh
 bindsym mod1+k exec $HOME/.config/i3/scripts/switchtodvorak.sh
 bindsym mod1+t exec $HOME/.config/i3/scripts/switchtoqwerty.sh
 bindsym mod1+i exec $HOME/.config/i3/scripts/switchtointl.sh
