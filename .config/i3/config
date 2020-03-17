@@ -16,12 +16,12 @@ set $mod Mod4
 #font pango:monospace 8
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:Bitstream Vera Sans Mono 8
+font pango:Bitstream Vera Sans Mono 12
 
 default_border pixel 1
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #696969 #000000 #696969 #696969   #696969
+client.focused          #696969 #000000 #ffffff #696969   #696969
 client.focused_inactive #696969 #000000 #696969 #000000   #000000
 client.unfocused        #696969 #000000 #696969 #000000   #000000
 
@@ -35,6 +35,7 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 bindsym $mod+Shift+x exec i3lock -i $HOME/.config/backgrounds/scaledcartoonspace.png
 
+bindsym mod1+a exec $HOME/.config/polybar/scripts/modifyscrathpadwindows.py
 bindsym mod1+e exec $HOME/.config/rofi/scripts/emojisearch.sh
 bindsym mod1+k exec $HOME/.config/i3/scripts/switchtodvorak.sh
 bindsym mod1+t exec $HOME/.config/i3/scripts/switchtoqwerty.sh
