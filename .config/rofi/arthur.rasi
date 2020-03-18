@@ -9,7 +9,7 @@
  * Copyright: Dave Davenport
  */
 * {
-    foreground:  #ffeedd;
+    foreground:  #ebebeb;
     backlight:   #ccffeedd;
     background-color:  transparent;
     dark: #1c1c1c;
@@ -79,18 +79,18 @@
     background-color: @tcyan;
 }
 #message {
-    font: "Source Code Pro 8";
+    font: "Bitstream Vera Sans Mono 22";
     color: @black;
 }
 
 #inputbar {
     color: @lightgreen;
     padding: 11px;
-    background-color: @tlightblack;
+    background-color: #1c1c1ccc;
     border: 2px 2px 2px 2px;
     border-radius:  15px 15px 0px 0px;
     border-color: @foreground;
-    font: "Source Code Pro 18";
+    font: "Bitstream Vera Sans Mono 22";
 }
 #entry,prompt,case-indicator {
     text-font: inherit;
@@ -162,17 +162,16 @@
 }
 #button {
     font: "Bitstream Vera Sans Mono 22";
-    padding: 6px;
-    border: 2px 0px 2px 2px;
-    border-radius: 4px 0px 0px 4px;
-    background-color: @tlightblack;
+    padding: 12px;
+    border: 2px 2px 2px 2px;
+    border-radius: 4px 4px 4px 4px;
+    background-color: #1c1c1ccc;
     border-color: @foreground;
     color: @foreground;
     horizontal-align: 0.5;
 }
 #button selected normal {
-    color: @dark;
-    border: 2px 0px 2px 2px;
-    background-color: @backlight;
-    border-color: @foreground;
+    color: @lightgreen;
+    border-radius: 16px 16px 16px 16px;
+    //background-color: @backlight;
 }
