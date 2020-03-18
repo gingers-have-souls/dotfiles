@@ -16,12 +16,12 @@ set $mod Mod4
 #font pango:monospace 8
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:Bitstream Vera Sans Mono 12
+font pango:Bitstream Vera Sans Mono 10
 
 default_border pixel 1
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #696969 #000000 #ffffff #696969   #696969
+client.focused          #696969 #000000 #cccccc #696969   #696969
 client.focused_inactive #696969 #000000 #696969 #000000   #000000
 client.unfocused        #696969 #000000 #696969 #000000   #000000
 
