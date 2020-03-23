@@ -32,3 +32,7 @@ Necessary programs (Manjaro Linux package names in no particular order):
  - xorg-xinit (for startx, not sure why this isn't a dependency of i3)
  - xorg-server (xorg base package, not sure why this isn't a dependency of i3)
  - xf86-video-intel (this makes the polybar backlight thing and backlight buttons work)
+
+```
+sudo pacman -S zsh zsh-history-substring-search zsh-syntax-highlighting termite neovim vifm python-ueberzug xorg-xmodmap i3-gaps python-i3ipc polybar xwallpaper xorg-xbacklight xss-lock i3lock pulseaudio rofi ttf-bitstream-vera adobe-source-code-pro-fonts Apple Unicode xdotool xclip dunst picom xorg-xinit xorg-server xf86-video-intel
+```
