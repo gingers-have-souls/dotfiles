@@ -164,7 +164,7 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 alias cp="cp -i"      # Confirm before overwriting something
 alias config='git --git-dir=$HOME/dotfiles --work-tree=$HOME'
 alias jsf='python -m json.tool'
-alias ll='ls -lah'
+alias ll='ls -lah --sort=size'
 alias ls='ls --color'
 alias n="nvim"
 # Current directory size

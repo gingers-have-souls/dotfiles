@@ -3,7 +3,7 @@ My i3 rice.
 
 ![Screenshot](/screenshot.png)
 
-## Necessary packages (Manjaro Linux package names in no particular order):
+## Manjaro Linux packages:
  - zsh (use `chsh` to switch shells)
  - zsh-history-substring-search
  - zsh-syntax-highlighting
@@ -31,14 +31,15 @@ My i3 rice.
  - xorg-server (xorg base package, not sure why this isn't a dependency of i3)
  - xf86-video-intel (this makes the polybar backlight thing and backlight buttons work)
 
-## Necessary fonts:
- - Apple Color Emojis. Download them off a friend's Mac then put it in `/usr/share/fonts/Apple-Color-Emoji/` then run `fc-cache` and you should be set.
- - Unicode Power Symbols. Download them from [here](https://unicodepowersymbol.com/font/) and I don't think the format matters although I used ttf, then place it in `/usr/share/fonts/IEC-symbols-Unicode` and run `fc-cache`.
-
 ## Pacman command
 ```
 sudo pacman -S zsh zsh-history-substring-search zsh-syntax-highlighting termite neovim vifm python-ueberzug xorg-xmodmap i3-gaps python-i3ipc polybar xwallpaper xorg-xbacklight xss-lock i3lock pulseaudio rofi ttf-bitstream-vera adobe-source-code-pro-fonts xdotool xclip dunst picom xorg-xinit xorg-server xf86-video-intel
 ```
+
+## Other packages and fonts:
+ - cli-visualizer (AUR package, so install with `yay -S cli-visualizer`)
+ - Apple Color Emojis. Download them off a friend's Mac then put it in `/usr/share/fonts/apple-color-emoji/` then run `fc-cache` and you should be set.
+ - Unicode Power Symbols. Download them from [here](https://unicodepowersymbol.com/font/) and I don't think the format matters although I used ttf, then place it in `/usr/share/fonts/iec-symbols-unicode` and run `fc-cache`.
 
 ## How you're probably going to want to do this
 The way I manage my dotfiles is with a bare git repository. From my understanding, what makes this different from a normal git repository is that the work tree (the tree in which all the files are) and the git directory (where all the git objects and stuff is stored) are different. To recreate what I have on your system, do this:
