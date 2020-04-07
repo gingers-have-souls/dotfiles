@@ -75,5 +75,5 @@ config pull
 **[This](https://www.atlassian.com/git/tutorials/dotfiles) was really helpful to me if you want to learn more git bare repositories. This mini-guide is heavily influenced by it.**
 
 ## Disclaimer
-This should work perfectly on pretty much any modern Intel laptop. On the other hand, this will not work perfectly on things that are not Intel laptops. However, as far as I can tell the only issues would be that the `xf86-video-intel` package might be unnecessary for you and that the backlight control stuff in the i3 config file and the polybar config file won't work. 
+This should work perfectly on pretty much any modern Intel laptop. On the other hand, this will not work perfectly on things that are not Intel laptops. However, as far as I can tell the only issues would be that the `xf86-video-intel` package might be unnecessary for you, that the backlight control stuff in the i3 config file and the polybar config file won't work, and that you might have to change the DPI in `.Xresources` since I'm using all this on a 4k screen. 
 Also, I haven't tested any of the install instructions (yet), so good luck!
