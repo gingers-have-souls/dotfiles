@@ -111,6 +111,7 @@
     border: 0px 2px 2px 2px;
     background-color: #1c1c1ccc;
     dynamic: false;
+	cycle: false;
     lines: 10;
 }
 
