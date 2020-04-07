@@ -1,11 +1,12 @@
+// vim:ft=css
+
 configuration {
 	terminal: "termite";
-	sidebar-mode: true;
-	font: "BitstreamVeraSansMono 25";
 	display-drun: "Applications: ";
 	display-run: "Run: ";
 	display-ssh: "SSH: ";
 	display-window: "Window: ";
 	show-icons: true;
 }
+
 @import "arthur.rasi"

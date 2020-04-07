@@ -1,5 +1,22 @@
+// vim:ft=css
+
 @import "config.rasi"
 @import "arthur.rasi"
+
 * {
 	font: "Apple Color Emoji 22";
+}
+
+#listview {
+	border: 2px;
+}
+
+#mainbox {
+	children: [ inputbar, listview ];
+
+}
+
+#listview {
+	border-radius: 0px 0px 15px 15px;
+	border: 0px 2px 2px 2px;
 }
