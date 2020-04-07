@@ -74,9 +74,13 @@ let g:netrw_winsize = 20
 autocmd WinEnter * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&filetype") == "netrw" || &buftype == 'quickfix' |q|endif
 " Useful tip: press gn to reset the root of the directory tree
 
-" Copy to system clipboard in visual mode with Control+c
+" Leader is space
+let mapleader=" "
+" Copy to system clipboard in visual mode
 vnoremap <C-c> "+y
+" Clear search highlights then redraw so you don't see :nohlsearch in the bottom left
+nnoremap <Leader>h :nohlsearch<CR>
 
 " Snippets
-nnoremap ,ct :read $HOME/.config/nvim/templates/c.c<CR>kdd4jA
-nnoremap ,cppt :read $HOME/.config/nvim/templates/cpp.cpp<CR>kdd6jA
+nnoremap <Leader>ct :read $HOME/.config/nvim/templates/c.c<CR>kdd4jA
+nnoremap <Leader>cppt :read $HOME/.config/nvim/templates/cpp.cpp<CR>kdd6jA
