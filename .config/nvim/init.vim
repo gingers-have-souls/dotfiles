@@ -3,12 +3,9 @@
 
 call plug#begin('~/.local/share/nvim/site/plugged')
 
-" sudo pacman -S cmake python-pynvim nodejs npm jdk8-openjdk go
-Plug 'ycm-core/YouCompleteMe',  { 'do': './install.py --clangd-completer --ts-completer --java-completer --go-completer' }
-" Let clangd fully control code completion
-let g:ycm_clangd_uses_ycmd_caching = 0
-" Automatically close preview window
-let g:ycm_autoclose_preview_window_after_completion = 1
+" Autocompletion
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" run :CocInstall coc-marketplace then :CocList marketplace to list options
 
 " Distraction-free writing in Vim
 Plug 'junegunn/goyo.vim'
@@ -31,7 +28,6 @@ Plug 'mboughaba/i3config.vim'
 let colorterm=$COLORTERM
 if colorterm =~# 'truecolor' || colorterm =~# '24bit'
 	" Colour previews
-	" Make sure you've installed go, since it's also a dependency of this!
 	Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
 	" Enable hexokinase colours
 	set termguicolors
