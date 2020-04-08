@@ -18,14 +18,18 @@
 
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #222
-background-alt = #444
+background = #222222
+background-alt = #444444
 ;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
-foreground-alt = #555
-primary = #0a6cf5
+foreground-alt = #555555
+primary = #ffb52a
 secondary = #e60053
+ternary = #9f78e1
 alert = #bd2c40
+black = #000000
+white = #ffffff
+blue = #0a6cf5
 
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
@@ -41,10 +45,10 @@ background = ${colors.background}
 foreground = ${colors.foreground}
 
 line-size = 3
-line-color = #f00
+line-color = ${colors.secondary}
 
-border-size = 4
-border-color = #00000000
+border-size = 0
+border-color = ${colors.black}
 
 padding-left = 0
 padding-right = 2
@@ -148,7 +152,7 @@ wrapping-scroll = false
 ;pin-workspaces = true
 
 label-mode-padding = 2
-label-mode-foreground = #000
+label-mode-foreground = ${colors.black}
 label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
@@ -197,11 +201,11 @@ label = 💡
 
 bar-width = 10
 bar-indicator = |
-bar-indicator-foreground = #fff
+bar-indicator-foreground = ${colors.white}
 bar-indicator-font = 2
 bar-fill = ─
 bar-fill-font = 2
-bar-fill-foreground = #ffffff
+bar-fill-foreground = ${colors.white}
 bar-empty = ─
 bar-empty-font = 2
 bar-empty-foreground = ${colors.foreground-alt}
@@ -216,7 +220,7 @@ type = internal/cpu
 interval = 2
 format-prefix = "🤔 "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #f90000
+format-underline = ${colors.secondary}
 label = %percentage:2%%
 
 [module/memory]
@@ -224,7 +228,7 @@ type = internal/memory
 interval = 2
 format-prefix = "🧠 "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #4bffdc
+format-underline = ${colors.ternary}
 label = %percentage_used%%
 
 [module/wlan]
@@ -233,7 +237,7 @@ interface = wlan0
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
-format-connected-underline = #9f78e1
+format-connected-underline = ${colors.ternary}
 label-connected = %essid%
 
 format-disconnected =
@@ -259,7 +263,7 @@ type = internal/network
 interface = eno1
 interval = 3.0
 
-format-connected-underline = #9f78e1
+format-connected-underline = ${colors.ternary}
 format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = %local_ip%
@@ -282,7 +286,7 @@ time-alt = "%r, %Y"
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = ${colors.primary}
+format-underline = ${colors.blue}
 
 label = %date% %time%
 
@@ -294,7 +298,7 @@ label-volume = 🔈 %percentage%%
 label-volume-foreground = ${root.foreground}
 
 label-muted = 🔇 muted
-label-muted-foreground = #666
+label-muted-foreground = #666666
 
 bar-volume-width = 10
 bar-volume-foreground-0 = #55aa55
@@ -348,7 +352,7 @@ adapter = ADP1
 full-at = 98
 
 format-charging = <animation-charging> <label-charging>
-format-charging-underline = #ffb52a
+format-charging-underline = ${colors.primary}
 
 format-discharging = <animation-discharging> <label-discharging>
 format-discharging-underline = ${self.format-charging-underline}
@@ -381,7 +385,7 @@ warn-temperature = 60
 
 #format = <ramp> <label>
 format = 🌡 <label>
-format-underline = #f50a4d
+format-underline = ${colors.secondary}
 #format-warn = <ramp> <label-warn>
 format-warn = 🌡 <label-warn>
 format-warn-underline = ${self.format-underline}
@@ -432,7 +436,7 @@ menu-2-1-exec = menu-open-0
 type = custom/script
 exec = echo " 📜 "
 click-left = $HOME/.config/polybar/scripts/modifyscrathpadwindows.py
-format-underline = #ffb52a
+format-underline = ${colors.primary}
 
 [settings]
 screenchange-reload = true

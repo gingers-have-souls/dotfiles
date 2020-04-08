@@ -13,7 +13,7 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 " Distraction-free writing in Vim
 Plug 'junegunn/goyo.vim'
 " Control-f for goyo
-nnoremap <C-f> :silent !i3-msg fullscreen<CR>:Goyo<CR>
+nnoremap <C-f> :Goyo<CR>
 " Reset line number highlights when goyo exits
 function! s:goyo_leave()
 	highlight LineNr guifg=gray ctermfg=gray
@@ -78,7 +78,7 @@ autocmd WinEnter * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&filetype
 let mapleader=" "
 " Copy to system clipboard in visual mode
 vnoremap <C-c> "+y
-" Clear search highlights then redraw so you don't see :nohlsearch in the bottom left
+" Clear search highlights
 nnoremap <Leader>h :nohlsearch<CR>
 
 " Snippets
