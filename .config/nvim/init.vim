@@ -1,3 +1,6 @@
+" Leader is space
+let mapleader=" "
+
 " Using vim-plug as a plugin manager
 " https://github.com/junegunn/vim-plug
 
@@ -6,15 +9,16 @@ call plug#begin('~/.local/share/nvim/site/plugged')
 " Autocompletion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " run :CocInstall coc-marketplace then :CocList marketplace to list options
+" Highlight the symbol and its references
+nmap <Leader>r :call CocActionAsync('highlight')<CR>
 
 " Distraction-free writing in Vim
 Plug 'junegunn/goyo.vim'
 " Control-f for goyo
 nnoremap <C-f> :Goyo<CR>
-" Reset line number highlights when goyo exits
+" Line number highlights get screwed up so reload colorscheme
 function! s:goyo_leave()
-	highlight LineNr guifg=gray ctermfg=gray
-	highlight CursorLineNr guifg=Magenta gui=NONE ctermfg=Magenta cterm=NONE
+	colorscheme molokai
 endfunction
 autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
@@ -42,7 +46,7 @@ endif
 call plug#end()
 
 
-colorscheme truecolourdefault
+colorscheme molokai
 set encoding=utf-8
 set ignorecase
 set mouse=niv
@@ -51,8 +55,6 @@ set shiftwidth=4
 set tabstop=4
 " Line numbers
 set number relativenumber
-highlight LineNr guifg=gray ctermfg=gray
-highlight CursorLineNr guifg=Magenta gui=NONE ctermfg=Magenta cterm=NONE
 
 
 " netrw (file manager) settings
@@ -70,8 +72,6 @@ let g:netrw_winsize = 20
 autocmd WinEnter * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&filetype") == "netrw" || &buftype == 'quickfix' |q|endif
 " Useful tip: press gn to reset the root of the directory tree
 
-" Leader is space
-let mapleader=" "
 " Copy to system clipboard in visual mode
 vnoremap <C-c> "+y
 " Clear search highlights
