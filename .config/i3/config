@@ -38,8 +38,8 @@ bindsym mod1+k exec $HOME/.config/i3/scripts/switchtodvorak.sh
 bindsym mod1+t exec $HOME/.config/i3/scripts/switchtoqwerty.sh
 bindsym mod1+i exec $HOME/.config/i3/scripts/switchtointl.sh
 
-bindsym XF86MonBrightnessUp exec xbacklight -inc 5
-bindsym XF86MonBrightnessDown exec xbacklight -dec 5
+bindsym XF86MonBrightnessUp exec xbacklight -inc 2 -time 0
+bindsym XF86MonBrightnessDown exec xbacklight -dec 2 -time 0
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
