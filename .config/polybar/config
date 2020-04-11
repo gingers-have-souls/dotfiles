@@ -57,7 +57,7 @@ module-margin-left = 1
 module-margin-right = 2
 
 ;font-0 = fixed:pixelsize=10;1
-font-0 = bitstreamverasansmono:pixelsize=20;1
+font-0 = BitstreamVeraSansMonoNF:pixelsize=20;1
 font-1 = applecoloremoji;
 #font-1 = unifont:fontformat=truetype:size=16:antialias=false;0
 #font-2 = siji:pixelsize=20;1

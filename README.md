@@ -21,7 +21,6 @@ My i3 rice.
  - i3lock (screen locker)
  - pulseaudio (for volume control)
  - rofi (application launcher and window switcher that is also used for the emoji search script)
- - ttf-bitstream-vera (what the DejaVu fonts are based off of, which means it's basically identical but without any extra emojis or the like)
  - adobe-source-code-pro-fonts (technically only used for U+2500 in the polybar but it's also a dependency of chromium)
  - xdotool (part of the emojisearch script (alt+e) that allows us to paste the emoji instead of just copying it to clipboard)
  - xclip (the part of emojisearch that copies it to the clipboard before pasting it)
@@ -31,14 +30,22 @@ My i3 rice.
  - xorg-server (xorg base package, not sure why this isn't a dependency of i3)
  - xf86-video-intel (this makes the polybar backlight thing and backlight buttons work)
 
-## Pacman command
+## pacman command
 ```
-sudo pacman -S zsh zsh-history-substring-search zsh-syntax-highlighting termite neovim vifm python-ueberzug xorg-xmodmap i3-gaps python-i3ipc polybar xwallpaper xorg-xbacklight xss-lock i3lock pulseaudio rofi ttf-bitstream-vera adobe-source-code-pro-fonts xdotool xclip dunst picom xorg-xinit xorg-server xf86-video-intel
+sudo pacman -S zsh zsh-history-substring-search zsh-syntax-highlighting termite neovim vifm python-ueberzug xorg-xmodmap i3-gaps python-i3ipc polybar xwallpaper xorg-xbacklight xss-lock i3lock pulseaudio rofi adobe-source-code-pro-fonts xdotool xclip dunst picom xorg-xinit xorg-server xf86-video-intel
 ```
 
-## Other packages and fonts:
- - cli-visualizer (AUR package, so install with `yay -S cli-visualizer`)
- - Apple Color Emojis. Download them off a friend's Mac then put it in `/usr/share/fonts/apple-color-emoji/` then run `fc-cache` and you should be set.
+## AUR packages:
+ - cli-visualizer (functionally quite useless but cool looking music visualizer)
+ - nerd-fonts-bitstream-vera-mono (like DejaVu, but without emojis and patched with nerd-font)
+
+## yay command:
+```
+yay -S cli-visualizer nerd-fonts-bitstream-vera-mono
+```
+
+## Fonts:
+ - Apple Color Emojis. Download them off a friend's Mac then put it in `/usr/share/fonts/apple-color-emoji/` then run `fc-cache`.
  - Unicode Power Symbols. Download them from [here](https://unicodepowersymbol.com/font/) and I don't think the format matters although I used ttf, then place it in `/usr/share/fonts/iec-symbols-unicode` and run `fc-cache`.
 
 ## How you're probably going to want to do this
@@ -65,7 +72,7 @@ config checkout
 ```
 config config --local status.showUntrackedFiles no
 ```
-7. To load the .zshrc you can run `source ~/.zshrc` (assuming you're already switched your shell to zsh with `chsh`), but it's probably easiest to just sign out and sign back in again. Make sure you have at least i3-gaps, xorg-xinit, and xorg-server installed, otherwise you will get an error when logging in. If that happens, press Control+alt+F2 to switch to tty2 and install the missing packages.
+7. To load the .zshrc you can run `source ~/.zshrc` (assuming you're already switched your shell to zsh with `chsh`), but it's probably easiest to just sign out and sign back in again. Make sure you have at least i3-gaps, nerd-fonts-bitstream-vera-mono, xorg-xinit, and xorg-server installed, otherwise you will get an error when logging in. If that happens, press Control+alt+F2 to switch to tty2 and install the missing packages.
 8. Finally, the command for updating to the most recent revision of my dotfiles.
 ```
 config pull
