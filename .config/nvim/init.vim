@@ -10,12 +10,12 @@ call plug#begin('~/.local/share/nvim/site/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " run :CocInstall coc-marketplace then :CocList marketplace to list options
 " Highlight the symbol and its references
-nmap <Leader>r :call CocActionAsync('highlight')<CR>
+nmap <Leader>r :call CocActionAsync('highlight')<CR><C-l>
 
 " Distraction-free writing in Vim
 Plug 'junegunn/goyo.vim'
 " Control-f for goyo
-nnoremap <C-f> :Goyo<CR>
+nnoremap <C-f> :Goyo<CR><C-l>
 " Line number highlights get screwed up so reload colorscheme
 function! s:goyo_leave()
 	colorscheme molokai
@@ -47,6 +47,7 @@ call plug#end()
 
 
 colorscheme molokai
+set nowrap
 set encoding=utf-8
 set ignorecase
 set mouse=niv
@@ -75,7 +76,7 @@ autocmd WinEnter * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&filetype
 " Copy to system clipboard in visual mode
 vnoremap <C-c> "+y
 " Clear search highlights
-nnoremap <Leader>h :nohlsearch<CR>
+nnoremap <Leader>h :nohlsearch<CR><C-l>
 
 " Snippets
 nnoremap <Leader>ct :read $HOME/.config/nvim/templates/c.c<CR>kdd4jA
