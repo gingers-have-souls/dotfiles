@@ -4,7 +4,9 @@
 @import "arthur.rasi"
 
 * {
-	font: "Apple Color Emoji 22";
+	font: "Apple Color Emoji 28";
+	width: 70%;
+	height: 50%;
 }
 
 #listview {
