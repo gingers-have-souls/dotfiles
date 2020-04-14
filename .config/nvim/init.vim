@@ -22,12 +22,6 @@ function! s:goyo_leave()
 endfunction
 autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
-" Automatic brackets
-Plug 'cohama/lexima.vim'
-
-" i3 config syntax highlighting
-Plug 'mboughaba/i3config.vim'
-
 " This plugin only works in a truecolor terminal
 let colorterm=$COLORTERM
 if colorterm =~# 'truecolor' || colorterm =~# '24bit'
@@ -43,6 +37,12 @@ if colorterm =~# 'truecolor' || colorterm =~# '24bit'
 	let g:Hexokinase_ftDisabled = ['text']
 endif
 
+" Automatic brackets
+Plug 'cohama/lexima.vim'
+
+" i3 config syntax highlighting
+Plug 'mboughaba/i3config.vim'
+
 call plug#end()
 
 
@@ -52,7 +52,7 @@ set splitbelow
 set nowrap
 set encoding=utf-8
 set ignorecase
-set mouse=niv
+set mouse=a
 " Set tab size
 set shiftwidth=4
 set tabstop=4
@@ -81,5 +81,5 @@ vnoremap <C-c> "+y
 nnoremap <Leader>h :nohlsearch<CR><C-l>
 
 " Snippets
-nnoremap <Leader>ct :read $HOME/.config/nvim/templates/c.c<CR>kdd4jA
-nnoremap <Leader>cppt :read $HOME/.config/nvim/templates/cpp.cpp<CR>kdd6jA
+nnoremap <Leader>ct :read $HOME/.config/nvim/snippets/c.c<CR>kdd4jA
+nnoremap <Leader>cppt :read $HOME/.config/nvim/snippets/cpp.cpp<CR>kdd6jA
