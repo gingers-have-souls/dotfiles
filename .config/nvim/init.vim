@@ -50,7 +50,6 @@ colorscheme molokai
 set splitright
 set splitbelow
 set nowrap
-set encoding=utf-8
 set ignorecase
 set mouse=a
 " Set tab size

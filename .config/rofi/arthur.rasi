@@ -53,6 +53,7 @@
 
     transparent: rgba(0,0,0,0);
     font: "Bitstream Vera Sans Mono NF 25";
+	width: 30%;
 }
 
 #window {
@@ -171,8 +172,8 @@
 }
 
 #button {
-    font: "Bitstream Vera Sans Mono NF 22";
-    padding: 12px;
+    font: "Bitstream Vera Sans Mono NF 40";
+    padding: 0px;
     color: @foreground;
     horizontal-align: 0.5;
 }
