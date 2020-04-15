@@ -37,16 +37,15 @@ sudo pacman -S zsh zsh-history-substring-search zsh-syntax-highlighting termite 
 
 ## AUR packages:
  - cli-visualizer (functionally quite useless but cool looking music visualizer)
- - nerd-fonts-bitstream-vera-mono (like DejaVu, but without emojis and patched with nerd-font)
+ - nerd-fonts-bitstream-vera-mono (like DejaVu, but without emojis and patched with nerd-font goodies)
 
 ## yay command:
 ```
 yay -S cli-visualizer nerd-fonts-bitstream-vera-mono
 ```
 
-## Fonts:
- - Apple Color Emojis. Download them off a friend's Mac then put it in `/usr/share/fonts/apple-color-emoji/` then run `fc-cache`.
- - Unicode Power Symbols. Download them from [here](https://unicodepowersymbol.com/font/) and I don't think the format matters although I used ttf, then place it in `/usr/share/fonts/iec-symbols-unicode` and run `fc-cache`.
+## Apple Color Emojis:
+ - Download them off a friend's Mac then put it in `/usr/share/fonts/apple-color-emoji/` then run `fc-cache`.
 
 ## How you're probably going to want to do this
 The way I manage my dotfiles is with a bare git repository. From my understanding, what makes this different from a normal git repository is that the work tree (the tree in which all the files are) and the git directory (where all the git objects and stuff is stored) are different. To recreate what I have on your system, do this:
