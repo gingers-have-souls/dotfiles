@@ -29,7 +29,7 @@
     # the top and down respectively.
     # The width can be negative.  In this case the actual width is the
     # screen width minus the width defined in within the geometry option.
-    geometry = "300x5-30+20"
+    geometry = "300x5-24+80"
 
     # Show how many messages are currently hidden (because of geometry).
     indicate_hidden = yes
@@ -64,7 +64,7 @@
     frame_width = 3
 
     # Defines color of the frame around the notification window.
-    frame_color = "#aaaaaa"
+    frame_color = "#696969"
 
     # Define a color for the separator.
     # possible values are:
@@ -160,13 +160,14 @@
     ### Icons ###
 
     # Align icons left/right/off
-    icon_position = off
+    icon_position = left
 
     # Scale larger icons down to this size, set to 0 to disable
     max_icon_size = 32
 
     # Paths to default icons.
     #icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
+	icon_path = /usr/share/icons/Adwaita/32x32/status/:/usr/share/icons/Adwaita/32x32/devices/:/usr/share/icons/Adwaita/32x32/legacy/
 
     ### History ###
 
@@ -180,10 +181,10 @@
     ### Misc/Advanced ###
 
     # dmenu path.
-    dmenu = /usr/bin/dmenu -p dunst:
+    dmenu = /usr/bin/rofi -dmenu -p dunst:
 
     # Browser for opening urls in context menu.
-    browser = /usr/bin/firefox -new-tab
+    browser = /usr/bin/chromium --new-window
 
     # Always run rule-defined scripts, even if the notification is suppressed
     always_run_script = true
@@ -213,7 +214,7 @@
     # corners.
     # The radius will be automatically lowered if it exceeds half of the
     # notification height to avoid clipping text and/or icons.
-    corner_radius = 0
+    corner_radius = 15
 
     ### Legacy
 
@@ -237,8 +238,8 @@
     # * close_current: Close current notification.
     # * close_all: Close all notifications.
     mouse_left_click = close_current
-    mouse_middle_click = do_action
-    mouse_right_click = close_all
+    mouse_middle_click = close_all
+    mouse_right_click = do_action
 
 # Experimental features that may or may not work correctly. Do not expect them
 # to have a consistent behaviour across releases.
@@ -279,22 +280,25 @@
     foreground = "#888888"
     timeout = 10
     # Icon for notifications with low urgency, uncomment to enable
-    #icon = /path/to/icon
+	# Empty to disable default icons
+    icon =
 
 [urgency_normal]
-    background = "#285577"
+    background = "#222222"
     foreground = "#ffffff"
     timeout = 10
     # Icon for notifications with normal urgency, uncomment to enable
-    #icon = /path/to/icon
+	# Empty to disable default icons
+    icon =
 
 [urgency_critical]
-    background = "#900000"
+    background = "#e60053"
     foreground = "#ffffff"
     frame_color = "#ff0000"
     timeout = 0
     # Icon for notifications with critical urgency, uncomment to enable
-    #icon = /path/to/icon
+	# Empty to disable default icons
+    icon =
 
 # Every section that isn't one of the above is interpreted as a rules to
 # override settings for certain messages.
