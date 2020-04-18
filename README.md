@@ -9,8 +9,11 @@ My i3 rice.
  - zsh-syntax-highlighting
  - termite
  - neovim (vim-plug is my plugin manager, see `$HOME/.config/nvim/init.vim` for more details on neovim setup)
- - vifm (file manager, type `:view` to enable previews)
- - python-ueberzug (images in vifm)
+ - vifm (terminal file manager)
+ - python-ueberzug (previews in vifm)
+ - ffmpegthumbnailer (previews in vifm)
+ - imagemagick (previews in vifm)
+ - poppler (previews in vifm)
  - xorg-xmodmap (I remap caps lock to backspace)
  - i3-gaps
  - python-i3ipc (interprocess communication, allows us to do things like "fibonacci" tiling and the button that shows all windows in the scratchpad)
@@ -32,16 +35,18 @@ My i3 rice.
 
 ## pacman command
 ```
-sudo pacman -S zsh zsh-history-substring-search zsh-syntax-highlighting termite neovim vifm python-ueberzug xorg-xmodmap i3-gaps python-i3ipc polybar xwallpaper xorg-xbacklight xss-lock i3lock pulseaudio rofi adobe-source-code-pro-fonts xdotool xclip dunst picom xorg-xinit xorg-server xf86-video-intel
+sudo pacman -S zsh zsh-history-substring-search zsh-syntax-highlighting termite neovim vifm python-ueberzug ffmpegthumbnailer poppler xorg-xmodmap i3-gaps python-i3ipc polybar xwallpaper xorg-xbacklight xss-lock i3lock pulseaudio rofi adobe-source-code-pro-fonts xdotool xclip dunst picom xorg-xinit xorg-server xf86-video-intel
 ```
 
 ## AUR packages:
  - cli-visualizer (functionally quite useless but cool looking music visualizer)
  - nerd-fonts-bitstream-vera-mono (like DejaVu, but without emojis and patched with nerd-font goodies)
+ - epub-thumbnailer-git (previews in vifm)
+ - fontpreview-git (previews in vifm)
 
 ## yay command:
 ```
-yay -S cli-visualizer nerd-fonts-bitstream-vera-mono
+yay -S cli-visualizer nerd-fonts-bitstream-vera-mono epub-thumbnailer-git fontpreview-git
 ```
 
 ## Apple Color Emojis:
