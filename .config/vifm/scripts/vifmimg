@@ -120,7 +120,7 @@ function previewgif() {
     else
         declare -p -A cmd=([action]=add [identifier]="$ID_PREVIEW"
             [x]="$2" [y]="$3" [width]="$4" [height]="$5" \
-            [path]="$PWD/$6") \
+            [scaler]=fit_contain [path]="$PWD/$6") \
             > "$FIFO_UEBERZUG"
     fi
 }
@@ -149,6 +149,8 @@ function previewpdf() {
 
 
 function previewmagick() {
+    # I had to use jpg since imagemagick screws up compositing
+    # with anything with transparency
     if [[ ! -f "/tmp$PWD/$6.jpg" ]]; then
         IMAGE_WIDTH=$(identify -format "%w" "$PWD/$6")
         IMAGE_HEIGHT=$(identify -format "%h" "$PWD/$6")
