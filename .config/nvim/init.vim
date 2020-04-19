@@ -49,7 +49,6 @@ call plug#end()
 colorscheme molokai
 set splitright
 set splitbelow
-set nowrap
 set ignorecase
 set mouse=a
 " Set tab size
