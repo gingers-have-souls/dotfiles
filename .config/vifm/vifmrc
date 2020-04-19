@@ -67,7 +67,7 @@ set norunexec
 
 " Selected color scheme
 
-colorscheme molokai
+colorscheme mycolours
 
 " Format for displaying time in file list. For example:
 " TIME_STAMP_FORMAT=%m/%d-%H:%M
@@ -193,17 +193,17 @@ fileviewer *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
     \ %pc
     \ vifmimg clear
 
-fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.xpm
+fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.xpm,*.ico
     \ vifmimg draw %px %py %pw %ph %c
     \ %pc
     \ vifmimg clear
 
-fileviewer *.gif
+fileviewer *.gif,*.webp
     \ vifmimg gifpreview %px %py %pw %ph %c
     \ %pc
     \ vifmimg clear
 
-fileviewer *.ico
+fileviewer *.svg
     \ vifmimg magickpreview %px %py %pw %ph %c
     \ %pc
     \ vifmimg clear
@@ -411,7 +411,7 @@ filetype *.asc
 " uncommenting one of lines below will result in ignoring 'vi[x]cmd' option
 " for unknown file types.
 " For *nix:
-filetype * xdg-open
+" filetype * xdg-open
 " For OS X:
 " filetype * open
 " For Windows:

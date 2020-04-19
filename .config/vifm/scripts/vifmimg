@@ -29,16 +29,16 @@ if [[ ! -d "/tmp$PWD/" ]]; then
 fi
 
 function inc() {
-	VAL="$(cat $PDF_PAGE_CONFIG)"
-	echo "$(expr $VAL + 1)" > $PDF_PAGE_CONFIG
+    VAL="$(cat $PDF_PAGE_CONFIG)"
+    echo "$(expr $VAL + 1)" > $PDF_PAGE_CONFIG
 }
 
 function dec() {
-	VAL="$(cat $PDF_PAGE_CONFIG)"
-	echo "$(expr $VAL - 1)" > $PDF_PAGE_CONFIG
-	if [[ $VAL -le 0 ]]; then
-		echo 0 > $PDF_PAGE_CONFIG
-	fi
+    VAL="$(cat $PDF_PAGE_CONFIG)"
+    echo "$(expr $VAL - 1)" > $PDF_PAGE_CONFIG
+    if [[ $VAL -le 0 ]]; then
+        echo 0 > $PDF_PAGE_CONFIG
+    fi
 }
 
 function previewclear() {
@@ -84,8 +84,8 @@ function previewepub() {
 function  previewaudio() {
   if [[ ! -f "/tmp${PWD}/$6.png" ]]; then
     ffmpeg -i "$6" "/tmp${PWD}/$6.png" \
-		-filter_complex "showwavespic=s=640x240:split_channels=1:colors=Black" \
-		-frames:v 1 -y &> /dev/null
+        -filter_complex "showwavespic=s=640x240:split_channels=1:colors=Black" \
+        -frames:v 1 -y &> /dev/null
   fi
   declare -p -A cmd=([action]=add [identifier]="$ID_PREVIEW"
                      [x]="$2" [y]="$3" [width]="$4" [height]="$5" \
@@ -104,11 +104,11 @@ function previewfont() {
 }
 
 function previewgif() {
-    if [[ ! -d "/tmp$PWD/$6/" ]]; then
-        mkdir -p "/tmp$PWD/$6/"
-        convert -coalesce "$PWD/$6" "/tmp$PWD/$6/$6.png"
-    fi
     if [[ ! -z "$PLAY_GIF" ]]; then
+        if [[ ! -d "/tmp$PWD/$6/" ]]; then
+            mkdir -p "/tmp$PWD/$6/"
+            convert -coalesce "$PWD/$6" "/tmp$PWD/$6/$6.png"
+        fi
         for frame in $(ls -1 /tmp$PWD/$6/$6*.png | sort -V); do
             declare -p -A cmd=([action]=add [identifier]="$ID_PREVIEW"
                 [x]="$2" [y]="$3" [width]="$4" [height]="$5" \
@@ -118,10 +118,10 @@ function previewgif() {
             sleep .07
         done
     else
-            declare -p -A cmd=([action]=add [identifier]="$ID_PREVIEW"
-                [x]="$2" [y]="$3" [width]="$4" [height]="$5" \
-                [scaler]=fit_contain [path]="/tmp$PWD/$6/$6-0.png") \
-                > "$FIFO_UEBERZUG"
+        declare -p -A cmd=([action]=add [identifier]="$ID_PREVIEW"
+            [x]="$2" [y]="$3" [width]="$4" [height]="$5" \
+            [path]="$PWD/$6") \
+            > "$FIFO_UEBERZUG"
     fi
 }
 
@@ -149,12 +149,23 @@ function previewpdf() {
 
 
 function previewmagick() {
-    if [[ ! -f "/tmp$PWD/$6.png" ]]; then
-        convert -thumbnail $(identify -format "%wx%h" "$6") "$PWD/$6" "/tmp$PWD/$6.png"
+    if [[ ! -f "/tmp$PWD/$6.jpg" ]]; then
+        IMAGE_WIDTH=$(identify -format "%w" "$PWD/$6")
+        IMAGE_HEIGHT=$(identify -format "%h" "$PWD/$6")
+        MAX_DIMENSION=500
+        if [ $IMAGE_WIDTH -gt $IMAGE_HEIGHT ]; then
+            composite -background transparent -size \
+                $MAX_DIMENSION\x$(($MAX_DIMENSION*$IMAGE_HEIGHT/$IMAGE_WIDTH)) \
+                "$PWD/$6" pattern:checkerboard -quality 100 "/tmp$PWD/$6.jpg"
+        else
+            composite -background transparent -size \
+                $(($MAX_DIMENSION*$IMAGE_WIDTH/$IMAGE_HEIGHT))x$MAX_DIMENSION \
+                "$PWD/$6" pattern:checkerboard -quality 100 "/tmp$PWD/$6.jpg"
+        fi
     fi
     declare -p -A cmd=([action]=add [identifier]="$ID_PREVIEW"
         [x]="$2" [y]="$3" [width]="$4" [height]="$5" \
-        [scaler]=fit_contain [path]="/tmp$PWD/$6.png") \
+        [scaler]=fit_contain [path]="/tmp$PWD/$6.jpg") \
         > "$FIFO_UEBERZUG"
 }
 
@@ -172,8 +183,8 @@ function main() {
         "gifpreview") previewgif "$@" ;;
         "pdfpreview") previewpdf "$@" ;;
         "magickpreview") previewmagick "$@" ;;
-	  "audiopreview") previewaudio "$@" ;;
-	  "fontpreview") previewfont "$@" ;;
+        "audiopreview") previewaudio "$@" ;;
+        "fontpreview") previewfont "$@" ;;
         "*") echo "Unknown command: '$@'" ;;
     esac
 }
