@@ -75,8 +75,6 @@ autocmd WinEnter * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&filetype
 
 " Copy to system clipboard in visual mode
 vnoremap <C-c> "+y
-" Exit
-nnoremap <C-x> :q<CR>
 " Clear search highlights
 nnoremap <Leader>h :nohlsearch<CR><C-l>
 
