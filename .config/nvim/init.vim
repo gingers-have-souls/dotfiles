@@ -51,12 +51,12 @@ set splitright
 set splitbelow
 set ignorecase
 set mouse=a
+set spelllang=en_ca
 " Set tab size
 set shiftwidth=4
 set tabstop=4
 " Line numbers
 set number relativenumber
-
 
 " netrw (file manager) settings
 " no history
@@ -73,10 +73,34 @@ let g:netrw_winsize = 20
 autocmd WinEnter * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&filetype") == "netrw" || &buftype == 'quickfix' |q|endif
 " Useful tip: press gn to reset the root of the directory tree
 
+" Writing mode
+function! WritingModeOn()
+	setlocal spell
+	setlocal linebreak
+	HexokinaseTurnOff
+endfunction
+function! WritingModeOff()
+	setlocal spell&
+	setlocal linebreak&
+	HexokinaseTurnOn
+endfunction
+function! WritingModeToggle()
+	if &spell ==# "nospell"
+		call WritingModeOn()
+	else
+		call WritingModeOff()
+	endif
+endfunction
+command! Wm call WritingModeToggle()
+command! Wmo call WritingModeOn()
+command! Wmf call WritingModeOff()
+
 " Copy to system clipboard in visual mode
 vnoremap <C-c> "+y
 " Clear search highlights
 nnoremap <Leader>h :nohlsearch<CR><C-l>
+" Exit insert mode in terminal
+tnoremap <C-x> <C-\><C-n>
 
 " Snippets
 nnoremap <Leader>ct :read $HOME/.config/nvim/snippets/c.c<CR>kdd4jA
