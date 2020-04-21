@@ -85,7 +85,7 @@ function  previewaudio() {
   if [[ ! -f "/tmp${PWD}/$6.png" ]]; then
     ffmpeg -i "$6" "/tmp${PWD}/$6.png" \
         -filter_complex "showwavespic=s=640x240:split_channels=1:colors=Black" \
-        -frames:v 1 -y &> /dev/null
+        &> /dev/null
   fi
   declare -p -A cmd=([action]=add [identifier]="$ID_PREVIEW"
                      [x]="$2" [y]="$3" [width]="$4" [height]="$5" \
