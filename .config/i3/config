@@ -24,7 +24,7 @@ gaps inner 20
 exec --no-startup-id picom
 exec --no-startup-id polybar example
 exec --no-startup-id xwallpaper --maximize $HOME/.config/backgrounds/Manjaro_organic_1920x1080.jpg
-exec --no-startup-id $HOME/.config/i3/scripts/autotiling.py
+exec_always --no-startup-id $HOME/.config/i3/scripts/autotiling.py
 
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
