@@ -22,12 +22,11 @@ function! s:goyo_leave()
 endfunction
 autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
+" Colour previews
+Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
 " This plugin only works in a truecolor terminal
-let colorterm=$COLORTERM
-if colorterm =~# 'truecolor' || colorterm =~# '24bit'
-	" Colour previews
-	Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
-	" Enable hexokinase colours
+if $COLORTERM ==# 'truecolor' || $colorterm ==# '24bit'
+	" Required to enable hexokinase colours
 	set termguicolors
 	" Highlights background of characters
 	let g:Hexokinase_highlighters = ['background']
