@@ -43,10 +43,10 @@ bindsym mod1+i exec $HOME/.config/i3/scripts/switchtointl.sh
 bindsym XF86MonBrightnessUp exec xbacklight -inc 2 -time 0
 bindsym XF86MonBrightnessDown exec xbacklight -dec 2 -time 0
 
-# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
+# xss-lock grabs a logind suspend inhibit lock and will use slock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork -i $HOME/.config/backgrounds/scaledcartoonspace.png
-bindsym $mod+Shift+x exec i3lock -i $HOME/.config/backgrounds/scaledcartoonspace.png
+exec --no-startup-id xss-lock --transfer-sleep-lock -- slock
+bindsym --release $mod+Shift+x exec slock
 
 # Use pactl to adjust volume in PulseAudio.
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +1%
