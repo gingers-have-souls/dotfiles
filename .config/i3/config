@@ -54,12 +54,10 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
-# This part requires spotifyd from the AUR and playerctl from the normal repos to be installed
-# Make sure to install spotifyd with the mpris thing to use this
-# I also use spotify-tui from the AUR as a spotify client
-bindsym XF86AudioPlay exec playerctl --player='spotifyd' play-pause
-bindsym XF86AudioNext exec playerctl --player='spotifyd' next
-bindsym XF86AudioPrev exec playerctl --player='spotifyd' previous
+# Controls ncspot (from AUR) with playerctl (normal repos)
+bindsym XF86AudioPlay exec playerctl --player='ncspot' play-pause
+bindsym XF86AudioNext exec playerctl --player='ncspot' next
+bindsym XF86AudioPrev exec playerctl --player='ncspot' previous
 # Another option is to control all players, including Chromium
 # Only playerctl is required for this
 #bindsym XF86AudioPlay exec playerctl -a play-pause
