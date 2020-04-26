@@ -77,11 +77,13 @@ function! WritingModeOn()
 	setlocal spell
 	setlocal linebreak
 	HexokinaseTurnOff
+	echo "Writing mode on"
 endfunction
 function! WritingModeOff()
 	setlocal spell&
 	setlocal linebreak&
 	HexokinaseTurnOn
+	echo "Writing mode off"
 endfunction
 function! WritingModeToggle()
 	if &spell ==# "nospell"
