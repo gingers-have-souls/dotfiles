@@ -8,9 +8,7 @@ call plug#begin('~/.local/share/nvim/site/plugged')
 
 " Autocompletion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" run :CocInstall coc-marketplace then :CocList marketplace to list options
-" Highlight the symbol and its references
-nmap <Leader>r :call CocActionAsync('highlight')<CR><C-l>
+" run :CocInstall coc-marketplace then :CocList marketplace to list plugins
 
 " Distraction-free writing in Vim
 Plug 'junegunn/goyo.vim'
@@ -35,6 +33,36 @@ if $COLORTERM ==# 'truecolor' || $colorterm ==# '24bit'
 	" Disables highlighting on .txt
 	let g:Hexokinase_ftDisabled = ['text']
 endif
+
+" Git diff within Neovim
+Plug 'airblade/vim-gitgutter'
+command! C call ToggleEditingConfigFile()
+function! ToggleEditingConfigFile()
+	if g:gitgutter_git_args ==# '--git-dir=$HOME/dotfiles --work-tree=$HOME'
+		let g:gitgutter_git_args = ''
+		GitGutter
+		echo "Not config file"
+	else
+		let g:gitgutter_git_args = '--git-dir=$HOME/dotfiles --work-tree=$HOME'
+		GitGutter
+		echo "Config file"
+	endif
+endfunction
+
+" Shows recently opened files
+Plug 'mhinz/vim-startify'
+
+let g:startify_custom_header = [
+\ '        __                    __           ___              ',
+\ '       /\ \__                /\ \__  __  /''___\            ',
+\ '   ____\ \ ,_\    __     _ __\ \ ,_\/\_\/\ \__/  __  __     ',
+\ '  /'',__\\ \ \/  /''__`\  /\`''__\ \ \/\/\ \ \ ,__\/\ \/\ \ ',
+\ ' /\__, `\\ \ \_/\ \L\.\_\ \ \/ \ \ \_\ \ \ \ \_/\ \ \_\ \   ',
+\ ' \/\____/ \ \__\ \__/.\_\\ \_\  \ \__\\ \_\ \_\  \/`____ \  ',
+\ '  \/___/   \/__/\/__/\/_/ \/_/   \/__/ \/_/\/_/   `/___/> \ ',
+\ '                                                     /\___/ ',
+\ '                                                     \/__/  ',
+\ ]
 
 " Automatic brackets
 Plug 'cohama/lexima.vim'

@@ -109,6 +109,11 @@ hi WildMenu        guifg=#66D9EF guibg=#000000
 hi TabLineFill     guifg=#1B1D1E guibg=#1B1D1E
 hi TabLine         guibg=#1B1D1E guifg=#808080 gui=none
 
+" vim-gitgutter
+hi GitGutterAdd guifg=#A6E22E
+hi GitGutterChange guifg=#E6DB74
+hi GitGutterDelete guifg=#F92672
+
 if s:molokai_original == 1
    hi Normal          guifg=#F8F8F2 guibg=#272822
    hi Comment         guifg=#75715E
@@ -232,6 +237,11 @@ if &t_Co > 255
 
    hi SpecialKey      ctermfg=59
 
+   " vim-gitgutter
+   hi GitGutterAdd ctermfg=118
+   hi GitGutterChange ctermfg=144
+   hi GitGutterDelete ctermfg=161               cterm=bold
+
    if exists("g:rehash256") && g:rehash256 == 1
        hi Normal       ctermfg=252 ctermbg=234
        hi CursorLine               ctermbg=236   cterm=none
@@ -268,6 +278,11 @@ if &t_Co > 255
        hi LineNr          ctermfg=239 ctermbg=235
        hi NonText         ctermfg=239
        hi SpecialKey      ctermfg=239
+
+	   " vim-gitgutter
+	   hi GitGutterAdd ctermfg=154
+	   hi GitGutterChange ctermfg=222
+       hi GitGutterDelete ctermfg=197               cterm=bold
    endif
 end
 
