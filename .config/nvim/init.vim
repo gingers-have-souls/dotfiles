@@ -36,6 +36,7 @@ endif
 
 " Git diff within Neovim
 Plug 'airblade/vim-gitgutter'
+autocmd BufWrite,BufRead,InsertLeave * GitGutter
 command! C call ToggleEditingConfigFile()
 function! ToggleEditingConfigFile()
 	if g:gitgutter_git_args ==# '--git-dir=$HOME/dotfiles --work-tree=$HOME'
