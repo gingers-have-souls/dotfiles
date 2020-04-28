@@ -50,6 +50,13 @@ function! ToggleEditingConfigFile()
 	endif
 endfunction
 
+" Cool status line, has integration with vim-gitgutter
+Plug 'vim-airline/vim-airline'
+let g:airline_powerline_fonts = 1
+
+" vim airline themes
+Plug 'vim-airline/vim-airline-themes'
+
 " Shows recently opened files
 Plug 'mhinz/vim-startify'
 
