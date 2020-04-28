@@ -135,3 +135,4 @@ tnoremap <C-x> <C-\><C-n>
 " Snippets
 nnoremap <Leader>ct :read $HOME/.config/nvim/snippets/c.c<CR>kdd4jA
 nnoremap <Leader>cppt :read $HOME/.config/nvim/snippets/cpp.cpp<CR>kdd6jA
+nnoremap <Leader>pyst :-1read $HOME/.config/nvim/snippets/pysh.py<CR>jI<CR>
