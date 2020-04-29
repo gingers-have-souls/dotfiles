@@ -49,6 +49,9 @@ function! ToggleEditingConfigFile()
 		echo "Config file"
 	endif
 endfunction
+let g:gitgutter_map_keys = 0
+nmap [c <Plug>(GitGutterPrevHunk)
+nmap ]c <Plug>(GitGutterNextHunk)
 
 " Cool status line, has integration with vim-gitgutter
 Plug 'vim-airline/vim-airline'
