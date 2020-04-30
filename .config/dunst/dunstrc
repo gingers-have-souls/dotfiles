@@ -181,7 +181,7 @@
     ### Misc/Advanced ###
 
     # dmenu path.
-    dmenu = /usr/bin/rofi -dmenu -p dunst:
+    dmenu = /usr/bin/rofi -dmenu -p dunst: -theme thicc
 
     # Browser for opening urls in context menu.
     browser = /usr/bin/chromium --new-window
