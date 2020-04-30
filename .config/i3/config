@@ -22,7 +22,7 @@ client.unfocused        #696969 #000000 #696969 #000000   #000000
 
 gaps inner 20
 exec --no-startup-id picom
-exec --no-startup-id polybar example
+exec --no-startup-id polybar topbar
 exec --no-startup-id xwallpaper --maximize $HOME/.config/backgrounds/Manjaro_organic_1920x1080.jpg
 exec_always --no-startup-id $HOME/.config/i3/scripts/autotiling.py
 

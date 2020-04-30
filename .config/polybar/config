@@ -17,10 +17,8 @@
 ;==========================================================
 
 [colors]
-;background = ${xrdb:color0:#222}
 background = #222222
 background-alt = #444444
-;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
 foreground-alt = #555555
 primary = #ffb52a
@@ -31,10 +29,9 @@ black = #000000
 white = #ffffff
 blue = #0a6cf5
 
-[bar/example]
+[bar/topbar]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-;height = 27
 height = 54
 ;offset-x = 1%
 ;offset-y = 1%
@@ -56,21 +53,16 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-;font-0 = fixed:pixelsize=10;1
 font-0 = DejaVuSansMonoNerdFont:pixelsize=20;1
-font-1 = applecoloremoji;
-#font-1 = unifont:fontformat=truetype:size=16:antialias=false;0
-#font-2 = siji:pixelsize=20;1
-font-2 = IECsymbolsUnicode:pixelsize=20;1
-font-3 = SourceCodePro:pixelsize=20;1
+font-1 = applecoloremoji:pixelsize=20;1
+font-2 = SourceCodePro:pixelsize=20;1
 
-modules-left = bspwm i3 scratchpad wlan eth xbacklight
+modules-left = i3 wlan eth xbacklight
 modules-center = xwindow
-;modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
 modules-right = pulseaudio memory cpu battery temperature date powermenu
 
-tray-position = right
-tray-padding = 2
+;tray-position = right
+;tray-padding = 2
 ;tray-background = #0063ff
 
 ;wm-restack = bspwm
@@ -81,15 +73,14 @@ tray-padding = 2
 ;scroll-up = bspwm-desknext
 ;scroll-down = bspwm-deskprev
 
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
 
 cursor-click = pointer
 cursor-scroll = ns-resize
 
 [module/xwindow]
 type = internal/xwindow
-;label = %title:0:30:...%
 
 label = %title%
 label-maxlen = 55
@@ -149,7 +140,7 @@ index-sort = true
 wrapping-scroll = false
 
 ; Only show workspaces on the same output as the bar
-;pin-workspaces = true
+pin-workspaces = true
 
 label-mode-padding = 2
 label-mode-foreground = ${colors.black}
@@ -158,7 +149,7 @@ label-mode-background = ${colors.primary}
 ; focused = Active workspace on focused monitor
 label-focused = %index%
 label-focused-background = ${colors.background-alt}
-label-focused-underline = ${self.label-focused-background}
+label-focused-underline= ${colors.primary}
 label-focused-padding = 2
 
 ; unfocused = Inactive workspace on any monitor
@@ -178,7 +169,6 @@ label-urgent-padding = 2
 
 ; Separator in between workspaces
 ; label-separator = |
-
 
 [module/mpd]
 type = internal/mpd
@@ -240,39 +230,24 @@ format-connected = <ramp-signal> <label-connected>
 format-connected-underline = ${colors.ternary}
 label-connected = %essid%
 
-format-disconnected =
-;format-disconnected = <label-disconnected>
-;format-disconnected-underline = ${self.format-connected-underline}
-;label-disconnected = %ifname% disconnected
-;label-disconnected-foreground = ${colors.foreground-alt}
-
-;ramp-signal-0 = 
-;ramp-signal-1 = 
-;ramp-signal-2 = 
-;ramp-signal-3 = 
-;ramp-signal-4 = 
 ramp-signal-0 = 🌧
 ramp-signal-1 = ☁
 ramp-signal-2 = 🌥
 ramp-signal-3 = 🌤
 ramp-signal-4 = ☀
-ramp-signal-foreground = ${colors.foreground-alt}
+
+format-disconnected =
 
 [module/eth]
 type = internal/network
 interface = eno1
 interval = 3.0
 
+format-connected = <label-connected>
 format-connected-underline = ${colors.ternary}
-format-connected-prefix = " "
-format-connected-prefix-foreground = ${colors.foreground-alt}
-label-connected = %local_ip%
+label-connected = %essid%
 
 format-disconnected =
-;format-disconnected = <label-disconnected>
-;format-disconnected-underline = ${self.format-connected-underline}
-;label-disconnected = %ifname% disconnected
-;label-disconnected-foreground = ${colors.foreground-alt}
 
 [module/date]
 type = internal/date
@@ -383,21 +358,14 @@ type = internal/temperature
 thermal-zone = 0
 warn-temperature = 60
 
-#format = <ramp> <label>
 format = 🌡 <label>
 format-underline = ${colors.secondary}
-#format-warn = <ramp> <label-warn>
 format-warn = 🌡 <label-warn>
 format-warn-underline = ${self.format-underline}
 
 label = %temperature-c%
 label-warn = %temperature-c%
 label-warn-foreground = ${colors.secondary}
-
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-foreground = ${colors.foreground-alt}
 
 [module/powermenu]
 type = custom/menu
@@ -406,10 +374,8 @@ expand-right = true
 
 format-spacing = 1
 
-#label-open = 
 label-open = ⏻
 label-open-foreground = ${colors.secondary}
-#label-close =  cancel
 label-close = ⏻ cancel
 label-close-foreground = ${colors.secondary}
 label-separator = |
@@ -432,13 +398,6 @@ menu-2-0-exec = systemctl poweroff
 menu-2-1 = cancel
 menu-2-1-exec = menu-open-0
 
-[module/scratchpad]
-type = custom/text
-content = "📜"
-content-padding = 1
-click-left = $HOME/.config/polybar/scripts/modifyscrathpadwindows.py
-content-underline = ${colors.primary}
-
 [settings]
 screenchange-reload = true
 ;compositing-background = xor
@@ -448,7 +407,7 @@ screenchange-reload = true
 ;pseudo-transparency = false
 
 [global/wm]
-margin-top = 5
-margin-bottom = 5
+margin-top = 0
+margin-bottom = 0
 
 ; vim:ft=dosini
