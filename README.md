@@ -44,14 +44,14 @@ sudo pacman -S zsh zsh-history-substring-search zsh-syntax-highlighting termite 
 ## AUR packages
 
 - cli-visualizer (functionally quite useless but cool looking music visualizer)
-- nerd-fonts-bitstream-vera-mono (like DejaVu, without emojis and patched with nerd-font)
+- nerd-fonts-dejavu-complete
 - epub-thumbnailer-git (previews in vifm)
 - fontpreview-git (previews in vifm)
 
 ## yay command
 
 ```shell
-yay -S cli-visualizer nerd-fonts-bitstream-vera-mono epub-thumbnailer-git fontpreview-git
+yay -S cli-visualizer nerd-fonts-dejavu-complete epub-thumbnailer-git fontpreview-git
 ```
 
 ## Apple Color Emojis
@@ -95,7 +95,7 @@ config checkout
 config config --local status.showUntrackedFiles no
 ```
 
-7. To load the .zshrc you can run `source ~/.zshrc` (assuming you're already switched your shell to zsh with `chsh`), but it's probably easiest to just sign out and sign back in again. Make sure you have at least i3-gaps, nerd-fonts-bitstream-vera-mono, xorg-xinit, and xorg-server installed, otherwise you will get an error when logging in. If that happens, press Control+alt+F2 to switch to tty2 and install the missing packages.
+7. To load the .zshrc you can run `source ~/.zshrc` (assuming you're already switched your shell to zsh with `chsh`), but it's probably easiest to just sign out and sign back in again. Make sure you have at least i3-gaps, nerd-fonts-dejavu-complete, xorg-xinit, and xorg-server installed, otherwise you will get an error when logging in. If that happens, press Control+alt+F2 to switch to tty2 and install the missing packages.
 
 8. Finally, the command for updating to the most recent revision of my dotfiles.
 

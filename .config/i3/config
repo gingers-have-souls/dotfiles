@@ -11,7 +11,7 @@ set $mod Mod4
 #font pango:monospace 8
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:Bitstream Vera Sans Mono NF 10
+font pango:DejaVu Sans Mono Nerd Font 10
 
 default_border pixel 1
 

@@ -1,18 +1,13 @@
 // vim:ft=css
 
-* {
+configuration {
 	font: "Apple Color Emoji 28";
+}
+
+#window {
+	children: [ inputbar, listview ];
 	width: 70%;
 	height: 50%;
-}
-
-#listview {
-	border: 2px;
-}
-
-#mainbox {
-	children: [ inputbar, listview ];
-
 }
 
 #listview {

@@ -2,7 +2,7 @@
 
 configuration {
 	terminal: "termite";
-	font: "Bitstream Vera Sans Mono NF 22";
+	font: "DejaVu Sans Mono Nerd Font 25";
 	display-drun: " ";
 	display-run: " ";
 	display-ssh: " ";

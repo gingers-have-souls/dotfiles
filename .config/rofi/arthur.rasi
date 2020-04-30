@@ -14,6 +14,7 @@
     backlight:   #ccffeedd;
     background-color:  transparent;
     dark: #1c1c1c;
+	tdark: #1c1c1ccc;
     // Black
     black:       #3d352a;
     lightblack:  #554444;
@@ -52,7 +53,6 @@
     highlight:     underline bold #ffffff;
 
     transparent: rgba(0,0,0,0);
-    font: "Bitstream Vera Sans Mono NF 25";
 	width: 30%;
 }
 
@@ -61,39 +61,19 @@
     anchor:   center;
     padding: 10px;
     border:  0px;
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: @transparent;
     spacing: 0;
-    children:  [mainbox];
-    orientation: horizontal;
-}
-
-#mainbox {
-    spacing: 0;
-    children: [ inputbar, message, listview , vertb ];
-}
-
-#message {
-    border-color: @foreground;
-    border:  0px 2px 2px 2px;
-//    border-radius: 10px;
-    padding: 5;
-    background-color: @tcyan;
-}
-
-#message {
-    font: "Bitstream Vera Sans Mono NF 22";
-    color: @black;
+	children: [ inputbar, listview , mode-switcher ];
 }
 
 #inputbar {
     color: @lightgreen;
     padding: 11px;
-    background-color: #1c1c1ccc;
+    background-color: @tdark;
     border: 2px 2px 2px 2px;
     border-radius:  15px 15px 0px 0px;
     border-color: @foreground;
-    font: "Bitstream Vera Sans Mono NF 22";
 }
 
 #entry,prompt,case-indicator {
@@ -110,7 +90,7 @@
     border-radius: 0px;
     border-color: @foreground;
     border: 0px 2px 2px 2px;
-    background-color: #1c1c1ccc;
+    background-color: @tdark;
     dynamic: false;
 	cycle: false;
     lines: 10;
@@ -158,22 +138,16 @@
 
 #element normal normal {}
 
-#vertb {
-    expand: false;
-    children: [mode-switcher];
-}
-
 #mode-switcher {
     expand: false;
 	border-radius: 0px 0px 15px 15px;
 	border: 0px 2px 2px 2px;
 	border-color: @foreground;
-    background-color: #1c1c1ccc;
+    background-color: @tdark;
 }
 
 #button {
-    font: "Bitstream Vera Sans Mono NF 40";
-    padding: 0px;
+    padding: 11px;
     color: @foreground;
     horizontal-align: 0.5;
 }
