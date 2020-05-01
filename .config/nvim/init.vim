@@ -4,7 +4,10 @@ let mapleader=" "
 " Using vim-plug as a plugin manager
 " https://github.com/junegunn/vim-plug
 
-call plug#begin('~/.local/share/nvim/site/plugged')
+" PlugInstall and the like do a horizontal split
+let g:plug_window = 'split new'
+
+call plug#begin(stdpath('data') . '/plugged')
 
 " Autocompletion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -23,6 +26,7 @@ autocmd! User GoyoLeave nested call <SID>goyo_leave()
 " Colour previews
 Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
 " This plugin only works in a truecolor terminal
+" Also, you need to install go with `sudo pacman -S go`
 if $COLORTERM ==# 'truecolor' || $colorterm ==# '24bit'
 	" Required to enable hexokinase colours
 	set termguicolors
@@ -74,7 +78,11 @@ let g:startify_lists = [
       \ { 'type': 'commands',  'header': ['   Commands']       },
       \ ]
 let g:startify_commands = [
-    \ {'n': ['Neovim Config', 'call OpenNeovimConfig()']},
+    \ {'n': ['Neovim config', 'call OpenNeovimConfig()']},
+    \ {'pd': ['Update plugins', 'PlugUpdate']},
+    \ {'pg': ['Update vim-plug', 'PlugUpgrade']},
+    \ {'ps': ['Plugin status', 'PlugStatus']},
+    \ {'c': ['Update coc.nvim', 'CocUpdate']},
     \ ]
 function! OpenNeovimConfig()
 	e $HOME/.config/nvim/init.vim
