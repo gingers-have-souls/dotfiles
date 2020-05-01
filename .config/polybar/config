@@ -61,9 +61,10 @@ modules-left = i3 wlan eth xbacklight
 modules-center = xwindow
 modules-right = pulseaudio memory cpu battery temperature date powermenu
 
-;tray-position = right
-;tray-padding = 2
-;tray-background = #0063ff
+tray-position = left
+tray-padding = 2
+tray-background = ${colors.background}
+tray-maxsize = 32
 
 ;wm-restack = bspwm
 ;wm-restack = i3
