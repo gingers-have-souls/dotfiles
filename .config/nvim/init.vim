@@ -52,17 +52,10 @@ endfunction
 let g:gitgutter_map_keys = 0
 nmap [c <Plug>(GitGutterPrevHunk)
 nmap ]c <Plug>(GitGutterNextHunk)
+nmap <Leader>ph <Plug>(GitGutterPreviewHunk)
 
-" Cool status line, has integration with vim-gitgutter
-Plug 'vim-airline/vim-airline'
-let g:airline_powerline_fonts = 1
-
-" vim airline themes
-Plug 'vim-airline/vim-airline-themes'
-
-" Shows recently opened files
+" Shows recently opened files and saves session
 Plug 'mhinz/vim-startify'
-
 let g:startify_custom_header = [
 \ '        __                    __           ___              ',
 \ '       /\ \__                /\ \__  __  /''___\            ',
@@ -74,6 +67,26 @@ let g:startify_custom_header = [
 \ '                                                     /\___/ ',
 \ '                                                     \/__/  ',
 \ ]
+let g:startify_lists = [
+      \ { 'type': 'files',     'header': ['   Recently Opened']},
+      \ { 'type': 'sessions',  'header': ['   Sessions']       },
+      \ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
+      \ { 'type': 'commands',  'header': ['   Commands']       },
+      \ ]
+let g:startify_commands = [
+    \ {'n': ['Neovim Config', 'call OpenNeovimConfig()']},
+    \ ]
+function! OpenNeovimConfig()
+	e $HOME/.config/nvim/init.vim
+	let g:gitgutter_git_args = '--git-dir=$HOME/dotfiles --work-tree=$HOME'
+	GitGutter
+endfunction
+
+" Cool status line, has integration with vim-gitgutter
+Plug 'vim-airline/vim-airline'
+let g:airline_powerline_fonts = 1
+" vim airline themes
+Plug 'vim-airline/vim-airline-themes'
 
 " Automatic brackets
 Plug 'cohama/lexima.vim'
@@ -112,6 +125,9 @@ autocmd WinEnter * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&filetype
 " Useful tip: press gn to reset the root of the directory tree
 
 " Writing mode
+command! Wm call WritingModeToggle()
+command! Wmo call WritingModeOn()
+command! Wmf call WritingModeOff()
 function! WritingModeOn()
 	setlocal spell
 	setlocal linebreak
@@ -131,9 +147,6 @@ function! WritingModeToggle()
 		call WritingModeOff()
 	endif
 endfunction
-command! Wm call WritingModeToggle()
-command! Wmo call WritingModeOn()
-command! Wmf call WritingModeOff()
 
 " Copy to system clipboard in visual mode
 vnoremap <C-c> "+y
@@ -145,4 +158,4 @@ tnoremap <C-x> <C-\><C-n>
 " Snippets
 nnoremap <Leader>ct :read $HOME/.config/nvim/snippets/c.c<CR>kdd4jA
 nnoremap <Leader>cppt :read $HOME/.config/nvim/snippets/cpp.cpp<CR>kdd6jA
-nnoremap <Leader>pyst :-1read $HOME/.config/nvim/snippets/pysh.py<CR>jI<CR>
+nnoremap <Leader>pyst gg:-1read $HOME/.config/nvim/snippets/pysh.py<CR><C-o>
