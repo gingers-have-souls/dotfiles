@@ -1,5 +1,5 @@
 " Leader is space
-let mapleader=" "
+let mapleader=' '
 
 " Using vim-plug as a plugin manager
 " https://github.com/junegunn/vim-plug
@@ -46,11 +46,11 @@ function! ToggleEditingConfigFile()
 	if g:gitgutter_git_args ==# '--git-dir=$HOME/dotfiles --work-tree=$HOME'
 		let g:gitgutter_git_args = ''
 		GitGutter
-		echo "Not config file"
+		echo 'Not config file'
 	else
 		let g:gitgutter_git_args = '--git-dir=$HOME/dotfiles --work-tree=$HOME'
 		GitGutter
-		echo "Config file"
+		echo 'Config file'
 	endif
 endfunction
 let g:gitgutter_map_keys = 0
@@ -79,6 +79,7 @@ let g:startify_lists = [
       \ ]
 let g:startify_commands = [
     \ {'n': ['Neovim config', 'call OpenNeovimConfig()']},
+    \ {'t': ['NERDTree', 'NERDTree']},
     \ {'pd': ['Update plugins', 'PlugUpdate']},
     \ {'pg': ['Update vim-plug', 'PlugUpgrade']},
     \ {'ps': ['Plugin status', 'PlugStatus']},
@@ -89,6 +90,12 @@ function! OpenNeovimConfig()
 	let g:gitgutter_git_args = '--git-dir=$HOME/dotfiles --work-tree=$HOME'
 	GitGutter
 endfunction
+
+" File manager
+Plug 'preservim/nerdtree'
+map <C-n> :NERDTreeToggle<CR>
+" Close NERDTree if it's the only window left open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Cool status line, has integration with vim-gitgutter
 Plug 'vim-airline/vim-airline'
@@ -116,21 +123,8 @@ set shiftwidth=4
 set tabstop=4
 " Line numbers
 set number relativenumber
-
-" netrw (file manager) settings
-" no history
-let g:netrw_dirhistmax = 0
-" no banner
-let g:netrw_banner = 0
-" tree style listing
-let g:netrw_liststyle = 3
-" open in previous window
-let g:netrw_browse_split = 4
-" Windows opened with :Vexplore and :Hexplore are this size
-let g:netrw_winsize = 20
-" Close Vim if netrw is the only window
-autocmd WinEnter * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&filetype") == "netrw" || &buftype == 'quickfix' |q|endif
-" Useful tip: press gn to reset the root of the directory tree
+" Change current directory automatically
+set autochdir
 
 " Writing mode
 command! Wm call WritingModeToggle()
@@ -140,16 +134,16 @@ function! WritingModeOn()
 	setlocal spell
 	setlocal linebreak
 	HexokinaseTurnOff
-	echo "Writing mode on"
+	echo 'Writing mode on'
 endfunction
 function! WritingModeOff()
 	setlocal spell&
 	setlocal linebreak&
 	HexokinaseTurnOn
-	echo "Writing mode off"
+	echo 'Writing mode off'
 endfunction
 function! WritingModeToggle()
-	if &spell ==# "nospell"
+	if &spell ==# 'nospell'
 		call WritingModeOn()
 	else
 		call WritingModeOff()

@@ -169,8 +169,6 @@ alias ls='ls --color'
 alias n="nvim"
 # Current directory size
 alias cdsz="du -d 1 -h"
-# Open Neovim with netrw
-alias netrw="nvim -c 'Vexplore'"
 
 # Theming section
 autoload -U compinit colors zcalc
