@@ -34,7 +34,7 @@ bindsym $mod+minus scratchpad show
 
 bindsym $mod+g exec $HOME/.config/i3/scripts/togglegaps.py
 
-bindsym mod1+a exec $HOME/.config/polybar/scripts/modifyscrathpadwindows.py
+bindsym mod1+a exec $HOME/.config/i3/scripts/modifyscrathpadwindows.py
 bindsym mod1+e exec $HOME/.config/rofi/scripts/emojisearch.sh
 bindsym mod1+k exec $HOME/.config/i3/scripts/switchtodvorak.sh
 bindsym mod1+t exec $HOME/.config/i3/scripts/switchtoqwerty.sh
