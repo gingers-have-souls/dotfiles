@@ -23,21 +23,6 @@ function! s:goyo_leave()
 endfunction
 autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
-" Colour previews
-Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
-" This plugin only works in a truecolor terminal
-" Also, you need to install go with `sudo pacman -S go`
-if $COLORTERM ==# 'truecolor' || $colorterm ==# '24bit'
-	" Required to enable hexokinase colours
-	set termguicolors
-	" Highlights background of characters
-	let g:Hexokinase_highlighters = ['background']
-	" Refreshes when file is written, read, or when insert mode is exited
-	let g:Hexokinase_refreshEvents = ['BufWrite', 'BufRead', 'InsertLeave']
-	" Disables highlighting on .txt
-	let g:Hexokinase_ftDisabled = ['text']
-endif
-
 " Git diff within Neovim
 Plug 'airblade/vim-gitgutter'
 autocmd BufWrite,BufRead,InsertLeave * GitGutter
@@ -125,6 +110,11 @@ set tabstop=4
 set number relativenumber
 " Change current directory automatically
 set autochdir
+" Enables 24-bit RGB if the terminal supports it
+if $COLORTERM ==# 'truecolor' || $colorterm ==# '24bit'
+	set termguicolors
+endif
+
 
 " Writing mode
 command! Wm call WritingModeToggle()
@@ -133,13 +123,11 @@ command! Wmf call WritingModeOff()
 function! WritingModeOn()
 	setlocal spell
 	setlocal linebreak
-	HexokinaseTurnOff
 	echo 'Writing mode on'
 endfunction
 function! WritingModeOff()
 	setlocal spell&
 	setlocal linebreak&
-	HexokinaseTurnOn
 	echo 'Writing mode off'
 endfunction
 function! WritingModeToggle()
