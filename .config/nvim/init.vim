@@ -123,11 +123,13 @@ command! Wmf call WritingModeOff()
 function! WritingModeOn()
 	setlocal spell
 	setlocal linebreak
+	silent CocDisable
 	echo 'Writing mode on'
 endfunction
 function! WritingModeOff()
 	setlocal spell&
 	setlocal linebreak&
+	CocEnable
 	echo 'Writing mode off'
 endfunction
 function! WritingModeToggle()
