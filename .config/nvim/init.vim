@@ -78,7 +78,7 @@ endfunction
 
 " File manager
 Plug 'preservim/nerdtree'
-map <C-n> :NERDTreeToggle<CR>
+map <C-n> :NERDTreeToggle<CR><C-l>
 " Close NERDTree if it's the only window left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
