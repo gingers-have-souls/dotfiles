@@ -9,6 +9,7 @@ My i3 rice.
 - zsh (use `chsh` to switch shells)
 - zsh-history-substring-search
 - zsh-syntax-highlighting
+- zsh-completions
 - termite
 - neovim (see `$HOME/.config/nvim/init.vim` for more details on neovim setup)
 - vifm (terminal file manager)
@@ -38,7 +39,7 @@ My i3 rice.
 ## pacman command
 
 ```shell
-sudo pacman -S zsh zsh-history-substring-search zsh-syntax-highlighting termite neovim vifm python-ueberzug ffmpegthumbnailer poppler xorg-xmodmap i3-gaps python-i3ipc polybar xwallpaper xorg-xbacklight xss-lock slock pulseaudio rofi adobe-source-code-pro-fonts xdotool xclip dunst picom xorg-xinit xorg-server xf86-video-intel
+sudo pacman -S zsh zsh-history-substring-search zsh-syntax-highlighting zsh-completions termite neovim vifm python-ueberzug ffmpegthumbnailer poppler xorg-xmodmap i3-gaps python-i3ipc polybar xwallpaper xorg-xbacklight xss-lock slock pulseaudio rofi adobe-source-code-pro-fonts xdotool xclip dunst picom xorg-xinit xorg-server xf86-video-intel
 ```
 
 ## AUR packages
