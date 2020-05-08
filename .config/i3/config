@@ -32,7 +32,7 @@ bindsym $mod+Shift+Tab workspace prev
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
-bindsym $mod+g exec $HOME/.config/i3/scripts/togglegaps.py
+bindsym $mod+g gaps inner current toggle 20
 
 bindsym mod1+a exec $HOME/.config/i3/scripts/modifyscrathpadwindows.py
 bindsym mod1+e exec $HOME/.config/rofi/scripts/emojisearch.sh
