@@ -44,15 +44,14 @@ sudo pacman -S zsh zsh-history-substring-search zsh-syntax-highlighting zsh-comp
 
 ## AUR packages
 
-- cli-visualizer (functionally quite useless but cool looking music visualizer)
-- nerd-fonts-dejavu-complete
+- nerd-fonts-dejavu-complete (font of choice)
 - epub-thumbnailer-git (previews in vifm)
 - fontpreview-git (previews in vifm)
 
 ## yay command
 
 ```shell
-yay -S cli-visualizer nerd-fonts-dejavu-complete epub-thumbnailer-git fontpreview-git
+yay -S nerd-fonts-dejavu-complete epub-thumbnailer-git fontpreview-git
 ```
 
 ## Apple Color Emojis
