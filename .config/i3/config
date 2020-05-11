@@ -55,9 +55,9 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 # Controls ncspot (from AUR) with playerctl (normal repos)
-bindsym XF86AudioPlay exec playerctl --player='ncspot' play-pause
-bindsym XF86AudioNext exec playerctl --player='ncspot' next
-bindsym XF86AudioPrev exec playerctl --player='ncspot' previous
+bindsym XF86AudioPlay exec playerctl --player "ncspot" play-pause
+bindsym XF86AudioNext exec playerctl --player "ncspot" next
+bindsym XF86AudioPrev exec playerctl --player "ncspot" previous
 # Another option is to control all players, including Chromium
 # Only playerctl is required for this
 #bindsym XF86AudioPlay exec playerctl -a play-pause
