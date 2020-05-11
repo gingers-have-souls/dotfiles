@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=Chromium
+GenericName=SMS
+Exec=/usr/bin/chromium --profile-directory='Profile 2' %U
+StartupNotify=true
+Terminal=false
+Icon=chromium
+Type=Application
+Categories=Network;WebBrowser;
+MimeType=text/html;text/xml;application/xhtml_xml;image/webp;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/ftp;

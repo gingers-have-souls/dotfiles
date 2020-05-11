@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=ncspot
+GenericName=Spotify Client
+TryExec=ncspot
+Exec=ncspot %F
+Terminal=true
+Type=Application
+Icon=audio-x-generic
+StartupNotify=false
