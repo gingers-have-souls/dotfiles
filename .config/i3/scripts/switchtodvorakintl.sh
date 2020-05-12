@@ -1,4 +1,4 @@
 #!/bin/sh
-notify-send dvorak-intl
+notify-send Keyboard dvorak-intl
 setxkbmap -variant dvorak-intl
 xmodmap ~/.Xmodmap

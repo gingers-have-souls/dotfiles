@@ -1,4 +1,4 @@
 #!/bin/sh
-notify-send us
+notify-send Keyboard us
 setxkbmap us
 xmodmap ~/.Xmodmap
