@@ -24,6 +24,7 @@ gaps inner 20
 exec --no-startup-id picom
 exec --no-startup-id polybar topbar
 exec --no-startup-id xwallpaper --maximize $HOME/.config/backgrounds/Manjaro_organic_1920x1080.jpg
+exec --no-startup-id $HOME/.config/i3/scripts/musicnotif.sh
 exec_always --no-startup-id $HOME/.config/i3/scripts/autotiling.py
 
 bindsym $mod+Tab workspace next
