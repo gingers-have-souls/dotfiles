@@ -1,6 +1,7 @@
 " vim:filetype=vim
-" I copied the fileviewer stuff from seebye from here
-" (https://www.reddit.com/r/linux/comments/aviu08/ueberzug_v1810_released/)
+" I copied the file preview stuff from seebye from here
+" https://www.reddit.com/r/linux/comments/aviu08/ueberzug_v1810_released/
+" Got the devicon stuff from https://github.com/cirala/vifm_devicons/
 
 " Sample configuration file for vifm (last updated: 2 June, 2019)
 " You can edit this file by hand.
@@ -530,11 +531,6 @@ nnoremap <f8> :delete<cr>
 "
 " let $VIFM_SERVER_NAME = v:servername
 
-" Got this part from https://github.com/cirala/vifm_devicons/
-
-" Ranger devicons for ViFM
-" https://github.com/cirala/vifm_devicons
-"
 " Filetypes/directories
 set classify=' :dir:/, :exe:, :reg:, :link:,? :?:, ::../::'
 
@@ -549,6 +545,7 @@ set classify+=' ::ledger::'
 set classify+=' ::license,,copyright,,copying,,LICENSE,,COPYRIGHT,,COPYING::'
 set classify+=' ::node_modules::'
 set classify+=' ::react.jsx::'
+set classify+=' ::Dockerfile::'
 
 " File extensions
 set classify+='λ ::*.ml,,*.mli::'
