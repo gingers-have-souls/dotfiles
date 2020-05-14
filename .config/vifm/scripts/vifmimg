@@ -149,25 +149,24 @@ function previewpdf() {
 
 
 function previewmagick() {
-    # I had to use jpg since imagemagick screws up compositing
-    # with anything with transparency
-    if [[ ! -f "/tmp$PWD/$6.jpg" ]]; then
+    # png doesn't work all the time for some reason
+    if [[ ! -f "/tmp$PWD/$6.gif" ]]; then
         IMAGE_WIDTH=$(identify -format "%w" "$PWD/$6")
         IMAGE_HEIGHT=$(identify -format "%h" "$PWD/$6")
         MAX_DIMENSION=500
         if [ $IMAGE_WIDTH -gt $IMAGE_HEIGHT ]; then
             composite -background transparent -size \
                 $MAX_DIMENSION\x$(($MAX_DIMENSION*$IMAGE_HEIGHT/$IMAGE_WIDTH)) \
-                "$PWD/$6" pattern:checkerboard -quality 100 "/tmp$PWD/$6.jpg"
+                "$PWD/$6" pattern:checkerboard "/tmp$PWD/$6.gif"
         else
             composite -background transparent -size \
                 $(($MAX_DIMENSION*$IMAGE_WIDTH/$IMAGE_HEIGHT))x$MAX_DIMENSION \
-                "$PWD/$6" pattern:checkerboard -quality 100 "/tmp$PWD/$6.jpg"
+                "$PWD/$6" pattern:checkerboard "/tmp$PWD/$6.gif"
         fi
     fi
     declare -p -A cmd=([action]=add [identifier]="$ID_PREVIEW"
         [x]="$2" [y]="$3" [width]="$4" [height]="$5" \
-        [scaler]=fit_contain [path]="/tmp$PWD/$6.jpg") \
+        [scaler]=fit_contain [path]="/tmp$PWD/$6.gif") \
         > "$FIFO_UEBERZUG"
 }
 
