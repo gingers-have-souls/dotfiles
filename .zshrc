@@ -129,12 +129,12 @@ bindkey -v                                       # That sweet sweet vi editing (
 bindkey '^[[7~' beginning-of-line                # Home key
 bindkey '^[[H' beginning-of-line                 # Home key
 if [[ "${terminfo[khome]}" != "" ]]; then
-  bindkey "${terminfo[khome]}" beginning-of-line # [Home] - Go to beginning of line
+	bindkey "${terminfo[khome]}" beginning-of-line # [Home] - Go to beginning of line
 fi
 bindkey '^[[8~' end-of-line               # End key
 bindkey '^[[F' end-of-line                # End key
 if [[ "${terminfo[kend]}" != "" ]]; then
-  bindkey "${terminfo[kend]}" end-of-line # [End] - Go to end of line
+	bindkey "${terminfo[kend]}" end-of-line # [End] - Go to end of line
 fi
 #bindkey '^[[2~' overwrite-mode                    # Insert key
 #bindkey '^[[3~' delete-char                       # Delete key
@@ -208,8 +208,8 @@ vicd() {
 	export FIFO_UEBERZUG="/tmp/vifm-ueberzug-${PPID}"
 
 	function cleanup {
-    	rm "$FIFO_UEBERZUG" 2>/dev/null
-    	pkill -P $$ 2>/dev/null
+		rm "$FIFO_UEBERZUG" 2>/dev/null
+		pkill -P $$ 2>/dev/null
 	}
 
 	rm "$FIFO_UEBERZUG" 2>/dev/null
@@ -230,70 +230,70 @@ vicd() {
 }
 
 ex() {
-    local c e i
+	local c e i
 
-    (($#)) || return
+	(($#)) || return
 
-    for i; do
-        c=''
-        e=1
+	for i; do
+		c=''
+		e=1
 
-        if [[ ! -r $i ]]; then
-            echo "$0: file is unreadable: \`$i'" >&2
-            continue
-        fi
+		if [[ ! -r $i ]]; then
+			echo "$0: file is unreadable: \`$i'" >&2
+			continue
+		fi
 
-        case $i in
-            *.t@(gz|lz|xz|b@(2|z?(2))|a@(z|r?(.@(Z|bz?(2)|gz|lzma|xz)))))
-                   c=(bsdtar xvf);;
-            *.7z)  c=(7z x);;
-            *.Z)   c=(uncompress);;
-            *.bz2) c=(bunzip2);;
-            *.exe) c=(cabextract);;
-            *.gz)  c=(gunzip);;
-            *.rar) c=(unrar x);;
-            *.xz)  c=(unxz);;
-            *.zip) c=(unzip);;
-            *)     echo "$0: unrecognized file extension: \`$i'" >&2
-                   continue;;
-        esac
+		case $i in
+			*.t@(gz|lz|xz|b@(2|z?(2))|a@(z|r?(.@(Z|bz?(2)|gz|lzma|xz)))))
+				   c=(bsdtar xvf);;
+			*.7z)  c=(7z x);;
+			*.Z)   c=(uncompress);;
+			*.bz2) c=(bunzip2);;
+			*.exe) c=(cabextract);;
+			*.gz)  c=(gunzip);;
+			*.rar) c=(unrar x);;
+			*.xz)  c=(unxz);;
+			*.zip) c=(unzip);;
+			*)     echo "$0: unrecognized file extension: \`$i'" >&2
+				   continue;;
+		esac
 
-        command "${c[@]}" "$i"
-        ((e = e || $?))
-    done
-    return "$e"
+		command "${c[@]}" "$i"
+		((e = e || $?))
+	done
+	return "$e"
 }
 
 # pip zsh completion start
 function _pip_completion {
-  local words cword
-  read -Ac words
-  read -cn cword
-  reply=( $( COMP_WORDS="$words[*]" \
-             COMP_CWORD=$(( cword-1 )) \
-             PIP_AUTO_COMPLETE=1 $words[1] 2>/dev/null ))
+	local words cword
+	read -Ac words
+	read -cn cword
+	reply=( $( COMP_WORDS="$words[*]" \
+		COMP_CWORD=$(( cword-1 )) \
+		PIP_AUTO_COMPLETE=1 $words[1] 2>/dev/null ))
 }
 compctl -K _pip_completion pip
 # pip zsh completion end
 
 # Change cursor shape for different vi modes.
 function zle-keymap-select {
-  if [[ ${KEYMAP} == vicmd ]] ||
-     [[ $1 = 'block' ]]; then
-    echo -ne '\e[1 q'
+	if [[ ${KEYMAP} == vicmd ]] ||
+		[[ $1 = 'block' ]]; then
+			echo -ne '\e[1 q'
 
-  elif [[ ${KEYMAP} == main ]] ||
-       [[ ${KEYMAP} == viins ]] ||
-       [[ ${KEYMAP} = '' ]] ||
-       [[ $1 = 'beam' ]]; then
-    echo -ne '\e[5 q'
-  fi
+		elif [[ ${KEYMAP} == main ]] ||
+			[[ ${KEYMAP} == viins ]] ||
+			[[ ${KEYMAP} = '' ]] ||
+			[[ $1 = 'beam' ]]; then
+					echo -ne '\e[5 q'
+	fi
 }
 zle -N zle-keymap-select
 
 zle-line-init() {
-    zle -K viins # initiate `vi insert` as keymap (can be removed if `bindkey -V` has been set elsewhere)
-    echo -ne "\e[5 q"
+	zle -K viins # initiate `vi insert` as keymap (can be removed if `bindkey -V` has been set elsewhere)
+	echo -ne "\e[5 q"
 }
 zle -N zle-line-init
 
