@@ -12,137 +12,137 @@ configuration {
 }
 
 * {
-    foreground:  #ebebeb;
-    backlight:   #ccffeedd;
-    background-color:  transparent;
-    dark: #1c1c1c;
+	foreground:  #ebebeb;
+	backlight:   #ccffeedd;
+	background-color:  transparent;
+	dark: #1c1c1c;
 	tdark: #1c1c1ccc;
 
 	black:       #3d352a;
-    lightblack:  #554444;
-    tlightblack: #554444cc;
+	lightblack:  #554444;
+	tlightblack: #554444cc;
 
-    red:         #e60053;
-    lightred:    #cc5533;
+	red:         #e60053;
+	lightred:    #cc5533;
 
-    green:       #0F9D58;
-    lightgreen:  #88cc22;
+	green:       #0F9D58;
+	lightgreen:  #88cc22;
 
-    yellow:      #F4B400;
-    lightyellow: #ffa75d;
+	yellow:      #F4B400;
+	lightyellow: #ffa75d;
 
-    blue:      #4486e3;
-    lightblue: #0099CC;
+	blue:      #4486e3;
+	lightblue: #0099CC;
 
-    magenta:      #ff00ff;
-    lightmagenta: #ff80ff;
+	magenta:      #ff00ff;
+	lightmagenta: #ff80ff;
 
-    cyan:      #b0c4de;
-    tcyan:      #ccb0c4de;
-    lightcyan:  #b0c4de;
+	cyan:      #b0c4de;
+	tcyan:      #ccb0c4de;
+	lightcyan:  #b0c4de;
 
-    white:      #bbaa99;
-    lightwhite: #ddccbb;
+	white:      #bbaa99;
+	lightwhite: #ddccbb;
 
-    transparent: rgba(0,0,0,0);
+	transparent: rgba(0,0,0,0);
 }
 
 #window {
-    location: center;
-    anchor:   center;
+	location: center;
+	anchor:   center;
 	width: 30%;
-    border:  0px;
-    border-radius: 15px;
-    background-color: @transparent;
-    spacing: 0;
+	border:  0px;
+	border-radius: 15px;
+	background-color: @transparent;
+	spacing: 0;
 	children: [ inputbar, listview , mode-switcher ];
 }
 
 #inputbar {
-    color: @lightgreen;
-    padding: 11px;
-    background-color: @tdark;
-    border: 2px 2px 2px 2px;
-    border-radius:  15px 15px 0px 0px;
-    border-color: @foreground;
+	color: @lightgreen;
+	padding: 11px;
+	background-color: @tdark;
+	border: 2px 2px 2px 2px;
+	border-radius:  15px 15px 0px 0px;
+	border-color: @foreground;
 }
 
 #entry,prompt,case-indicator {
-    text-font: inherit;
-    text-color:inherit;
+	text-font: inherit;
+	text-color:inherit;
 }
 
 #prompt {
-    margin:     0px 0.3em 0em 0em ;
+	margin:     0px 0.3em 0em 0em ;
 }
 
 #listview {
-    padding: 8px;
-    border-radius: 0px;
-    border-color: @foreground;
-    border: 0px 2px 2px 2px;
-    background-color: @tdark;
-    dynamic: false;
+	padding: 8px;
+	border-radius: 0px;
+	border-color: @foreground;
+	border: 0px 2px 2px 2px;
+	background-color: @tdark;
+	dynamic: false;
 	cycle: false;
-    lines: 10;
+	lines: 10;
 }
 
 #element {
-    padding: 3px;
-    vertical-align: 0.5;
-    background-color: transparent;
-    color: @foreground;
-    font:inherit;
+	padding: 3px;
+	vertical-align: 0.5;
+	background-color: transparent;
+	color: @foreground;
+	font:inherit;
 }
 
 #element selected.normal {
-    background-color: @blue;
+	background-color: @blue;
 }
 
 #element normal active {
-    foreground: @lightblue;
+	foreground: @lightblue;
 }
 
 #element normal urgent {
-    foreground: @lightred;
+	foreground: @lightred;
 }
 
 #element alternate normal {}
 
 #element alternate active {
-    foreground: @lightblue;
+	foreground: @lightblue;
 }
 
 #element alternate urgent {
-    foreground: @lightred;
+	foreground: @lightred;
 }
 
 #element selected active {
-    background-color: @lightblue;
-    foreground: @dark;
+	background-color: @lightblue;
+	foreground: @dark;
 }
 
 #element selected urgent {
-    background-color: @lightred;
-    foreground: @dark;
+	background-color: @lightred;
+	foreground: @dark;
 }
 
 #element normal normal {}
 
 #mode-switcher {
-    expand: false;
+	expand: false;
 	border-radius: 0px 0px 15px 15px;
 	border: 0px 2px 2px 2px;
 	border-color: @foreground;
-    background-color: @tdark;
+	background-color: @tdark;
 }
 
 #button {
-    padding: 11px;
-    color: @foreground;
-    horizontal-align: 0.5;
+	padding: 11px;
+	color: @foreground;
+	horizontal-align: 0.5;
 }
 
 #button selected normal {
-    color: @lightgreen;
+	color: @lightgreen;
 }

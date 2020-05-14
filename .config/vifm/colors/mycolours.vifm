@@ -1,3 +1,4 @@
+" vim:filetype=vim
 highlight clear
 
 highlight Win cterm=none ctermfg=none ctermbg=none

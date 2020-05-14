@@ -47,18 +47,18 @@ let g:startify_custom_header = [
 \ '                                                     \/__/  ',
 \ ]
 let g:startify_lists = [
-      \ { 'type': 'files',     'header': ['   Recently Opened']},
-      \ { 'type': 'sessions',  'header': ['   Sessions']       },
-      \ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
-      \ { 'type': 'commands',  'header': ['   Commands']       },
-      \ ]
+	\ { 'type': 'files',     'header': ['   Recently Opened']},
+	\ { 'type': 'sessions',  'header': ['   Sessions']       },
+	\ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
+	\ { 'type': 'commands',  'header': ['   Commands']       },
+	\ ]
 let g:startify_commands = [
-    \ {'n': ['Neovim config', 'call OpenNeovimConfig()']},
-    \ {'pd': ['Update plugins', 'PlugUpdate']},
-    \ {'pg': ['Update vim-plug', 'PlugUpgrade']},
-    \ {'ps': ['Plugin status', 'PlugStatus']},
-    \ {'c': ['Update coc.nvim', 'CocUpdate']},
-    \ ]
+	\ {'n': ['Neovim config', 'call OpenNeovimConfig()']},
+	\ {'pd': ['Update plugins', 'PlugUpdate']},
+	\ {'pg': ['Update vim-plug', 'PlugUpgrade']},
+	\ {'ps': ['Plugin status', 'PlugStatus']},
+	\ {'c': ['Update coc.nvim', 'CocUpdate']},
+	\ ]
 function! OpenNeovimConfig()
 	e $HOME/.config/nvim/init.vim
 	let g:gitgutter_git_args = '--git-dir=$HOME/dotfiles --work-tree=$HOME'

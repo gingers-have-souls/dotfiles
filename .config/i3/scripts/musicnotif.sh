@@ -1,8 +1,8 @@
 #!/bin/sh
 
 if ! mkdir /tmp/musicnotif.lock 2>/dev/null; then
-    echo "musicnotif.sh is already running." >&2
-    exit 1
+	echo "musicnotif.sh is already running." >&2
+	exit 1
 fi
 
 player="ncspot"

@@ -109,7 +109,7 @@ set scrolloff=4
 " Don't do too many requests to slow file systems
 
 if !has('win')
-    set slowfs=curlftpfs
+	set slowfs=curlftpfs
 endif
 
 " Set custom status line look
@@ -179,93 +179,93 @@ view!
 
 filextype *.pdf zathura %c %i &, apvlv %c, xpdf %c
 fileviewer *.pdf
-    \ vifmimg pdfpreview %px %py %pw %ph %c
-    \ %pc
-    \ vifmimg clear
+	\ vifmimg pdfpreview %px %py %pw %ph %c
+	\ %pc
+	\ vifmimg clear
 
 fileviewer *.epub
-    \ vifmimg epubpreview %px %py %pw %ph %c
-    \ %pc
-    \ vifmimg clear
+	\ vifmimg epubpreview %px %py %pw %ph %c
+	\ %pc
+	\ vifmimg clear
 
 fileviewer *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
-    \*.fl[icv],*.m2v,*.mov,*.webm,*.ts,*.mts,*.m4v,*.r[am],*.qt,*.divx,
-    \ vifmimg videopreview %px %py %pw %ph %c
-    \ %pc
-    \ vifmimg clear
+	\*.fl[icv],*.m2v,*.mov,*.webm,*.ts,*.mts,*.m4v,*.r[am],*.qt,*.divx,
+	\ vifmimg videopreview %px %py %pw %ph %c
+	\ %pc
+	\ vifmimg clear
 
 fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.xpm,*.ico
-    \ vifmimg draw %px %py %pw %ph %c
-    \ %pc
-    \ vifmimg clear
+	\ vifmimg draw %px %py %pw %ph %c
+	\ %pc
+	\ vifmimg clear
 
 fileviewer *.gif,*.webp
-    \ vifmimg gifpreview %px %py %pw %ph %c
-    \ %pc
-    \ vifmimg clear
+	\ vifmimg gifpreview %px %py %pw %ph %c
+	\ %pc
+	\ vifmimg clear
 
 fileviewer *.svg
-    \ vifmimg magickpreview %px %py %pw %ph %c
-    \ %pc
-    \ vifmimg clear
+	\ vifmimg magickpreview %px %py %pw %ph %c
+	\ %pc
+	\ vifmimg clear
 
 fileviewer <audio/*>
-    \ vifmimg audiopreview %px %py %pw %ph %c
-    \ %pc
-    \ vifmimg clear
+	\ vifmimg audiopreview %px %py %pw %ph %c
+	\ %pc
+	\ vifmimg clear
 
 fileviewer *.ttf,*.otf,*.woff
-    \ vifmimg fontpreview %px %py %pw %ph %c
-    \ %pc
-    \ vifmimg clear
+	\ vifmimg fontpreview %px %py %pw %ph %c
+	\ %pc
+	\ vifmimg clear
 
 " PostScript
 filextype *.ps,*.eps,*.ps.gz
-        \ {View in zathura}
-        \ zathura %f,
-        \ {View in gv}
-        \ gv %c %i &,
+		\ {View in zathura}
+		\ zathura %f,
+		\ {View in gv}
+		\ gv %c %i &,
 
 " Djvu
 filextype *.djvu
-        \ {View in zathura}
-        \ zathura %f,
-        \ {View in apvlv}
-        \ apvlv %f,
+		\ {View in zathura}
+		\ zathura %f,
+		\ {View in apvlv}
+		\ apvlv %f,
 
 filetype *.wav,*.mp3,*.flac,*.m4a,*.wma,*.ape,*.ac3,*.og[agx],*.spx,*.opus
-       \ {Play using ffplay}
-       \ ffplay -nodisp -autoexit %c,
-       \ {Play using MPlayer}
-       \ mplayer %f,
+		\ {Play using ffplay}
+		\ ffplay -nodisp -autoexit %c,
+		\ {Play using MPlayer}
+		\ mplayer %f,
 fileviewer *.mp3 mp3info
 fileviewer *.flac soxi
 
 " Video
 filextype *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
-         \*.fl[icv],*.m2v,*.mov,*.webm,*.ts,*.mts,*.m4v,*.r[am],*.qt,*.divx,
-         \*.as[fx]
-        \ {View using ffplay}
-        \ ffplay -fs -autoexit %f,
-        \ {View using Dragon}
-        \ dragon %f:p,
-        \ {View using mplayer}
-        \ mplayer %f,
+		 \*.fl[icv],*.m2v,*.mov,*.webm,*.ts,*.mts,*.m4v,*.r[am],*.qt,*.divx,
+		 \*.as[fx]
+		\ {View using ffplay}
+		\ ffplay -fs -autoexit %f,
+		\ {View using Dragon}
+		\ dragon %f:p,
+		\ {View using mplayer}
+		\ mplayer %f,
 "fileviewer *.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
-"          \*.fl[icv],*.m2v,*.mov,*.webm,*.ts,*.mts,*.m4v,*.r[am],*.qt,*.divx,
-"          \*.as[fx]
-"         \ ffprobe -pretty %c 2>&1
+"		  \*.fl[icv],*.m2v,*.mov,*.webm,*.ts,*.mts,*.m4v,*.r[am],*.qt,*.divx,
+"		  \*.as[fx]
+"		 \ ffprobe -pretty %c 2>&1
 
 " Web
 filextype *.html,*.htm
 		\ {Open with chromium}
 		\ chromium %f &,
-        \ {Open with firefox}
-        \ firefox %f &,
-        \ {Open with dwb}
-        \ dwb %f %i &,
-        \ {Open with uzbl}
-        \ uzbl-browser %f %i &,
+		\ {Open with firefox}
+		\ firefox %f &,
+		\ {Open with dwb}
+		\ dwb %f %i &,
+		\ {Open with uzbl}
+		\ uzbl-browser %f %i &,
 "filetype *.html,*.htm links, lynx
 
 " Object
@@ -277,49 +277,49 @@ fileviewer *.[1-8] man ./%c | col -b
 
 " Images
 "filextype *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
-"        \ {View in sxiv}
-"        \ sxiv %f,
-"        \ {View in gpicview}
-"        \ gpicview %c,
-"        \ {View in shotwell}
-"        \ shotwell,
+"		\ {View in sxiv}
+"		\ sxiv %f,
+"		\ {View in gpicview}
+"		\ gpicview %c,
+"		\ {View in shotwell}
+"		\ shotwell,
 "fileviewer *.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm
-"         \ identify %f
+"		 \ identify %f
 
 " OpenRaster
 "filextype *.ora
-"        \ {Edit in MyPaint}
-"        \ mypaint %f,
+"		\ {Edit in MyPaint}
+"		\ mypaint %f,
 
 " Mindmap
 "filextype *.vym
-"        \ {Open with VYM}
-"        \ vym %f &,
+"		\ {Open with VYM}
+"		\ vym %f &,
 
 " MD5
 filetype *.md5
-       \ {Check MD5 hash sum}
-       \ md5sum -c %f %S,
+		\ {Check MD5 hash sum}
+		\ md5sum -c %f %S,
 
 " SHA1
 filetype *.sha1
-       \ {Check SHA1 hash sum}
-       \ sha1sum -c %f %S,
+		\ {Check SHA1 hash sum}
+		\ sha1sum -c %f %S,
 
 " SHA256
 filetype *.sha256
-       \ {Check SHA256 hash sum}
-       \ sha256sum -c %f %S,
+		\ {Check SHA256 hash sum}
+		\ sha256sum -c %f %S,
 
 " SHA512
 filetype *.sha512
-       \ {Check SHA512 hash sum}
-       \ sha512sum -c %f %S,
+		\ {Check SHA512 hash sum}
+		\ sha512sum -c %f %S,
 
 " GPG signature
 filetype *.asc
-       \ {Check signature}
-       \ !!gpg --verify %c,
+		\ {Check signature}
+		\ !!gpg --verify %c,
 
 " Torrent
 "filetype *.torrent ktorrent %f &
@@ -327,18 +327,18 @@ filetype *.asc
 
 " FuseZipMount
 "filetype *.zip,*.jar,*.war,*.ear,*.oxt,*.apkg
-"       \ {Mount with fuse-zip}
-"       \ FUSE_MOUNT|fuse-zip %SOURCE_FILE %DESTINATION_DIR,
-"       \ {View contents}
-"       \ zip -sf %c | less,
-"       \ {Extract here}
-"       \ tar -xf %c,
+"		\ {Mount with fuse-zip}
+"		\ FUSE_MOUNT|fuse-zip %SOURCE_FILE %DESTINATION_DIR,
+"		\ {View contents}
+"		\ zip -sf %c | less,
+"		\ {Extract here}
+"		\ tar -xf %c,
 "fileviewer *.zip,*.jar,*.war,*.ear,*.oxt zip -sf %c
 
 " ArchiveMount
 "filetype *.tar,*.tar.bz2,*.tbz2,*.tgz,*.tar.gz,*.tar.xz,*.txz
-"       \ {Mount with archivemount}
-"       \ FUSE_MOUNT|archivemount %SOURCE_FILE %DESTINATION_DIR,
+"		\ {Mount with archivemount}
+"		\ FUSE_MOUNT|archivemount %SOURCE_FILE %DESTINATION_DIR,
 "fileviewer *.tgz,*.tar.gz tar -tzf %c
 "fileviewer *.tar.bz2,*.tbz2 tar -tjf %c
 "fileviewer *.tar.txz,*.txz xz --list %c
@@ -346,29 +346,29 @@ filetype *.asc
 
 " Rar2FsMount and rar archives
 "filetype *.rar
-"       \ {Mount with rar2fs}
-"       \ FUSE_MOUNT|rar2fs %SOURCE_FILE %DESTINATION_DIR,
+"		\ {Mount with rar2fs}
+"		\ FUSE_MOUNT|rar2fs %SOURCE_FILE %DESTINATION_DIR,
 "fileviewer *.rar unrar v %c
 
 " IsoMount
 "filetype *.iso
-"       \ {Mount with fuseiso}
-"       \ FUSE_MOUNT|fuseiso %SOURCE_FILE %DESTINATION_DIR,
+"		\ {Mount with fuseiso}
+"		\ FUSE_MOUNT|fuseiso %SOURCE_FILE %DESTINATION_DIR,
 
 " SshMount
 "filetype *.ssh
-"       \ {Mount with sshfs}
-"       \ FUSE_MOUNT2|sshfs %PARAM %DESTINATION_DIR %FOREGROUND,
+"		\ {Mount with sshfs}
+"		\ FUSE_MOUNT2|sshfs %PARAM %DESTINATION_DIR %FOREGROUND,
 
 " FtpMount
 "filetype *.ftp
-"       \ {Mount with curlftpfs}
-"       \ FUSE_MOUNT2|curlftpfs -o ftp_port=-,,disable_eprt %PARAM %DESTINATION_DIR %FOREGROUND,
+"		\ {Mount with curlftpfs}
+"		\ FUSE_MOUNT2|curlftpfs -o ftp_port=-,,disable_eprt %PARAM %DESTINATION_DIR %FOREGROUND,
 
 " Fuse7z and 7z archives
 "filetype *.7z
-"       \ {Mount with fuse-7z}
-"       \ FUSE_MOUNT|fuse-7z %SOURCE_FILE %DESTINATION_DIR,
+"		\ {Mount with fuse-7z}
+"		\ FUSE_MOUNT|fuse-7z %SOURCE_FILE %DESTINATION_DIR,
 "fileviewer *.7z 7z l %c
 
 " Office files
@@ -384,8 +384,8 @@ filetype *.asc
 
 " Directories
 "filextype */
-"        \ {View in thunar}
-"        \ Thunar %f &,
+"		\ {View in thunar}
+"		\ Thunar %f &,
 
 " Syntax highlighting in preview
 "
@@ -464,22 +464,22 @@ nnoremap gb :file &<cr>l
 
 " Interaction with system clipboard
 if has('win')
-    " Yank current directory path to Windows clipboard with forward slashes
-    nnoremap yp :!echo %"d:gs!\!/! %i | clip<cr>
-    " Yank path to current file to Windows clipboard with forward slashes
-    nnoremap yf :!echo %"c:gs!\!/! %i | clip<cr>
+	" Yank current directory path to Windows clipboard with forward slashes
+	nnoremap yp :!echo %"d:gs!\!/! %i | clip<cr>
+	" Yank path to current file to Windows clipboard with forward slashes
+	nnoremap yf :!echo %"c:gs!\!/! %i | clip<cr>
 elseif executable('xclip')
-    " Yank current directory path into the clipboard
-    nnoremap yd :!echo %d | xclip -selection clipboard %i<cr>
-    " Yank current file path into the clipboard
-    nnoremap yf :!echo %c:p | xclip -selection clipboard %i<cr>
+	" Yank current directory path into the clipboard
+	nnoremap yd :!echo %d | xclip -selection clipboard %i<cr>
+	" Yank current file path into the clipboard
+	nnoremap yf :!echo %c:p | xclip -selection clipboard %i<cr>
 elseif executable('xsel')
-    " Yank current directory path into primary and selection clipboards
-    nnoremap yd :!echo -n %d | xsel --input --primary %i &&
-                \ echo -n %d | xsel --clipboard --input %i<cr>
-    " Yank current file path into into primary and selection clipboards
-    nnoremap yf :!echo -n %c:p | xsel --input --primary %i &&
-                \ echo -n %c:p | xsel --clipboard --input %i<cr>
+	" Yank current directory path into primary and selection clipboards
+	nnoremap yd :!echo -n %d | xsel --input --primary %i &&
+				\ echo -n %d | xsel --clipboard --input %i<cr>
+	" Yank current file path into into primary and selection clipboards
+	nnoremap yf :!echo -n %c:p | xsel --input --primary %i &&
+				\ echo -n %c:p | xsel --clipboard --input %i<cr>
 endif
 
 " Mappings for faster renaming
@@ -527,7 +527,7 @@ nnoremap <f8> :delete<cr>
 "
 " It can be used in some shell script that gets run from inside vifm, for
 " example, like this:
-"     vifm --server-name "$VIFM_SERVER_NAME" --remote +"cd '$PWD'"
+"	vifm --server-name "$VIFM_SERVER_NAME" --remote +"cd '$PWD'"
 "
 " let $VIFM_SERVER_NAME = v:servername
 
