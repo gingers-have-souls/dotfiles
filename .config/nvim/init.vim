@@ -13,16 +13,6 @@ call plug#begin(stdpath('data') . '/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " run :CocInstall coc-marketplace then :CocList marketplace to list plugins
 
-" Distraction-free writing in Vim
-Plug 'junegunn/goyo.vim'
-" Control-f for goyo
-nnoremap <C-f> :Goyo<CR><C-l>
-" Line number highlights get screwed up so reload colorscheme
-function! s:goyo_leave()
-	colorscheme molokai
-endfunction
-autocmd! User GoyoLeave nested call <SID>goyo_leave()
-
 " Git diff within Neovim
 Plug 'airblade/vim-gitgutter'
 autocmd BufWrite,BufRead,InsertLeave * GitGutter
@@ -64,7 +54,6 @@ let g:startify_lists = [
       \ ]
 let g:startify_commands = [
     \ {'n': ['Neovim config', 'call OpenNeovimConfig()']},
-    \ {'t': ['NERDTree', 'NERDTree']},
     \ {'pd': ['Update plugins', 'PlugUpdate']},
     \ {'pg': ['Update vim-plug', 'PlugUpgrade']},
     \ {'ps': ['Plugin status', 'PlugStatus']},
