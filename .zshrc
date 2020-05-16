@@ -126,6 +126,7 @@ KEYTIMEOUT=1 # This helps enter vi-mode faster and is in hundreths of a second
 
 ## Keybindings section
 bindkey -v                                       # That sweet sweet vi editing (press escape to enter normal mode)
+bindkey "^?" backward-delete-char                # Fixes backspace not working properly after entering normal mode
 bindkey '^[[7~' beginning-of-line                # Home key
 bindkey '^[[H' beginning-of-line                 # Home key
 if [[ "${terminfo[khome]}" != "" ]]; then
