@@ -73,12 +73,10 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 " Cool status line, has integration with vim-gitgutter
 Plug 'vim-airline/vim-airline'
-let g:airline_powerline_fonts = 1
-" vim airline themes
-Plug 'vim-airline/vim-airline-themes'
 
 " Onedark colour scheme
 Plug 'joshdick/onedark.vim'
+let g:onedark_terminal_italics = 1
 
 " Adds devicons to startify, NERDTree, and others
 Plug 'ryanoasis/vim-devicons'
