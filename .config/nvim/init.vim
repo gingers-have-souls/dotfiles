@@ -77,6 +77,12 @@ let g:airline_powerline_fonts = 1
 " vim airline themes
 Plug 'vim-airline/vim-airline-themes'
 
+" Onedark colour scheme
+Plug 'joshdick/onedark.vim'
+
+" Adds devicons to startify, NERDTree, and others
+Plug 'ryanoasis/vim-devicons'
+
 " Automatic brackets
 Plug 'cohama/lexima.vim'
 
@@ -86,7 +92,11 @@ Plug 'mboughaba/i3config.vim'
 call plug#end()
 
 
-colorscheme molokai
+" Enables 24-bit RGB if the terminal supports it
+if $COLORTERM ==# 'truecolor' || $colorterm ==# '24bit'
+	set termguicolors
+endif
+colorscheme onedark
 set splitright
 set splitbelow
 set ignorecase
@@ -99,10 +109,6 @@ set tabstop=4
 set number relativenumber
 " Change current directory automatically
 set autochdir
-" Enables 24-bit RGB if the terminal supports it
-if $COLORTERM ==# 'truecolor' || $colorterm ==# '24bit'
-	set termguicolors
-endif
 
 
 " Writing mode
