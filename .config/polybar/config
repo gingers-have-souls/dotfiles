@@ -57,7 +57,7 @@ font-0 = DejaVuSansMonoNerdFont:pixelsize=20;1
 font-1 = applecoloremoji:pixelsize=20;1
 font-2 = SourceCodePro:pixelsize=20;1
 
-modules-left = i3 wlan eth xbacklight
+modules-left = i3 rofikeyboard wlan eth xbacklight
 modules-center = xwindow
 modules-right = pulseaudio memory cpu battery temperature date powermenu
 
@@ -398,6 +398,16 @@ menu-2-0 = power off
 menu-2-0-exec = systemctl poweroff
 menu-2-1 = cancel
 menu-2-1-exec = menu-open-0
+
+[module/rofikeyboard]
+type = custom/text
+
+content = " "
+
+content-underline = ${colors.secondary}
+content-padding = 1
+
+click-left = $HOME/.config/rofi/scripts/switchkeyboardvariant.sh
 
 [settings]
 screenchange-reload = true
