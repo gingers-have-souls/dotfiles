@@ -1,12 +1,8 @@
 // vim:ft=css
 
+@import "nomodeswitcher"
+
 #window {
-	children: [ inputbar, listview ];
 	width: 70%;
 	height: 50%;
-}
-
-#listview {
-	border-radius: 0px 0px 15px 15px;
-	border: 0px 2px 2px 2px;
 }
