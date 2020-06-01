@@ -71,6 +71,11 @@ map <C-n> :NERDTreeToggle<CR><C-l>
 " Close NERDTree if it's the only window left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+" Requires fzf to be installed
+" Allows for file searching and more
+Plug 'junegunn/fzf.vim'
+nmap <Leader>s :Files<CR>
+
 " Cool status line, has integration with vim-gitgutter
 Plug 'vim-airline/vim-airline'
 
@@ -89,9 +94,7 @@ Plug 'mboughaba/i3config.vim'
 
 call plug#end()
 
-
-" Enables 24-bit RGB if the terminal supports it
-if $COLORTERM ==# 'truecolor' || $colorterm ==# '24bit'
+if $TERM =~# 'xterm' || $TERM =~# '256color' || $TERM =~# 'alacritty'
 	set termguicolors
 endif
 colorscheme onedark
@@ -136,11 +139,11 @@ endfunction
 " Copy to system clipboard in visual mode
 vnoremap <C-c> "+y
 " Clear search highlights
-nnoremap <Leader>h :nohlsearch<CR><C-l>
+nnoremap <Leader><space> :nohlsearch<CR><C-l>
 " Exit insert mode in terminal
 tnoremap <C-x> <C-\><C-n>
 
 " Snippets
 nnoremap <Leader>ct :read $HOME/.config/nvim/snippets/c.c<CR>kdd4jA
 nnoremap <Leader>cppt :read $HOME/.config/nvim/snippets/cpp.cpp<CR>kdd6jA
-nnoremap <Leader>pyst gg:-1read $HOME/.config/nvim/snippets/pysh.py<CR><C-o>
+nnoremap <Leader>pyt gg:-1read $HOME/.config/nvim/snippets/py.py<CR><C-o>
