@@ -24,7 +24,6 @@ gaps inner 20
 exec --no-startup-id picom
 exec --no-startup-id polybar topbar
 exec --no-startup-id xwallpaper --maximize $HOME/.config/backgrounds/Manjaro_organic_1920x1080.jpg
-exec --no-startup-id $HOME/.config/i3/scripts/musicnotif.sh
 exec_always --no-startup-id $HOME/.config/i3/scripts/autotiling.py
 
 bindsym $mod+Tab workspace next
@@ -53,11 +52,11 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
-# Controls ncspot (from AUR) with playerctl (normal repos)
-bindsym XF86AudioPlay exec playerctl --player "ncspot" play-pause
-bindsym XF86AudioNext exec playerctl --player "ncspot" next
-bindsym XF86AudioPrev exec playerctl --player "ncspot" previous
-# Another option is to control all players, including Chromium
+# Controls Spotify (from AUR) with playerctl (normal repos)
+bindsym XF86AudioPlay exec playerctl --player "spotify" play-pause
+bindsym XF86AudioNext exec playerctl --player "spotify" next
+bindsym XF86AudioPrev exec playerctl --player "spotify" previous
+# Another option is to control all players, including things like Chromium
 # Only playerctl is required for this
 #bindsym XF86AudioPlay exec playerctl -a play-pause
 #bindsym XF86AudioNext exec playerctl -a next
