@@ -89,8 +89,8 @@ Plug 'ryanoasis/vim-devicons'
 " Automatic brackets
 Plug 'cohama/lexima.vim'
 
-" i3 config syntax highlighting
-Plug 'mboughaba/i3config.vim'
+" Primarily improves syntax highlighting of various programming languages and config files
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
