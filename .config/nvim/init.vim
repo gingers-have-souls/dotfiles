@@ -15,6 +15,10 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Git diff within Neovim
 Plug 'airblade/vim-gitgutter'
+let g:gitgutter_map_keys = 0
+nmap [c <Plug>(GitGutterPrevHunk)
+nmap ]c <Plug>(GitGutterNextHunk)
+nmap <Leader>ph <Plug>(GitGutterPreviewHunk)
 autocmd BufWrite,BufRead,InsertLeave * GitGutter
 command! C call ToggleEditingConfigFile()
 function! ToggleEditingConfigFile()
@@ -28,10 +32,6 @@ function! ToggleEditingConfigFile()
 		echo 'Config file'
 	endif
 endfunction
-let g:gitgutter_map_keys = 0
-nmap [c <Plug>(GitGutterPrevHunk)
-nmap ]c <Plug>(GitGutterNextHunk)
-nmap <Leader>ph <Plug>(GitGutterPreviewHunk)
 
 " Shows recently opened files and saves session
 Plug 'mhinz/vim-startify'
@@ -63,6 +63,25 @@ function! OpenNeovimConfig()
 	e $HOME/.config/nvim/init.vim
 	let g:gitgutter_git_args = '--git-dir=$HOME/dotfiles --work-tree=$HOME'
 	GitGutter
+endfunction
+
+" Makes a floating/popup terminal window
+Plug 'voldikss/vim-floaterm'
+nmap <Leader>f :call OpenFloatermForTab()<CR>
+tnoremap <C-x> <C-\><C-n>:call ToggleIfFloaterm()<CR><C-l>
+function! OpenFloatermForTab()
+	let l:tabname = 'tab_'
+	let l:tabname .= tabpagenr()
+	if floaterm#terminal#get_bufnr(l:tabname) == -1
+		execute 'FloatermNew --name='.l:tabname
+	else
+		execute 'FloatermToggle' l:tabname
+	endif
+endfunction
+function! ToggleIfFloaterm()
+	if &filetype ==# 'floaterm'
+		FloatermToggle
+	endif
 endfunction
 
 " File manager
@@ -140,8 +159,6 @@ endfunction
 vnoremap <C-c> "+y
 " Clear search highlights
 nnoremap <Leader><space> :nohlsearch<CR><C-l>
-" Exit insert mode in terminal
-tnoremap <C-x> <C-\><C-n>
 
 " Snippets
 nnoremap <Leader>ct :read $HOME/.config/nvim/snippets/c.c<CR>kdd4jA
