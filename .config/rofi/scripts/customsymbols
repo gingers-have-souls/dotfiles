@@ -1,6 +1,9 @@
 ç | Language | French | cedille lowercase
-Ç | Language | French | CEDILLE UPERCASE
+Ç | Language | French | CEDILLE UPPERCASE
 œ | Language | French | oe
+Œ | Language | French | OE UPPERCASE
+æ | Language | ae
+Æ | Language | AE UPPERCASE
 ¿ | Language | Spanish | upside down question mark
 ¡ | Language | Spanish | upside down exclamation mark
 • | Chemistry | hydrate symbol
