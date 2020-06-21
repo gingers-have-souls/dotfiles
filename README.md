@@ -23,7 +23,6 @@ My i3 rice.
 - polybar (the nice looking thing at the top of the screen)
 - xwallpaper
 - xorg-xbacklight (for screen brightness)
-- xss-lock (screensaver that locks the screen when suspend is entered)
 - slock (screen locker)
 - pulseaudio (for volume control)
 - rofi (application launcher and window switcher, also used for the emojisearch script)
@@ -39,7 +38,7 @@ My i3 rice.
 ## pacman command
 
 ```shell
-sudo pacman -S zsh zsh-history-substring-search zsh-syntax-highlighting zsh-completions termite neovim vifm python-ueberzug ffmpegthumbnailer poppler xorg-xmodmap i3-gaps python-i3ipc polybar xwallpaper xorg-xbacklight xss-lock slock pulseaudio rofi adobe-source-code-pro-fonts xdotool xclip dunst picom xorg-xinit xorg-server xf86-video-intel
+sudo pacman -S zsh zsh-history-substring-search zsh-syntax-highlighting zsh-completions termite neovim vifm python-ueberzug ffmpegthumbnailer poppler xorg-xmodmap i3-gaps python-i3ipc polybar xwallpaper xorg-xbacklight slock pulseaudio rofi adobe-source-code-pro-fonts xdotool xclip dunst picom xorg-xinit xorg-server xf86-video-intel
 ```
 
 ## AUR packages

@@ -41,9 +41,6 @@ bindsym mod1+k exec $HOME/.config/rofi/scripts/switchkeyboardvariant.sh
 bindsym XF86MonBrightnessUp exec xbacklight -inc 2 -time 0
 bindsym XF86MonBrightnessDown exec xbacklight -dec 2 -time 0
 
-# xss-lock grabs a logind suspend inhibit lock and will use slock to lock the
-# screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- slock
 bindsym --release $mod+Shift+x exec slock
 
 # Use pactl to adjust volume in PulseAudio.
