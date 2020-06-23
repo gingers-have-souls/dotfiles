@@ -1,6 +1,7 @@
 " Leader is space
 let mapleader=' '
 
+
 " Using vim-plug as a plugin manager
 " https://github.com/junegunn/vim-plug
 
@@ -11,7 +12,6 @@ call plug#begin(stdpath('data') . '/plugged')
 
 " Autocompletion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" run :CocInstall coc-marketplace then :CocList marketplace to list plugins
 
 " Git diff within Neovim
 Plug 'airblade/vim-gitgutter'
@@ -35,6 +35,7 @@ endfunction
 
 " Shows recently opened files and saves session
 Plug 'mhinz/vim-startify'
+command! St tabe Startify|Startify
 let g:startify_custom_header = [
 \ '        __                    __           ___              ',
 \ '       /\ \__                /\ \__  __  /''___\            ',
@@ -60,7 +61,7 @@ let g:startify_commands = [
 	\ {'c': ['Update coc.nvim', 'CocUpdate']},
 	\ ]
 function! OpenNeovimConfig()
-	e $HOME/.config/nvim/init.vim
+	edit $HOME/.config/nvim/init.vim
 	let g:gitgutter_git_args = '--git-dir=$HOME/dotfiles --work-tree=$HOME'
 	GitGutter
 endfunction
@@ -88,7 +89,7 @@ endfunction
 Plug 'preservim/nerdtree'
 map <C-n> :NERDTreeToggle<CR><C-l>
 " Close NERDTree if it's the only window left open
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+autocmd bufenter * if (winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree()) | q | endif
 
 " Requires fzf to be installed
 " Allows for file searching and more
@@ -113,6 +114,7 @@ Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
+
 if $TERM =~# 'xterm' || $TERM =~# '256color' || $TERM =~# 'alacritty'
 	set termguicolors
 endif
@@ -121,43 +123,14 @@ set splitright
 set splitbelow
 set ignorecase
 set mouse=a
+set title
 set spelllang=en_ca
 " Set tab size
 set shiftwidth=4
 set tabstop=4
-" Line numbers
 set number relativenumber
 " Change current directory automatically
 set autochdir
-
-
-" Writing mode
-command! Wm call WritingModeToggle()
-command! Wmo call WritingModeOn()
-command! Wmf call WritingModeOff()
-function! WritingModeOn()
-	setlocal spell
-	setlocal linebreak
-	nmap j gj
-	nmap k gk
-	silent CocDisable
-	echo 'Writing mode on'
-endfunction
-function! WritingModeOff()
-	setlocal spell&
-	setlocal linebreak&
-	nmap j j
-	nmap k k
-	silent CocEnable
-	echo 'Writing mode off'
-endfunction
-function! WritingModeToggle()
-	if &spell ==# 'nospell'
-		call WritingModeOn()
-	else
-		call WritingModeOff()
-	endif
-endfunction
 
 " Copy to system clipboard in visual mode
 vnoremap <C-c> "+y
@@ -168,3 +141,23 @@ nnoremap <Leader><space> :nohlsearch<CR><C-l>
 nnoremap <Leader>ct :read $HOME/.config/nvim/snippets/c.c<CR>kdd4jA
 nnoremap <Leader>cppt :read $HOME/.config/nvim/snippets/cpp.cpp<CR>kdd6jA
 nnoremap <Leader>pyt gg:-1read $HOME/.config/nvim/snippets/py.py<CR><C-o>
+
+" Writing mode
+command! Wm call WritingModeToggle()
+function! WritingModeToggle()
+	if &spell ==# 'nospell'
+		setlocal spell
+		setlocal linebreak
+		nmap j gj
+		nmap k gk
+		silent CocDisable
+		echo 'Writing mode on'
+	else
+		setlocal spell&
+		setlocal linebreak&
+		nmap j j
+		nmap k k
+		silent CocEnable
+		echo 'Writing mode off'
+	endif
+endfunction
