@@ -61,23 +61,23 @@ yay -S nerd-fonts-dejavu-complete epub-thumbnailer-git fontpreview-git
 
 The way I manage my dotfiles is with a bare git repository. From my understanding, what makes this different from a normal git repository is that the work tree (the tree in which all the files are) and the git directory (where all the git objects and stuff is stored) are different. To recreate what I have on your system, do this:
 
-1. Create a dotfiles directory in your home directory.
+1. Create a .dotfiles directory in your home directory.
 
 ```shell
 cd
-mkdir dotfiles
+mkdir .dotfiles
 ```
 
 2. Make an alias so you don't have to type in the git and work directories every time. This alias is also in my .zshrc, so after you install that don't worry about making it again.
 
 ```shell
-alias config='git --git-dir=$HOME/dotfiles --work-tree=$HOME'
+alias config='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 ```
 
-3. Now clone the repository into the dotfiles folder. Remember the `--bare` flag, since that's what makes this a bare repository!
+3. Now clone the repository into the .dotfiles folder. Remember the `--bare` flag, since that's what makes this a bare repository!
 
 ```shell
-git clone --bare https://github.com/gingers-have-souls/dotfiles $HOME/dotfiles
+git clone --bare https://github.com/gingers-have-souls/dotfiles $HOME/.dotfiles
 ```
 
 4. Finally, we have to actually put all the files in the right place. To do this, we update the files in the work tree by checking out. If this fails, see step 5.
