@@ -302,11 +302,3 @@ zle -N zle-line-init
 echo -ne '\e[5 q'
 # Use beam shape cursor for each new prompt.
 preexec() { echo -ne '\e[5 q' ;}
-
-# Sets X window title
-case $TERM in
-	xterm*) # if it's a terminal in X
-		precmd () {print -Pn "\e]0;$USER@$(hostname):%~\a"} 
-# \e]0; = beginnig, \a = end, %~ is current directory
-		;;
-esac
