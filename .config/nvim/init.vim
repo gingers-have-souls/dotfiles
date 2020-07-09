@@ -22,12 +22,12 @@ nmap <Leader>ph <Plug>(GitGutterPreviewHunk)
 autocmd BufWrite,BufRead,InsertLeave * GitGutter
 command! C call ToggleEditingConfigFile()
 function! ToggleEditingConfigFile()
-	if g:gitgutter_git_args ==# '--git-dir=$HOME/dotfiles --work-tree=$HOME'
+	if g:gitgutter_git_args ==# '--git-dir=$HOME/.dotfiles --work-tree=$HOME'
 		let g:gitgutter_git_args = ''
 		GitGutter
 		echo 'Not config file'
 	else
-		let g:gitgutter_git_args = '--git-dir=$HOME/dotfiles --work-tree=$HOME'
+		let g:gitgutter_git_args = '--git-dir=$HOME/.dotfiles --work-tree=$HOME'
 		GitGutter
 		echo 'Config file'
 	endif
@@ -62,7 +62,7 @@ let g:startify_commands = [
 	\ ]
 function! OpenNeovimConfig()
 	edit $HOME/.config/nvim/init.vim
-	let g:gitgutter_git_args = '--git-dir=$HOME/dotfiles --work-tree=$HOME'
+	let g:gitgutter_git_args = '--git-dir=$HOME/.dotfiles --work-tree=$HOME'
 	GitGutter
 endfunction
 
