@@ -4,6 +4,6 @@ symbols=$(cat $HOME/.config/rofi/scripts/customsymbols; sed 's/\t/ | /g' $HOME/.
 
 selected=$(echo "$symbols" | rofi -dmenu -p "" -i -theme thicc)
 
-if echo "$symbols" | grep "^$selected$"; then
+if echo "$symbols" | grep -E "^$selected$"; then
 	echo "$selected" | awk '{print $1}' | tr -d '\n' | xclip -selection clipboard && xdotool key "ctrl+shift+v"
 fi
