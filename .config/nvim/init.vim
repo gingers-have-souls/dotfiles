@@ -106,8 +106,13 @@ let g:onedark_terminal_italics = 1
 " Adds devicons to startify, NERDTree, and others
 Plug 'ryanoasis/vim-devicons'
 
-" Automatic brackets
-Plug 'cohama/lexima.vim'
+" Autocompletion for brackets and quotes and stuff
+Plug 'Raimondi/delimitMate'
+let delimitMate_nesting_quotes = ['"', '`']
+let delimitMate_expand_cr = 1
+let delimitMate_expand_space = 1
+let delimitMate_balance_matchpairs = 1
+let delimitMate_excluded_regions = "String"
 
 " Primarily improves syntax highlighting of various programming languages and config files
 Plug 'sheerun/vim-polyglot'
