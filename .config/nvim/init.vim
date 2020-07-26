@@ -155,14 +155,18 @@ function! WritingModeToggle()
 		setlocal spell
 		setlocal linebreak
 		nmap j gj
+		nmap <DOWN> gj
 		nmap k gk
+		nmap <UP> gk
 		silent CocDisable
 		echo 'Writing mode on'
 	else
 		setlocal spell&
 		setlocal linebreak&
 		nmap j j
+		nmap <DOWN> j
 		nmap k k
+		nmap <UP> k
 		silent CocEnable
 		echo 'Writing mode off'
 	endif
