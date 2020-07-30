@@ -91,6 +91,10 @@ map <C-n> :NERDTreeToggle<CR><C-l>
 " Close NERDTree if it's the only window left open
 autocmd bufenter * if (winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree()) | q | endif
 
+" Enables manipulating stuff and their surroundings (e.g. brackets,
+" parentheses, but especially HTML tags)
+Plug 'machakann/vim-sandwich'
+
 " Requires fzf to be installed
 " Allows for file searching and more
 Plug 'junegunn/fzf.vim'
