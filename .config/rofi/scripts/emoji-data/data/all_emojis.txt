@@ -21,7 +21,7 @@
 😚	Smileys & Emotion	face-affection	kissing face with closed eyes	closed | eye | face | kiss | kissing face with closed eyes
 😙	Smileys & Emotion	face-affection	kissing face with smiling eyes	eye | face | kiss | kissing face with smiling eyes | smile
 🥲	Smileys & Emotion	face-affection	smiling face with tear	grateful | proud | relieved | smiling | smiling face with tear | tear | touched
-😋	Smileys & Emotion	face-tongue	face savoring food	delicious | face | face savoring food | savouring | smile | yum | face savouring food | um | savoring
+😋	Smileys & Emotion	face-tongue	face savoring food	delicious | face | face savoring food | savouring | smile | yum | savoring | face savouring food | um
 😛	Smileys & Emotion	face-tongue	face with tongue	face | face with tongue | tongue
 😜	Smileys & Emotion	face-tongue	winking face with tongue	eye | face | joke | tongue | wink | winking face with tongue
 🤪	Smileys & Emotion	face-tongue	zany face	eye | goofy | large | small | zany face
@@ -1198,24 +1198,24 @@
 👩🏽‍🚀	People & Body	person-role	woman astronaut: medium skin tone	astronaut | medium skin tone | rocket | woman
 👩🏾‍🚀	People & Body	person-role	woman astronaut: medium-dark skin tone	astronaut | medium-dark skin tone | rocket | woman
 👩🏿‍🚀	People & Body	person-role	woman astronaut: dark skin tone	astronaut | dark skin tone | rocket | woman
-👨‍🚒	People & Body	person-role	man firefighter	firefighter | firetruck | man | fire engine | fireman | fire truck
-👨🏻‍🚒	People & Body	person-role	man firefighter: light skin tone	firefighter | firetruck | light skin tone | man | fire engine | fireman | fire truck
-👨🏼‍🚒	People & Body	person-role	man firefighter: medium-light skin tone	firefighter | firetruck | man | medium-light skin tone | fire engine | fireman | fire truck
-👨🏽‍🚒	People & Body	person-role	man firefighter: medium skin tone	firefighter | firetruck | man | medium skin tone | fire engine | fireman | fire truck
-👨🏾‍🚒	People & Body	person-role	man firefighter: medium-dark skin tone	firefighter | firetruck | man | medium-dark skin tone | fire engine | fireman | fire truck
-👨🏿‍🚒	People & Body	person-role	man firefighter: dark skin tone	dark skin tone | firefighter | firetruck | man | fire engine | fireman | fire truck
-👩‍🚒	People & Body	person-role	woman firefighter	firefighter | firetruck | woman | fire engine | firewoman | fire truck
+👨‍🚒	People & Body	person-role	man firefighter	firefighter | firetruck | man | fire truck | fireman | fire engine
+👨🏻‍🚒	People & Body	person-role	man firefighter: light skin tone	firefighter | firetruck | light skin tone | man | fire truck | fireman | fire engine
+👨🏼‍🚒	People & Body	person-role	man firefighter: medium-light skin tone	firefighter | firetruck | man | medium-light skin tone | fire truck | fireman | fire engine
+👨🏽‍🚒	People & Body	person-role	man firefighter: medium skin tone	firefighter | firetruck | man | medium skin tone | fire truck | fireman | fire engine
+👨🏾‍🚒	People & Body	person-role	man firefighter: medium-dark skin tone	firefighter | firetruck | man | medium-dark skin tone | fire truck | fireman | fire engine
+👨🏿‍🚒	People & Body	person-role	man firefighter: dark skin tone	dark skin tone | firefighter | firetruck | man | fire truck | fireman | fire engine
+👩‍🚒	People & Body	person-role	woman firefighter	firefighter | firetruck | woman | fire truck | firewoman | fire engine
 🧑‍🚒	People & Body	person-role	firefighter	firefighter | firetruck | fire engine | fire truck | engine | fire | truck
-🧑🏻‍🚒	People & Body	person-role	firefighter: light skin tone	firefighter | firetruck | light skin tone | fire engine | fire truck | engine | fire | truck
-🧑🏼‍🚒	People & Body	person-role	firefighter: medium-light skin tone	firefighter | firetruck | medium-light skin tone | fire engine | fire truck | engine | fire | truck
-🧑🏽‍🚒	People & Body	person-role	firefighter: medium skin tone	firefighter | firetruck | medium skin tone | fire engine | fire truck | engine | fire | truck
-🧑🏾‍🚒	People & Body	person-role	firefighter: medium-dark skin tone	firefighter | firetruck | medium-dark skin tone | fire engine | fire truck | engine | fire | truck
-🧑🏿‍🚒	People & Body	person-role	firefighter: dark skin tone	dark skin tone | firefighter | firetruck | fire engine | fire truck | engine | fire | truck
-👩🏻‍🚒	People & Body	person-role	woman firefighter: light skin tone	firefighter | firetruck | light skin tone | woman | fire engine | firewoman | fire truck
-👩🏼‍🚒	People & Body	person-role	woman firefighter: medium-light skin tone	firefighter | firetruck | medium-light skin tone | woman | fire engine | firewoman | fire truck
-👩🏽‍🚒	People & Body	person-role	woman firefighter: medium skin tone	firefighter | firetruck | medium skin tone | woman | fire engine | firewoman | fire truck
-👩🏾‍🚒	People & Body	person-role	woman firefighter: medium-dark skin tone	firefighter | firetruck | medium-dark skin tone | woman | fire engine | firewoman | fire truck
-👩🏿‍🚒	People & Body	person-role	woman firefighter: dark skin tone	dark skin tone | firefighter | firetruck | woman | fire engine | firewoman | fire truck
+🧑🏻‍🚒	People & Body	person-role	firefighter: light skin tone	firefighter | firetruck | light skin tone | engine | fire | truck | fire engine | fire truck
+🧑🏼‍🚒	People & Body	person-role	firefighter: medium-light skin tone	firefighter | firetruck | medium-light skin tone | engine | fire | truck | fire engine | fire truck
+🧑🏽‍🚒	People & Body	person-role	firefighter: medium skin tone	firefighter | firetruck | medium skin tone | engine | fire | truck | fire engine | fire truck
+🧑🏾‍🚒	People & Body	person-role	firefighter: medium-dark skin tone	firefighter | firetruck | medium-dark skin tone | engine | fire | truck | fire engine | fire truck
+🧑🏿‍🚒	People & Body	person-role	firefighter: dark skin tone	dark skin tone | firefighter | firetruck | engine | fire | truck | fire engine | fire truck
+👩🏻‍🚒	People & Body	person-role	woman firefighter: light skin tone	firefighter | firetruck | light skin tone | woman | fire truck | firewoman | fire engine
+👩🏼‍🚒	People & Body	person-role	woman firefighter: medium-light skin tone	firefighter | firetruck | medium-light skin tone | woman | fire truck | firewoman | fire engine
+👩🏽‍🚒	People & Body	person-role	woman firefighter: medium skin tone	firefighter | firetruck | medium skin tone | woman | fire truck | firewoman | fire engine
+👩🏾‍🚒	People & Body	person-role	woman firefighter: medium-dark skin tone	firefighter | firetruck | medium-dark skin tone | woman | fire truck | firewoman | fire engine
+👩🏿‍🚒	People & Body	person-role	woman firefighter: dark skin tone	dark skin tone | firefighter | firetruck | woman | fire truck | firewoman | fire engine
 👮	People & Body	person-role	police officer	cop | officer | police
 👮🏻	People & Body	person-role	police officer: light skin tone	cop | light skin tone | officer | police
 👮🏼	People & Body	person-role	police officer: medium-light skin tone	cop | medium-light skin tone | officer | police
@@ -1429,12 +1429,12 @@
 🎅🏽	People & Body	person-fantasy	Santa Claus: medium skin tone	celebration | Christmas | claus | father | medium skin tone | santa | Santa Claus | Father Christmas | Santa | Claus | Father
 🎅🏾	People & Body	person-fantasy	Santa Claus: medium-dark skin tone	celebration | Christmas | claus | father | medium-dark skin tone | santa | Santa Claus | Father Christmas | Santa | Claus | Father
 🎅🏿	People & Body	person-fantasy	Santa Claus: dark skin tone	celebration | Christmas | claus | dark skin tone | father | santa | Santa Claus | Father Christmas | Santa | Claus | Father
-🤶	People & Body	person-fantasy	Mrs. Claus	celebration | Christmas | claus | mother | Mrs. | Mrs. Claus | Mrs | Mrs Claus | Mrs Santa Claus
-🤶🏻	People & Body	person-fantasy	Mrs. Claus: light skin tone	celebration | Christmas | claus | light skin tone | mother | Mrs. | Mrs. Claus | Mrs | Mrs Claus | Mrs Santa Claus
-🤶🏼	People & Body	person-fantasy	Mrs. Claus: medium-light skin tone	celebration | Christmas | claus | medium-light skin tone | mother | Mrs. | Mrs. Claus | Mrs | Mrs Claus | Mrs Santa Claus
-🤶🏽	People & Body	person-fantasy	Mrs. Claus: medium skin tone	celebration | Christmas | claus | medium skin tone | mother | Mrs. | Mrs. Claus | Mrs | Mrs Claus | Mrs Santa Claus
-🤶🏾	People & Body	person-fantasy	Mrs. Claus: medium-dark skin tone	celebration | Christmas | claus | medium-dark skin tone | mother | Mrs. | Mrs. Claus | Mrs | Mrs Claus | Mrs Santa Claus
-🤶🏿	People & Body	person-fantasy	Mrs. Claus: dark skin tone	celebration | Christmas | claus | dark skin tone | mother | Mrs. | Mrs. Claus | Mrs | Mrs Claus | Mrs Santa Claus
+🤶	People & Body	person-fantasy	Mrs. Claus	celebration | Christmas | claus | mother | Mrs. | Mrs. Claus | Mrs Claus | Mrs Santa Claus | Mrs
+🤶🏻	People & Body	person-fantasy	Mrs. Claus: light skin tone	celebration | Christmas | claus | light skin tone | mother | Mrs. | Mrs. Claus | Mrs Claus | Mrs Santa Claus | Mrs
+🤶🏼	People & Body	person-fantasy	Mrs. Claus: medium-light skin tone	celebration | Christmas | claus | medium-light skin tone | mother | Mrs. | Mrs. Claus | Mrs Claus | Mrs Santa Claus | Mrs
+🤶🏽	People & Body	person-fantasy	Mrs. Claus: medium skin tone	celebration | Christmas | claus | medium skin tone | mother | Mrs. | Mrs. Claus | Mrs Claus | Mrs Santa Claus | Mrs
+🤶🏾	People & Body	person-fantasy	Mrs. Claus: medium-dark skin tone	celebration | Christmas | claus | medium-dark skin tone | mother | Mrs. | Mrs. Claus | Mrs Claus | Mrs Santa Claus | Mrs
+🤶🏿	People & Body	person-fantasy	Mrs. Claus: dark skin tone	celebration | Christmas | claus | dark skin tone | mother | Mrs. | Mrs. Claus | Mrs Claus | Mrs Santa Claus | Mrs
 🦸	People & Body	person-fantasy	superhero	good | hero | heroine | superhero | superpower
 🦸🏻	People & Body	person-fantasy	superhero: light skin tone	good | hero | heroine | light skin tone | superhero | superpower
 🦸🏼	People & Body	person-fantasy	superhero: medium-light skin tone	good | hero | heroine | medium-light skin tone | superhero | superpower
@@ -1685,12 +1685,12 @@
 💆🏾‍♀	People & Body	person-activity	woman getting massage: medium-dark skin tone	face | massage | medium-dark skin tone | woman | woman getting massage
 💆🏿‍♀️	People & Body	person-activity	woman getting massage: dark skin tone	
 💆🏿‍♀	People & Body	person-activity	woman getting massage: dark skin tone	dark skin tone | face | massage | woman | woman getting massage
-💇	People & Body	person-activity	person getting haircut	barber | beauty | haircut | parlor | person getting haircut | hairdresser | parlour
-💇🏻	People & Body	person-activity	person getting haircut: light skin tone	barber | beauty | haircut | light skin tone | parlor | person getting haircut | hairdresser | parlour
-💇🏼	People & Body	person-activity	person getting haircut: medium-light skin tone	barber | beauty | haircut | medium-light skin tone | parlor | person getting haircut | hairdresser | parlour
-💇🏽	People & Body	person-activity	person getting haircut: medium skin tone	barber | beauty | haircut | medium skin tone | parlor | person getting haircut | hairdresser | parlour
-💇🏾	People & Body	person-activity	person getting haircut: medium-dark skin tone	barber | beauty | haircut | medium-dark skin tone | parlor | person getting haircut | hairdresser | parlour
-💇🏿	People & Body	person-activity	person getting haircut: dark skin tone	barber | beauty | dark skin tone | haircut | parlor | person getting haircut | hairdresser | parlour
+💇	People & Body	person-activity	person getting haircut	barber | beauty | haircut | parlor | person getting haircut | parlour | hairdresser
+💇🏻	People & Body	person-activity	person getting haircut: light skin tone	barber | beauty | haircut | light skin tone | parlor | person getting haircut | parlour | hairdresser
+💇🏼	People & Body	person-activity	person getting haircut: medium-light skin tone	barber | beauty | haircut | medium-light skin tone | parlor | person getting haircut | parlour | hairdresser
+💇🏽	People & Body	person-activity	person getting haircut: medium skin tone	barber | beauty | haircut | medium skin tone | parlor | person getting haircut | parlour | hairdresser
+💇🏾	People & Body	person-activity	person getting haircut: medium-dark skin tone	barber | beauty | haircut | medium-dark skin tone | parlor | person getting haircut | parlour | hairdresser
+💇🏿	People & Body	person-activity	person getting haircut: dark skin tone	barber | beauty | dark skin tone | haircut | parlor | person getting haircut | parlour | hairdresser
 💇‍♂️	People & Body	person-activity	man getting haircut	
 💇‍♂	People & Body	person-activity	man getting haircut	haircut | man | man getting haircut | hairdresser
 💇🏻‍♂️	People & Body	person-activity	man getting haircut: light skin tone	
@@ -1823,24 +1823,24 @@
 👩🏽‍🦯	People & Body	person-activity	woman with probing cane: medium skin tone	accessibility | blind | medium skin tone | woman | woman with probing cane | woman with guide cane
 👩🏾‍🦯	People & Body	person-activity	woman with probing cane: medium-dark skin tone	accessibility | blind | medium-dark skin tone | woman | woman with probing cane | woman with guide cane
 👩🏿‍🦯	People & Body	person-activity	woman with probing cane: dark skin tone	accessibility | blind | dark skin tone | woman | woman with probing cane | woman with guide cane
-👨‍🦼	People & Body	person-activity	man in motorized wheelchair	accessibility | man | man in motorized wheelchair | wheelchair | man in powered wheelchair | man in motorised wheelchair
-👨🏻‍🦼	People & Body	person-activity	man in motorized wheelchair: light skin tone	accessibility | light skin tone | man | man in motorized wheelchair | wheelchair | man in powered wheelchair | man in motorised wheelchair
-👨🏼‍🦼	People & Body	person-activity	man in motorized wheelchair: medium-light skin tone	accessibility | man | man in motorized wheelchair | medium-light skin tone | wheelchair | man in powered wheelchair | man in motorised wheelchair
-👨🏽‍🦼	People & Body	person-activity	man in motorized wheelchair: medium skin tone	accessibility | man | man in motorized wheelchair | medium skin tone | wheelchair | man in powered wheelchair | man in motorised wheelchair
-👨🏾‍🦼	People & Body	person-activity	man in motorized wheelchair: medium-dark skin tone	accessibility | man | man in motorized wheelchair | medium-dark skin tone | wheelchair | man in powered wheelchair | man in motorised wheelchair
-👨🏿‍🦼	People & Body	person-activity	man in motorized wheelchair: dark skin tone	accessibility | dark skin tone | man | man in motorized wheelchair | wheelchair | man in powered wheelchair | man in motorised wheelchair
-👩‍🦼	People & Body	person-activity	woman in motorized wheelchair	accessibility | wheelchair | woman | woman in motorized wheelchair | woman in powered wheelchair | woman in motorised wheelchair
+👨‍🦼	People & Body	person-activity	man in motorized wheelchair	accessibility | man | man in motorized wheelchair | wheelchair | man in motorised wheelchair | man in powered wheelchair
+👨🏻‍🦼	People & Body	person-activity	man in motorized wheelchair: light skin tone	accessibility | light skin tone | man | man in motorized wheelchair | wheelchair | man in motorised wheelchair | man in powered wheelchair
+👨🏼‍🦼	People & Body	person-activity	man in motorized wheelchair: medium-light skin tone	accessibility | man | man in motorized wheelchair | medium-light skin tone | wheelchair | man in motorised wheelchair | man in powered wheelchair
+👨🏽‍🦼	People & Body	person-activity	man in motorized wheelchair: medium skin tone	accessibility | man | man in motorized wheelchair | medium skin tone | wheelchair | man in motorised wheelchair | man in powered wheelchair
+👨🏾‍🦼	People & Body	person-activity	man in motorized wheelchair: medium-dark skin tone	accessibility | man | man in motorized wheelchair | medium-dark skin tone | wheelchair | man in motorised wheelchair | man in powered wheelchair
+👨🏿‍🦼	People & Body	person-activity	man in motorized wheelchair: dark skin tone	accessibility | dark skin tone | man | man in motorized wheelchair | wheelchair | man in motorised wheelchair | man in powered wheelchair
+👩‍🦼	People & Body	person-activity	woman in motorized wheelchair	accessibility | wheelchair | woman | woman in motorized wheelchair | woman in motorised wheelchair | woman in powered wheelchair
 🧑‍🦼	People & Body	person-activity	person in motorized wheelchair	accessibility | person in motorized wheelchair | wheelchair | person in powered wheelchair
 🧑🏻‍🦼	People & Body	person-activity	person in motorized wheelchair: light skin tone	accessibility | light skin tone | wheelchair
 🧑🏼‍🦼	People & Body	person-activity	person in motorized wheelchair: medium-light skin tone	accessibility | medium-light skin tone | wheelchair
 🧑🏽‍🦼	People & Body	person-activity	person in motorized wheelchair: medium skin tone	accessibility | medium skin tone | wheelchair
 🧑🏾‍🦼	People & Body	person-activity	person in motorized wheelchair: medium-dark skin tone	accessibility | medium-dark skin tone | wheelchair
 🧑🏿‍🦼	People & Body	person-activity	person in motorized wheelchair: dark skin tone	accessibility | dark skin tone | wheelchair
-👩🏻‍🦼	People & Body	person-activity	woman in motorized wheelchair: light skin tone	accessibility | light skin tone | wheelchair | woman | woman in motorized wheelchair | woman in powered wheelchair | woman in motorised wheelchair
-👩🏼‍🦼	People & Body	person-activity	woman in motorized wheelchair: medium-light skin tone	accessibility | medium-light skin tone | wheelchair | woman | woman in motorized wheelchair | woman in powered wheelchair | woman in motorised wheelchair
-👩🏽‍🦼	People & Body	person-activity	woman in motorized wheelchair: medium skin tone	accessibility | medium skin tone | wheelchair | woman | woman in motorized wheelchair | woman in powered wheelchair | woman in motorised wheelchair
-👩🏾‍🦼	People & Body	person-activity	woman in motorized wheelchair: medium-dark skin tone	accessibility | medium-dark skin tone | wheelchair | woman | woman in motorized wheelchair | woman in powered wheelchair | woman in motorised wheelchair
-👩🏿‍🦼	People & Body	person-activity	woman in motorized wheelchair: dark skin tone	accessibility | dark skin tone | wheelchair | woman | woman in motorized wheelchair | woman in powered wheelchair | woman in motorised wheelchair
+👩🏻‍🦼	People & Body	person-activity	woman in motorized wheelchair: light skin tone	accessibility | light skin tone | wheelchair | woman | woman in motorized wheelchair | woman in motorised wheelchair | woman in powered wheelchair
+👩🏼‍🦼	People & Body	person-activity	woman in motorized wheelchair: medium-light skin tone	accessibility | medium-light skin tone | wheelchair | woman | woman in motorized wheelchair | woman in motorised wheelchair | woman in powered wheelchair
+👩🏽‍🦼	People & Body	person-activity	woman in motorized wheelchair: medium skin tone	accessibility | medium skin tone | wheelchair | woman | woman in motorized wheelchair | woman in motorised wheelchair | woman in powered wheelchair
+👩🏾‍🦼	People & Body	person-activity	woman in motorized wheelchair: medium-dark skin tone	accessibility | medium-dark skin tone | wheelchair | woman | woman in motorized wheelchair | woman in motorised wheelchair | woman in powered wheelchair
+👩🏿‍🦼	People & Body	person-activity	woman in motorized wheelchair: dark skin tone	accessibility | dark skin tone | wheelchair | woman | woman in motorized wheelchair | woman in motorised wheelchair | woman in powered wheelchair
 👨‍🦽	People & Body	person-activity	man in manual wheelchair	accessibility | man | man in manual wheelchair | wheelchair
 👨🏻‍🦽	People & Body	person-activity	man in manual wheelchair: light skin tone	accessibility | light skin tone | man | man in manual wheelchair | wheelchair
 👨🏼‍🦽	People & Body	person-activity	man in manual wheelchair: medium-light skin tone	accessibility | man | man in manual wheelchair | medium-light skin tone | wheelchair
@@ -2051,12 +2051,12 @@
 🏄🏾‍♀	People & Body	person-sport	woman surfing: medium-dark skin tone	medium-dark skin tone | surfing | woman | surfer
 🏄🏿‍♀️	People & Body	person-sport	woman surfing: dark skin tone	
 🏄🏿‍♀	People & Body	person-sport	woman surfing: dark skin tone	dark skin tone | surfing | woman | surfer
-🚣	People & Body	person-sport	person rowing boat	boat | person rowing boat | rowboat | rowing boat | person
-🚣🏻	People & Body	person-sport	person rowing boat: light skin tone	boat | light skin tone | person rowing boat | rowboat | rowing boat | person
-🚣🏼	People & Body	person-sport	person rowing boat: medium-light skin tone	boat | medium-light skin tone | person rowing boat | rowboat | rowing boat | person
-🚣🏽	People & Body	person-sport	person rowing boat: medium skin tone	boat | medium skin tone | person rowing boat | rowboat | rowing boat | person
-🚣🏾	People & Body	person-sport	person rowing boat: medium-dark skin tone	boat | medium-dark skin tone | person rowing boat | rowboat | rowing boat | person
-🚣🏿	People & Body	person-sport	person rowing boat: dark skin tone	boat | dark skin tone | person rowing boat | rowboat | rowing boat | person
+🚣	People & Body	person-sport	person rowing boat	boat | person rowing boat | rowboat | person | rowing boat
+🚣🏻	People & Body	person-sport	person rowing boat: light skin tone	boat | light skin tone | person rowing boat | rowboat | person | rowing boat
+🚣🏼	People & Body	person-sport	person rowing boat: medium-light skin tone	boat | medium-light skin tone | person rowing boat | rowboat | person | rowing boat
+🚣🏽	People & Body	person-sport	person rowing boat: medium skin tone	boat | medium skin tone | person rowing boat | rowboat | person | rowing boat
+🚣🏾	People & Body	person-sport	person rowing boat: medium-dark skin tone	boat | medium-dark skin tone | person rowing boat | rowboat | person | rowing boat
+🚣🏿	People & Body	person-sport	person rowing boat: dark skin tone	boat | dark skin tone | person rowing boat | rowboat | person | rowing boat
 🚣‍♂️	People & Body	person-sport	man rowing boat	
 🚣‍♂	People & Body	person-sport	man rowing boat	boat | man | man rowing boat | rowboat | rowing boat
 🚣🏻‍♂️	People & Body	person-sport	man rowing boat: light skin tone	
@@ -2177,36 +2177,36 @@
 🏋🏾‍♀	People & Body	person-sport	woman lifting weights: medium-dark skin tone	medium-dark skin tone | weight lifter | woman | woman lifting weights | weightlifter
 🏋🏿‍♀️	People & Body	person-sport	woman lifting weights: dark skin tone	
 🏋🏿‍♀	People & Body	person-sport	woman lifting weights: dark skin tone	dark skin tone | weight lifter | woman | woman lifting weights | weightlifter
-🚴	People & Body	person-sport	person biking	bicycle | biking | cyclist | person biking | person cycling | person riding a bike
-🚴🏻	People & Body	person-sport	person biking: light skin tone	bicycle | biking | cyclist | light skin tone | person biking | person cycling | person riding a bike
-🚴🏼	People & Body	person-sport	person biking: medium-light skin tone	bicycle | biking | cyclist | medium-light skin tone | person biking | person cycling | person riding a bike
-🚴🏽	People & Body	person-sport	person biking: medium skin tone	bicycle | biking | cyclist | medium skin tone | person biking | person cycling | person riding a bike
-🚴🏾	People & Body	person-sport	person biking: medium-dark skin tone	bicycle | biking | cyclist | medium-dark skin tone | person biking | person cycling | person riding a bike
-🚴🏿	People & Body	person-sport	person biking: dark skin tone	bicycle | biking | cyclist | dark skin tone | person biking | person cycling | person riding a bike
+🚴	People & Body	person-sport	person biking	bicycle | biking | cyclist | person biking | person riding a bike | person cycling
+🚴🏻	People & Body	person-sport	person biking: light skin tone	bicycle | biking | cyclist | light skin tone | person biking | person riding a bike | person cycling
+🚴🏼	People & Body	person-sport	person biking: medium-light skin tone	bicycle | biking | cyclist | medium-light skin tone | person biking | person riding a bike | person cycling
+🚴🏽	People & Body	person-sport	person biking: medium skin tone	bicycle | biking | cyclist | medium skin tone | person biking | person riding a bike | person cycling
+🚴🏾	People & Body	person-sport	person biking: medium-dark skin tone	bicycle | biking | cyclist | medium-dark skin tone | person biking | person riding a bike | person cycling
+🚴🏿	People & Body	person-sport	person biking: dark skin tone	bicycle | biking | cyclist | dark skin tone | person biking | person riding a bike | person cycling
 🚴‍♂️	People & Body	person-sport	man biking	
-🚴‍♂	People & Body	person-sport	man biking	bicycle | biking | cyclist | man | man cycling | man riding a bike
+🚴‍♂	People & Body	person-sport	man biking	bicycle | biking | cyclist | man | man riding a bike | man cycling
 🚴🏻‍♂️	People & Body	person-sport	man biking: light skin tone	
-🚴🏻‍♂	People & Body	person-sport	man biking: light skin tone	bicycle | biking | cyclist | light skin tone | man | man cycling | man riding a bike
+🚴🏻‍♂	People & Body	person-sport	man biking: light skin tone	bicycle | biking | cyclist | light skin tone | man | man riding a bike | man cycling
 🚴🏼‍♂️	People & Body	person-sport	man biking: medium-light skin tone	
-🚴🏼‍♂	People & Body	person-sport	man biking: medium-light skin tone	bicycle | biking | cyclist | man | medium-light skin tone | man cycling | man riding a bike
+🚴🏼‍♂	People & Body	person-sport	man biking: medium-light skin tone	bicycle | biking | cyclist | man | medium-light skin tone | man riding a bike | man cycling
 🚴🏽‍♂️	People & Body	person-sport	man biking: medium skin tone	
-🚴🏽‍♂	People & Body	person-sport	man biking: medium skin tone	bicycle | biking | cyclist | man | medium skin tone | man cycling | man riding a bike
+🚴🏽‍♂	People & Body	person-sport	man biking: medium skin tone	bicycle | biking | cyclist | man | medium skin tone | man riding a bike | man cycling
 🚴🏾‍♂️	People & Body	person-sport	man biking: medium-dark skin tone	
-🚴🏾‍♂	People & Body	person-sport	man biking: medium-dark skin tone	bicycle | biking | cyclist | man | medium-dark skin tone | man cycling | man riding a bike
+🚴🏾‍♂	People & Body	person-sport	man biking: medium-dark skin tone	bicycle | biking | cyclist | man | medium-dark skin tone | man riding a bike | man cycling
 🚴🏿‍♂️	People & Body	person-sport	man biking: dark skin tone	
-🚴🏿‍♂	People & Body	person-sport	man biking: dark skin tone	bicycle | biking | cyclist | dark skin tone | man | man cycling | man riding a bike
+🚴🏿‍♂	People & Body	person-sport	man biking: dark skin tone	bicycle | biking | cyclist | dark skin tone | man | man riding a bike | man cycling
 🚴‍♀️	People & Body	person-sport	woman biking	
-🚴‍♀	People & Body	person-sport	woman biking	bicycle | biking | cyclist | woman | woman cycling | woman riding a bike
+🚴‍♀	People & Body	person-sport	woman biking	bicycle | biking | cyclist | woman | woman riding a bike | woman cycling
 🚴🏻‍♀️	People & Body	person-sport	woman biking: light skin tone	
-🚴🏻‍♀	People & Body	person-sport	woman biking: light skin tone	bicycle | biking | cyclist | light skin tone | woman | woman cycling | woman riding a bike
+🚴🏻‍♀	People & Body	person-sport	woman biking: light skin tone	bicycle | biking | cyclist | light skin tone | woman | woman riding a bike | woman cycling
 🚴🏼‍♀️	People & Body	person-sport	woman biking: medium-light skin tone	
-🚴🏼‍♀	People & Body	person-sport	woman biking: medium-light skin tone	bicycle | biking | cyclist | medium-light skin tone | woman | woman cycling | woman riding a bike
+🚴🏼‍♀	People & Body	person-sport	woman biking: medium-light skin tone	bicycle | biking | cyclist | medium-light skin tone | woman | woman riding a bike | woman cycling
 🚴🏽‍♀️	People & Body	person-sport	woman biking: medium skin tone	
-🚴🏽‍♀	People & Body	person-sport	woman biking: medium skin tone	bicycle | biking | cyclist | medium skin tone | woman | woman cycling | woman riding a bike
+🚴🏽‍♀	People & Body	person-sport	woman biking: medium skin tone	bicycle | biking | cyclist | medium skin tone | woman | woman riding a bike | woman cycling
 🚴🏾‍♀️	People & Body	person-sport	woman biking: medium-dark skin tone	
-🚴🏾‍♀	People & Body	person-sport	woman biking: medium-dark skin tone	bicycle | biking | cyclist | medium-dark skin tone | woman | woman cycling | woman riding a bike
+🚴🏾‍♀	People & Body	person-sport	woman biking: medium-dark skin tone	bicycle | biking | cyclist | medium-dark skin tone | woman | woman riding a bike | woman cycling
 🚴🏿‍♀️	People & Body	person-sport	woman biking: dark skin tone	
-🚴🏿‍♀	People & Body	person-sport	woman biking: dark skin tone	bicycle | biking | cyclist | dark skin tone | woman | woman cycling | woman riding a bike
+🚴🏿‍♀	People & Body	person-sport	woman biking: dark skin tone	bicycle | biking | cyclist | dark skin tone | woman | woman riding a bike | woman cycling
 🚵	People & Body	person-sport	person mountain biking	bicycle | bicyclist | bike | cyclist | mountain | person mountain biking
 🚵🏻	People & Body	person-sport	person mountain biking: light skin tone	bicycle | bicyclist | bike | cyclist | light skin tone | mountain | person mountain biking
 🚵🏼	People & Body	person-sport	person mountain biking: medium-light skin tone	bicycle | bicyclist | bike | cyclist | medium-light skin tone | mountain | person mountain biking
@@ -2569,7 +2569,7 @@
 🐑	Animals & Nature	animal-mammal	ewe	ewe | female | sheep
 🐐	Animals & Nature	animal-mammal	goat	Capricorn | goat | zodiac
 🐪	Animals & Nature	animal-mammal	camel	camel | dromedary | hump | one hump | single hump
-🐫	Animals & Nature	animal-mammal	two-hump camel	bactrian | camel | hump | two-hump camel | two humps | Bactrian
+🐫	Animals & Nature	animal-mammal	two-hump camel	bactrian | camel | hump | two-hump camel | Bactrian | two humps
 🦙	Animals & Nature	animal-mammal	llama	alpaca | guanaco | llama | vicuña | wool
 🦒	Animals & Nature	animal-mammal	giraffe	giraffe | spots
 🐘	Animals & Nature	animal-mammal	elephant	elephant
@@ -2646,7 +2646,7 @@
 🕷️	Animals & Nature	animal-bug	spider	
 🕷	Animals & Nature	animal-bug	spider	insect | spider | arachnid
 🕸️	Animals & Nature	animal-bug	spider web	
-🕸	Animals & Nature	animal-bug	spider web	spider | web | spider’s web | spider web
+🕸	Animals & Nature	animal-bug	spider web	spider | web | spider web | spider’s web
 🦂	Animals & Nature	animal-bug	scorpion	scorpio | Scorpio | scorpion | zodiac
 🦟	Animals & Nature	animal-bug	mosquito	disease | fever | malaria | mosquito | pest | virus | dengue | insect
 🪰	Animals & Nature	animal-bug	fly	disease | fly | maggot | pest | rotting
@@ -2714,7 +2714,7 @@
 🌰	Food & Drink	food-vegetable	chestnut	chestnut | plant | nut
 🍞	Food & Drink	food-prepared	bread	bread | loaf
 🥐	Food & Drink	food-prepared	croissant	bread | breakfast | croissant | food | french | roll | crescent roll | French
-🥖	Food & Drink	food-prepared	baguette bread	baguette | bread | food | french | french stick | French stick | French
+🥖	Food & Drink	food-prepared	baguette bread	baguette | bread | food | french | French stick | French | french stick
 🫓	Food & Drink	food-prepared	flatbread	arepa | flatbread | lavash | naan | pita | nan | pitta
 🥨	Food & Drink	food-prepared	pretzel	pretzel | twisted
 🥯	Food & Drink	food-prepared	bagel	bagel | bakery | breakfast | schmear
@@ -2726,7 +2726,7 @@
 🥩	Food & Drink	food-prepared	cut of meat	chop | cut of meat | lambchop | porkchop | steak
 🥓	Food & Drink	food-prepared	bacon	bacon | breakfast | food | meat
 🍔	Food & Drink	food-prepared	hamburger	burger | hamburger | beefburger
-🍟	Food & Drink	food-prepared	french fries	french | fries | chips | french fries | French fries
+🍟	Food & Drink	food-prepared	french fries	french | fries | chips | French fries | french fries
 🍕	Food & Drink	food-prepared	pizza	cheese | pizza | slice
 🌭	Food & Drink	food-prepared	hot dog	frankfurter | hot dog | hotdog | sausage
 🥪	Food & Drink	food-prepared	sandwich	bread | sandwich
@@ -2762,11 +2762,11 @@
 🍡	Food & Drink	food-asian	dango	dango | dessert | Japanese | skewer | stick | sweet
 🥟	Food & Drink	food-asian	dumpling	dumpling | empanada | gyōza | jiaozi | pierogi | potsticker | pastie | samosa
 🥠	Food & Drink	food-asian	fortune cookie	fortune cookie | prophecy
-🥡	Food & Drink	food-asian	takeout box	oyster pail | takeout box | takeaway box | takeaway container | takeout
+🥡	Food & Drink	food-asian	takeout box	oyster pail | takeout box | takeaway container | takeout | takeaway box
 🦀	Food & Drink	food-marine	crab	Cancer | crab | zodiac | crustacean | seafood | shellfish
 🦞	Food & Drink	food-marine	lobster	bisque | claws | lobster | seafood | shellfish
 🦐	Food & Drink	food-marine	shrimp	food | shellfish | shrimp | small | prawn | seafood
-🦑	Food & Drink	food-marine	squid	food | molusc | squid | mollusc | decapod | seafood
+🦑	Food & Drink	food-marine	squid	food | molusc | squid | decapod | seafood | mollusc
 🦪	Food & Drink	food-marine	oyster	diving | oyster | pearl
 🍦	Food & Drink	food-sweet	soft ice cream	cream | dessert | ice | icecream | soft | sweet | ice cream | soft serve
 🍧	Food & Drink	food-sweet	shaved ice	dessert | ice | shaved | sweet | granita
@@ -2780,7 +2780,7 @@
 🍫	Food & Drink	food-sweet	chocolate bar	bar | chocolate | dessert | sweet
 🍬	Food & Drink	food-sweet	candy	candy | dessert | sweet | sweets
 🍭	Food & Drink	food-sweet	lollipop	candy | dessert | lollipop | sweet | lolly
-🍮	Food & Drink	food-sweet	custard	custard | dessert | pudding | sweet | crème caramel | egg custard | baked custard
+🍮	Food & Drink	food-sweet	custard	custard | dessert | pudding | sweet | baked custard | crème caramel | egg custard
 🍯	Food & Drink	food-sweet	honey pot	honey | honeypot | pot | sweet
 🍼	Food & Drink	drink	baby bottle	baby | bottle | drink | milk | baby’s bottle
 🥛	Food & Drink	drink	glass of milk	drink | glass | glass of milk | milk
@@ -2885,13 +2885,13 @@
 ♨️	Travel & Places	place-other	hot springs	
 ♨	Travel & Places	place-other	hot springs	hot | hotsprings | springs | steaming
 🎠	Travel & Places	place-other	carousel horse	carousel | horse | merry-go-round
-🎡	Travel & Places	place-other	ferris wheel	amusement park | ferris | wheel | theme park | Ferris wheel
+🎡	Travel & Places	place-other	ferris wheel	amusement park | ferris | wheel | Ferris wheel | theme park
 🎢	Travel & Places	place-other	roller coaster	amusement park | coaster | roller | rollercoaster | theme park
-💈	Travel & Places	place-other	barber pole	barber | haircut | pole | barber’s pole | barber pole
+💈	Travel & Places	place-other	barber pole	barber | haircut | pole | barber pole | barber’s pole
 🎪	Travel & Places	place-other	circus tent	circus | tent | big top
 🚂	Travel & Places	transport-ground	locomotive	engine | locomotive | railway | steam | train
-🚃	Travel & Places	transport-ground	railway car	car | electric | railway | train | tram | trolleybus | railway carriage | trolley bus
-🚄	Travel & Places	transport-ground	high-speed train	high-speed train | railway | shinkansen | speed | train | TGV | Shinkansen
+🚃	Travel & Places	transport-ground	railway car	car | electric | railway | train | tram | trolleybus | trolley bus | railway carriage
+🚄	Travel & Places	transport-ground	high-speed train	high-speed train | railway | shinkansen | speed | train | Shinkansen | TGV
 🚅	Travel & Places	transport-ground	bullet train	bullet | railway | shinkansen | speed | train | Shinkansen
 🚆	Travel & Places	transport-ground	train	railway | train
 🚇	Travel & Places	transport-ground	metro	metro | subway | tube | underground
@@ -2913,7 +2913,7 @@
 🚖	Travel & Places	transport-ground	oncoming taxi	oncoming | taxi | cab
 🚗	Travel & Places	transport-ground	automobile	automobile | car
 🚘	Travel & Places	transport-ground	oncoming automobile	automobile | car | oncoming
-🚙	Travel & Places	transport-ground	sport utility vehicle	recreational | sport utility | sport utility vehicle | camper van | motorhome | RV | 4WD | four-wheel drive | SUV
+🚙	Travel & Places	transport-ground	sport utility vehicle	recreational | sport utility | sport utility vehicle | 4WD | four-wheel drive | SUV | camper van | motorhome | RV
 🛻	Travel & Places	transport-ground	pickup truck	pick-up | pickup | truck
 🚚	Travel & Places	transport-ground	delivery truck	delivery | truck | delivery van
 🚛	Travel & Places	transport-ground	articulated lorry	articulated lorry | lorry | semi | truck | articulated truck
@@ -2924,7 +2924,7 @@
 🏍	Travel & Places	transport-ground	motorcycle	motorcycle | racing | motorbike
 🛵	Travel & Places	transport-ground	motor scooter	motor | scooter
 🦽	Travel & Places	transport-ground	manual wheelchair	accessibility | manual wheelchair
-🦼	Travel & Places	transport-ground	motorized wheelchair	accessibility | motorized wheelchair | powered wheelchair | mobility scooter
+🦼	Travel & Places	transport-ground	motorized wheelchair	accessibility | motorized wheelchair | mobility scooter | powered wheelchair
 🛺	Travel & Places	transport-ground	auto rickshaw	auto rickshaw | tuk tuk | tuk-tuk | tuktuk
 🚲	Travel & Places	transport-ground	bicycle	bicycle | bike | cycle
 🛴	Travel & Places	transport-ground	kick scooter	kick | scooter
@@ -2936,7 +2936,7 @@
 🛤	Travel & Places	transport-ground	railway track	railway | railway track | train
 🛢️	Travel & Places	transport-ground	oil drum	
 🛢	Travel & Places	transport-ground	oil drum	drum | oil
-⛽	Travel & Places	transport-ground	fuel pump	diesel | fuel | fuelpump | gas | pump | station | petrol | petrol pump | gas pump
+⛽	Travel & Places	transport-ground	fuel pump	diesel | fuel | fuelpump | gas | pump | station | petrol pump | gas pump | petrol
 🚨	Travel & Places	transport-ground	police car light	beacon | car | light | police | revolving
 🚥	Travel & Places	transport-ground	horizontal traffic light	horizontal traffic light | light | signal | traffic | horizontal traffic lights | lights
 🚦	Travel & Places	transport-ground	vertical traffic light	light | signal | traffic | vertical traffic light | lights | vertical traffic lights
@@ -2963,7 +2963,7 @@
 💺	Travel & Places	transport-air	seat	chair | seat
 🚁	Travel & Places	transport-air	helicopter	helicopter | vehicle | chopper
 🚟	Travel & Places	transport-air	suspension railway	railway | suspension | cable
-🚠	Travel & Places	transport-air	mountain cableway	cable | gondola | mountain | mountain cableway | mountain cablecar | cableway
+🚠	Travel & Places	transport-air	mountain cableway	cable | gondola | mountain | mountain cableway | cableway | mountain cablecar
 🚡	Travel & Places	transport-air	aerial tramway	aerial | cable | car | gondola | tramway
 🛰️	Travel & Places	transport-air	satellite	
 🛰	Travel & Places	transport-air	satellite	satellite | space
@@ -2983,29 +2983,29 @@
 🕰️	Travel & Places	time	mantelpiece clock	
 🕰	Travel & Places	time	mantelpiece clock	clock | mantelpiece clock | mantel clock
 🕛	Travel & Places	time	twelve o’clock	00 | 12 | 12:00 | clock | o’clock | twelve
-🕧	Travel & Places	time	twelve-thirty	12 | 12:30 | clock | thirty | twelve | twelve-thirty | 12.30 | 30 | half past twelve | twelve thirty
+🕧	Travel & Places	time	twelve-thirty	12 | 12:30 | clock | thirty | twelve | twelve-thirty | twelve thirty | 12.30 | 30 | half past twelve
 🕐	Travel & Places	time	one o’clock	00 | 1 | 1:00 | clock | o’clock | one
-🕜	Travel & Places	time	one-thirty	1 | 1:30 | clock | one | one-thirty | thirty | 1.30 | 30 | half past one | one thirty
+🕜	Travel & Places	time	one-thirty	1 | 1:30 | clock | one | one-thirty | thirty | one thirty | 1.30 | 30 | half past one
 🕑	Travel & Places	time	two o’clock	00 | 2 | 2:00 | clock | o’clock | two
-🕝	Travel & Places	time	two-thirty	2 | 2:30 | clock | thirty | two | two-thirty | 2.30 | 30 | half past two | two thirty
+🕝	Travel & Places	time	two-thirty	2 | 2:30 | clock | thirty | two | two-thirty | two thirty | 2.30 | 30 | half past two
 🕒	Travel & Places	time	three o’clock	00 | 3 | 3:00 | clock | o’clock | three
-🕞	Travel & Places	time	three-thirty	3 | 3:30 | clock | thirty | three | three-thirty | 3.30 | 30 | half past three | three thirty
+🕞	Travel & Places	time	three-thirty	3 | 3:30 | clock | thirty | three | three-thirty | three thirty | 3.30 | 30 | half past three
 🕓	Travel & Places	time	four o’clock	00 | 4 | 4:00 | clock | four | o’clock
-🕟	Travel & Places	time	four-thirty	4 | 4:30 | clock | four | four-thirty | thirty | 30 | 4.30 | half past four | four thirty
+🕟	Travel & Places	time	four-thirty	4 | 4:30 | clock | four | four-thirty | thirty | four thirty | 30 | 4.30 | half past four
 🕔	Travel & Places	time	five o’clock	00 | 5 | 5:00 | clock | five | o’clock
-🕠	Travel & Places	time	five-thirty	5 | 5:30 | clock | five | five-thirty | thirty | 30 | 5.30 | half past five | five thirty
+🕠	Travel & Places	time	five-thirty	5 | 5:30 | clock | five | five-thirty | thirty | five thirty | 30 | 5.30 | half past five
 🕕	Travel & Places	time	six o’clock	00 | 6 | 6:00 | clock | o’clock | six
-🕡	Travel & Places	time	six-thirty	6 | 6:30 | clock | six | six-thirty | thirty | 30 | 6.30 | half past six | six thirty
+🕡	Travel & Places	time	six-thirty	6 | 6:30 | clock | six | six-thirty | thirty | six thirty | 30 | 6.30 | half past six
 🕖	Travel & Places	time	seven o’clock	00 | 7 | 7:00 | clock | o’clock | seven
-🕢	Travel & Places	time	seven-thirty	7 | 7:30 | clock | seven | seven-thirty | thirty | 30 | 7.30 | half past seven | seven thirty
+🕢	Travel & Places	time	seven-thirty	7 | 7:30 | clock | seven | seven-thirty | thirty | seven thirty | 30 | 7.30 | half past seven
 🕗	Travel & Places	time	eight o’clock	00 | 8 | 8:00 | clock | eight | o’clock
-🕣	Travel & Places	time	eight-thirty	8 | 8:30 | clock | eight | eight-thirty | thirty | 30 | 8.30 | half past eight | eight thirty
+🕣	Travel & Places	time	eight-thirty	8 | 8:30 | clock | eight | eight-thirty | thirty | eight thirty | 30 | 8.30 | half past eight
 🕘	Travel & Places	time	nine o’clock	00 | 9 | 9:00 | clock | nine | o’clock
-🕤	Travel & Places	time	nine-thirty	9 | 9:30 | clock | nine | nine-thirty | thirty | 30 | 9.30 | half past nine | nine thirty
+🕤	Travel & Places	time	nine-thirty	9 | 9:30 | clock | nine | nine-thirty | thirty | nine thirty | 30 | 9.30 | half past nine
 🕙	Travel & Places	time	ten o’clock	00 | 10 | 10:00 | clock | o’clock | ten
-🕥	Travel & Places	time	ten-thirty	10 | 10:30 | clock | ten | ten-thirty | thirty | 10.30 | 30 | half past ten | ten thirty
+🕥	Travel & Places	time	ten-thirty	10 | 10:30 | clock | ten | ten-thirty | thirty | ten thirty | 10.30 | 30 | half past ten
 🕚	Travel & Places	time	eleven o’clock	00 | 11 | 11:00 | clock | eleven | o’clock
-🕦	Travel & Places	time	eleven-thirty	11 | 11:30 | clock | eleven | eleven-thirty | thirty | 11.30 | 30 | half past eleven | eleven thirty
+🕦	Travel & Places	time	eleven-thirty	11 | 11:30 | clock | eleven | eleven-thirty | thirty | eleven thirty | 11.30 | 30 | half past eleven
 🌑	Travel & Places	sky & weather	new moon	dark | moon | new moon
 🌒	Travel & Places	sky & weather	waxing crescent moon	crescent | moon | waxing
 🌓	Travel & Places	sky & weather	first quarter moon	first quarter moon | moon | quarter | first-quarter moon
@@ -3028,7 +3028,7 @@
 ⭐	Travel & Places	sky & weather	star	star | yellow medium star
 🌟	Travel & Places	sky & weather	glowing star	glittery | glow | glowing star | shining | sparkle | star
 🌠	Travel & Places	sky & weather	shooting star	falling | shooting | star
-🌌	Travel & Places	sky & weather	milky way	milky way | space | galaxy | Milky Way
+🌌	Travel & Places	sky & weather	milky way	milky way | space | Milky Way | galaxy
 ☁️	Travel & Places	sky & weather	cloud	
 ☁	Travel & Places	sky & weather	cloud	cloud | weather
 ⛅	Travel & Places	sky & weather	sun behind cloud	cloud | sun | sun behind cloud
@@ -3071,7 +3071,7 @@
 🔥	Travel & Places	sky & weather	fire	fire | flame | tool
 💧	Travel & Places	sky & weather	droplet	cold | comic | drop | droplet | sweat
 🌊	Travel & Places	sky & weather	water wave	ocean | water | wave | sea | swell
-🎃	Activities	event	jack-o-lantern	celebration | halloween | jack | jack-o-lantern | lantern | jack-o’-lantern | pumpkin | Halloween
+🎃	Activities	event	jack-o-lantern	celebration | halloween | jack | jack-o-lantern | lantern | Halloween | jack-o’-lantern | pumpkin
 🎄	Activities	event	Christmas tree	celebration | Christmas | tree
 🎆	Activities	event	fireworks	celebration | fireworks
 🎇	Activities	event	sparkler	celebration | fireworks | sparkle | sparkler
@@ -3080,12 +3080,12 @@
 🎈	Activities	event	balloon	balloon | celebration
 🎉	Activities	event	party popper	celebration | party | popper | tada | ta-da
 🎊	Activities	event	confetti ball	ball | celebration | confetti
-🎋	Activities	event	tanabata tree	banner | celebration | Japanese | tanabata tree | tree | star festival | tanabata | Tanabata tree
+🎋	Activities	event	tanabata tree	banner | celebration | Japanese | tanabata tree | tree | Tanabata tree | star festival | tanabata
 🎍	Activities	event	pine decoration	bamboo | celebration | Japanese | pine | pine decoration | decoration
 🎎	Activities	event	Japanese dolls	celebration | doll | festival | Japanese | Japanese dolls
 🎏	Activities	event	carp streamer	carp | celebration | streamer | carp wind sock | carp wind socks | Japanese wind socks | koinobori
 🎐	Activities	event	wind chime	bell | celebration | chime | wind
-🎑	Activities	event	moon viewing ceremony	celebration | ceremony | moon | moon viewing ceremony | jugoya | moon-viewing ceremony | otsukimi | tsukimi
+🎑	Activities	event	moon viewing ceremony	celebration | ceremony | moon | moon viewing ceremony | moon-viewing ceremony | jugoya | otsukimi | tsukimi
 🧧	Activities	event	red envelope	gift | good luck | hóngbāo | lai see | money | red envelope
 🎀	Activities	event	ribbon	celebration | ribbon
 🎁	Activities	event	wrapped gift	box | celebration | gift | present | wrapped
@@ -3110,8 +3110,8 @@
 🏉	Activities	sport	rugby football	ball | football | rugby
 🎾	Activities	sport	tennis	ball | racquet | tennis | racket
 🥏	Activities	sport	flying disc	flying disc | ultimate
-🎳	Activities	sport	bowling	ball | bowling | game | pins | tenpin bowling
-🏏	Activities	sport	cricket game	ball | bat | cricket game | game | cricket ball | cricket bat | cricket match | cricket
+🎳	Activities	sport	bowling	ball | bowling | game | tenpin bowling | pins
+🏏	Activities	sport	cricket game	ball | bat | cricket game | game | cricket | cricket ball | cricket bat | cricket match
 🏑	Activities	sport	field hockey	ball | field | game | hockey | stick
 🏒	Activities	sport	ice hockey	game | hockey | ice | puck | stick
 🥍	Activities	sport	lacrosse	ball | goal | lacrosse | stick
@@ -3124,7 +3124,7 @@
 ⛸️	Activities	sport	ice skate	
 ⛸	Activities	sport	ice skate	ice | skate | ice skating
 🛼	Activities	sport	roller skate	roller | skate
-🎣	Activities	sport	fishing pole	fish | fishing pole | pole | angling | fishing | rod
+🎣	Activities	sport	fishing pole	fish | fishing pole | pole | fishing | rod | angling
 🤿	Activities	sport	diving mask	diving | diving mask | scuba | snorkeling | snorkelling
 🎽	Activities	sport	running shirt	athletics | running | sash | shirt
 🎿	Activities	sport	skis	ski | skis | snow | skiing
@@ -3140,7 +3140,7 @@
 🎮	Activities	game	video game	controller | game | video game
 🕹️	Activities	game	joystick	
 🕹	Activities	game	joystick	game | joystick | video game
-🎰	Activities	game	slot machine	game | slot | slot machine | fruit machine | one-armed bandit | pokie | pokies
+🎰	Activities	game	slot machine	game | slot | slot machine | pokie | pokies | fruit machine | one-armed bandit
 🎲	Activities	game	game die	dice | die | game
 🧩	Activities	game	puzzle piece	clue | interlocking | jigsaw | piece | puzzle
 🧸	Activities	game	teddy bear	plaything | plush | stuffed | teddy bear | toy
@@ -3174,7 +3174,7 @@
 🥼	Objects	clothing	lab coat	doctor | experiment | lab coat | scientist
 🦺	Objects	clothing	safety vest	emergency | safety | vest | hi-vis | hi-viz | high-vis | high-viz | jacket
 👔	Objects	clothing	necktie	clothing | necktie | tie
-👕	Objects	clothing	t-shirt	clothing | shirt | t-shirt | tshirt | T-shirt | tee | tee-shirt
+👕	Objects	clothing	t-shirt	clothing | shirt | t-shirt | tshirt | tee | T-shirt | tee-shirt
 👖	Objects	clothing	jeans	clothing | jeans | pants | trousers
 🧣	Objects	clothing	scarf	neck | scarf
 🧤	Objects	clothing	gloves	gloves | hand
@@ -3194,7 +3194,7 @@
 🛍️	Objects	clothing	shopping bags	
 🛍	Objects	clothing	shopping bags	bag | hotel | shopping | shopping bags
 🎒	Objects	clothing	backpack	backpack | bag | rucksack | satchel | school
-🩴	Objects	clothing	thong sandal	beach sandals | sandals | thong sandal | thong sandals | thongs | zōri | flip-flop | flipflop | zori | beach sandal | sandal | thong
+🩴	Objects	clothing	thong sandal	beach sandals | sandals | thong sandal | thong sandals | thongs | zōri | flipflop | zori | beach sandal | flip-flop | sandal | thong
 👞	Objects	clothing	man’s shoe	clothing | man | man’s shoe | shoe
 👟	Objects	clothing	running shoe	athletic | clothing | running shoe | shoe | sneaker | trainer
 🥾	Objects	clothing	hiking boot	backpacking | boot | camping | hiking
@@ -3270,13 +3270,13 @@
 💿	Objects	computer	optical disk	cd | computer | disk | optical | CD
 📀	Objects	computer	dvd	blu-ray | computer | disk | dvd | optical | DVD
 🧮	Objects	computer	abacus	abacus | calculation
-🎥	Objects	light & video	movie camera	camera | cinema | movie | film | movie camera
+🎥	Objects	light & video	movie camera	camera | cinema | movie | movie camera | film
 🎞️	Objects	light & video	film frames	
 🎞	Objects	light & video	film frames	cinema | film | frames | movie
 📽️	Objects	light & video	film projector	
 📽	Objects	light & video	film projector	cinema | film | movie | projector | video
-🎬	Objects	light & video	clapper board	clapper | clapper board | movie | clapperboard | film
-📺	Objects	light & video	television	television | tv | video | tele | telly | TV
+🎬	Objects	light & video	clapper board	clapper | clapper board | movie | film | clapperboard
+📺	Objects	light & video	television	television | tv | video | TV | tele | telly
 📷	Objects	light & video	camera	camera | video
 📸	Objects	light & video	camera with flash	camera | camera with flash | flash | video
 📹	Objects	light & video	video camera	camera | video | camcorder
@@ -3328,10 +3328,10 @@
 📤	Objects	mail	outbox tray	box | letter | mail | outbox | sent | tray | out tray
 📥	Objects	mail	inbox tray	box | inbox | letter | mail | receive | tray | in tray
 📦	Objects	mail	package	box | package | parcel
-📫	Objects	mail	closed mailbox with raised flag	closed | closed mailbox with raised flag | mail | mailbox | postbox | closed postbox with raised flag | letterbox | post | post box | closed letterbox with raised flag
-📪	Objects	mail	closed mailbox with lowered flag	closed | closed mailbox with lowered flag | lowered | mail | mailbox | postbox | closed postbox with lowered flag | letterbox | post | post box | closed letterbox with lowered flag
-📬	Objects	mail	open mailbox with raised flag	mail | mailbox | open | open mailbox with raised flag | postbox | open postbox with raised flag | post | post box | open letterbox with raised flag
-📭	Objects	mail	open mailbox with lowered flag	lowered | mail | mailbox | open | open mailbox with lowered flag | postbox | open postbox with lowered flag | post | post box | open letterbox with lowered flag
+📫	Objects	mail	closed mailbox with raised flag	closed | closed mailbox with raised flag | mail | mailbox | postbox | closed letterbox with raised flag | closed postbox with raised flag | letterbox | post | post box
+📪	Objects	mail	closed mailbox with lowered flag	closed | closed mailbox with lowered flag | lowered | mail | mailbox | postbox | closed letterbox with lowered flag | closed postbox with lowered flag | letterbox | post | post box
+📬	Objects	mail	open mailbox with raised flag	mail | mailbox | open | open mailbox with raised flag | postbox | open letterbox with raised flag | open postbox with raised flag | post | post box
+📭	Objects	mail	open mailbox with lowered flag	lowered | mail | mailbox | open | open mailbox with lowered flag | postbox | open letterbox with lowered flag | open postbox with lowered flag | post | post box
 📮	Objects	mail	postbox	mail | mailbox | postbox
 🗳️	Objects	mail	ballot box with ballot	
 🗳	Objects	mail	ballot box with ballot	ballot | ballot box with ballot | box
@@ -3364,7 +3364,7 @@
 📉	Objects	office	chart decreasing	chart | chart decreasing | down | graph | trend | graph decreasing
 📊	Objects	office	bar chart	bar | chart | graph
 📋	Objects	office	clipboard	clipboard
-📌	Objects	office	pushpin	pin | pushpin | map pin | drawing-pin
+📌	Objects	office	pushpin	pin | pushpin | drawing-pin | map pin
 📍	Objects	office	round pushpin	pin | pushpin | round pushpin | round drawing-pin
 📎	Objects	office	paperclip	paperclip
 🖇️	Objects	office	linked paperclips	
@@ -3443,7 +3443,7 @@
 🛋️	Objects	household	couch and lamp	
 🛋	Objects	household	couch and lamp	couch | couch and lamp | hotel | lamp | sofa | sofa and lamp
 🪑	Objects	household	chair	chair | seat | sit
-🚽	Objects	household	toilet	toilet | lavatory | loo | facilities | WC
+🚽	Objects	household	toilet	toilet | facilities | loo | WC | lavatory
 🪠	Objects	household	plunger	force cup | plumber | plunger | suction | toilet
 🚿	Objects	household	shower	shower | water
 🛁	Objects	household	bathtub	bath | bathtub | tub
@@ -3459,7 +3459,7 @@
 🪥	Objects	household	toothbrush	bathroom | brush | clean | dental | hygiene | teeth | toothbrush
 🧽	Objects	household	sponge	absorbing | cleaning | porous | sponge
 🧯	Objects	household	fire extinguisher	extinguish | fire | fire extinguisher | quench
-🛒	Objects	household	shopping cart	cart | shopping | trolley | shopping trolley | shopping cart
+🛒	Objects	household	shopping cart	cart | shopping | trolley | shopping cart | shopping trolley
 🚬	Objects	other-object	cigarette	cigarette | smoking
 ⚰️	Objects	other-object	coffin	
 ⚰	Objects	other-object	coffin	coffin | death
@@ -3469,12 +3469,12 @@
 🗿	Objects	other-object	moai	face | moai | moyai | statue
 🪧	Objects	other-object	placard	demonstration | picket | placard | protest | sign
 🏧	Symbols	transport-sign	ATM sign	atm | ATM sign | automated | bank | teller | cashpoint
-🚮	Symbols	transport-sign	litter in bin sign	litter | litter bin | litter in bin sign | rubbish | garbage | trash
+🚮	Symbols	transport-sign	litter in bin sign	litter | litter bin | litter in bin sign | garbage | trash | rubbish
 🚰	Symbols	transport-sign	potable water	drinking | potable | water | drinking water
 ♿	Symbols	transport-sign	wheelchair symbol	access | wheelchair symbol | disabled access
 🚹	Symbols	transport-sign	men’s room	lavatory | man | men’s room | restroom | wc | men’s toilet
 🚺	Symbols	transport-sign	women’s room	lavatory | restroom | wc | woman | women’s room | women’s toilet
-🚻	Symbols	transport-sign	restroom	lavatory | restroom | WC | toilets | washroom
+🚻	Symbols	transport-sign	restroom	lavatory | restroom | WC | washroom | toilets
 🚼	Symbols	transport-sign	baby symbol	baby | baby symbol | changing | change room
 🚾	Symbols	transport-sign	water closet	closet | lavatory | restroom | water | wc | amenities | bathroom | toilet | water closet | WC
 🛂	Symbols	transport-sign	passport control	control | passport
@@ -3489,7 +3489,7 @@
 🚳	Symbols	warning	no bicycles	bicycle | bike | forbidden | no | no bicycles | prohibited
 🚭	Symbols	warning	no smoking	forbidden | no | not | prohibited | smoking | denied
 🚯	Symbols	warning	no littering	forbidden | litter | no | no littering | not | prohibited | denied
-🚱	Symbols	warning	non-potable water	non-drinking | non-potable | water | non-drinking water | non-drinkable water
+🚱	Symbols	warning	non-potable water	non-drinking | non-potable | water | non-drinkable water | non-drinking water
 🚷	Symbols	warning	no pedestrians	forbidden | no | no pedestrians | not | pedestrian | prohibited | denied
 📵	Symbols	warning	no mobile phones	cell | forbidden | mobile | no | no mobile phones | phone
 🔞	Symbols	warning	no one under eighteen	18 | age restriction | eighteen | no one under eighteen | prohibited | underage
@@ -3619,9 +3619,9 @@
 ⭕	Symbols	other-symbol	hollow red circle	circle | hollow red circle | large | o | red
 ✅	Symbols	other-symbol	check mark button	✓ | button | check | mark | tick | white heavy check mark
 ☑️	Symbols	other-symbol	check box with check	
-☑	Symbols	other-symbol	check box with check	✓ | box | check | check box with check | tick | tick box with tick | ballot | ballot box with check
+☑	Symbols	other-symbol	check box with check	✓ | box | check | check box with check | ballot | ballot box with check | tick | tick box with tick
 ✔️	Symbols	other-symbol	check mark	
-✔	Symbols	other-symbol	check mark	✓ | check | mark | tick | heavy tick mark | heavy check mark
+✔	Symbols	other-symbol	check mark	✓ | check | mark | heavy tick mark | tick | heavy check mark
 ✖️	Symbols	other-symbol	multiplication sign	
 ✖	Symbols	other-symbol	multiplication sign	× | cancel | multiplication | multiply | sign | x | heavy multiplication x
 ❌	Symbols	other-symbol	cross mark	× | cancel | cross | mark | multiplication | multiply | x
