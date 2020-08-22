@@ -4,7 +4,7 @@ My i3 rice.
 
 ![Screenshot](/screenshot.png)
 
-## Manjaro Linux packages
+## Arch Linux packages
 
 - zsh (use `chsh` to switch shells)
 - zsh-history-substring-search
@@ -38,11 +38,12 @@ My i3 rice.
 ## pacman command
 
 ```shell
-sudo pacman -S zsh zsh-history-substring-search zsh-syntax-highlighting zsh-completions termite neovim vifm python-ueberzug ffmpegthumbnailer poppler xorg-xmodmap i3-gaps python-i3ipc polybar xwallpaper xorg-xbacklight slock pulseaudio rofi adobe-source-code-pro-fonts xdotool xclip dunst picom xorg-xinit xorg-server xf86-video-intel
+sudo pacman -Syu zsh zsh-history-substring-search zsh-syntax-highlighting zsh-completions termite neovim vifm ueberzug ffmpegthumbnailer poppler xorg-xmodmap i3-gaps python-i3ipc xwallpaper xorg-xbacklight slock pulseaudio rofi adobe-source-code-pro-fonts xdotool xclip dunst picom xorg-xinit xorg-server xf86-video-intel
 ```
 
 ## AUR packages
 
+- polybar (status bar)
 - nerd-fonts-dejavu-complete (font of choice)
 - epub-thumbnailer-git (previews in vifm)
 - fontpreview-git (previews in vifm)
@@ -50,7 +51,7 @@ sudo pacman -S zsh zsh-history-substring-search zsh-syntax-highlighting zsh-comp
 ## yay command
 
 ```shell
-yay -S nerd-fonts-dejavu-complete epub-thumbnailer-git fontpreview-git
+yay -S polybar nerd-fonts-dejavu-complete epub-thumbnailer-git fontpreview-git
 ```
 
 ## Apple Color Emojis
