@@ -161,6 +161,9 @@ bindkey -M menuselect 'k' vi-up-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 
+# To be able to run things in ~/.local/bin
+export PATH=$HOME/.local/bin:$PATH
+
 ## Alias section
 alias cp="cp -i"      # Confirm before overwriting something
 alias config='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
