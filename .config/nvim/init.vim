@@ -68,6 +68,7 @@ endfunction
 
 " Makes a floating/popup terminal window
 Plug 'voldikss/vim-floaterm'
+let g:floaterm_autoclose = 2
 nmap <Leader>f :call OpenFloatermForTab()<CR>
 tnoremap <C-x> <C-\><C-n>:call ToggleIfFloaterm()<CR><C-l>
 function! OpenFloatermForTab()
