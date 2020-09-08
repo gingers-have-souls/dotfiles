@@ -1,0 +1,10 @@
+// vim:ft=css
+
+#window {
+	children: [ inputbar, listview ];
+}
+
+#listview {
+	border-radius: 0px 0px 15px 15px;
+	border: 0px 2px 2px 2px;
+}
