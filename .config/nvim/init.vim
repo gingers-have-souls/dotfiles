@@ -56,8 +56,9 @@ let g:startify_lists = [
 let g:startify_commands = [
 	\ {'n': ['Neovim config', 'call OpenNeovimConfig()']},
 	\ {'pd': ['Update plugins', 'PlugUpdate']},
-	\ {'pg': ['Update vim-plug', 'PlugUpgrade']},
+	\ {'pc': ['Clean plugins', 'PlugClean']},
 	\ {'ps': ['Plugin status', 'PlugStatus']},
+	\ {'pg': ['Update vim-plug', 'PlugUpgrade']},
 	\ {'c': ['Update coc.nvim', 'CocUpdate']},
 	\ ]
 function! OpenNeovimConfig()
