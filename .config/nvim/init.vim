@@ -114,12 +114,12 @@ Plug 'ryanoasis/vim-devicons'
 
 " Autocompletion for brackets and quotes and stuff
 Plug 'Raimondi/delimitMate'
-let delimitMate_matchpairs = "(:),{:},[:]"
+let delimitMate_matchpairs = '(:),{:},[:]'
 let delimitMate_nesting_quotes = ['"', '`']
 let delimitMate_expand_cr = 1
 let delimitMate_expand_space = 1
 let delimitMate_balance_matchpairs = 1
-let delimitMate_excluded_regions = "String"
+let delimitMate_excluded_regions = 'String'
 
 " Primarily improves syntax highlighting of various programming languages and config files
 Plug 'sheerun/vim-polyglot'
