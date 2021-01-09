@@ -11,7 +11,6 @@ My i3 rice.
 - zsh-syntax-highlighting
 - zsh-completions
 - termite
-- neovim (see `$HOME/.config/nvim/init.vim` for more details on neovim setup)
 - vifm (terminal file manager)
 - python-ueberzug (previews in vifm)
 - ffmpegthumbnailer (previews in vifm)
@@ -38,11 +37,12 @@ My i3 rice.
 ## pacman command
 
 ```shell
-sudo pacman -Syu zsh zsh-history-substring-search zsh-syntax-highlighting zsh-completions termite neovim vifm ueberzug ffmpegthumbnailer poppler xorg-xmodmap i3-gaps python-i3ipc xwallpaper xorg-xbacklight slock pulseaudio rofi adobe-source-code-pro-fonts xdotool xclip dunst picom xorg-xinit xorg-server xf86-video-intel
+sudo pacman -Syu zsh zsh-history-substring-search zsh-syntax-highlighting zsh-completions termite vifm ueberzug ffmpegthumbnailer poppler xorg-xmodmap i3-gaps python-i3ipc xwallpaper xorg-xbacklight slock pulseaudio rofi adobe-source-code-pro-fonts xdotool xclip dunst picom xorg-xinit xorg-server xf86-video-intel
 ```
 
 ## AUR packages
 
+- neovim-git (see `$HOME/.config/nvim/init.vim` for more details on neovim setup)
 - polybar (status bar)
 - nerd-fonts-dejavu-complete (font of choice)
 - epub-thumbnailer-git (previews in vifm)
@@ -51,7 +51,7 @@ sudo pacman -Syu zsh zsh-history-substring-search zsh-syntax-highlighting zsh-co
 ## yay command
 
 ```shell
-yay -S polybar nerd-fonts-dejavu-complete epub-thumbnailer-git fontpreview-git
+yay -S neovim-git polybar nerd-fonts-dejavu-complete epub-thumbnailer-git fontpreview-git
 ```
 
 ## Apple Color Emojis
@@ -103,7 +103,7 @@ config config --local status.showUntrackedFiles no
 config pull
 ```
 
-9. For the neovim config you're also going to have to install vim-plug and run `:PlugInstall`.
+9. For the neovim config you're also going to have to install vim-plug and run `:PlugInstall`, as well as a bunch of other things I have yet to document.
 
 **[This](https://www.atlassian.com/git/tutorials/dotfiles) was really helpful to me if you want to learn more git bare repositories. This mini-guide is heavily influenced by it.**
 

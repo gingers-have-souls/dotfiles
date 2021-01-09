@@ -171,6 +171,7 @@ alias jsf='python -m json.tool'
 alias ll='ls -lah --sort=size'
 alias ls='ls --color'
 alias n="nvim"
+alias cn='GIT_DIR=$HOME/.dotfiles.git GIT_WORK_TREE=$HOME nvim'
 # Current directory size
 alias cdsz="du -d 1 -h"
 

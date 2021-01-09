@@ -1,0 +1,10 @@
+# Since cpp snippets extend c snippets, and there is also a cpp snippet with the name dmoj, we need to make sure
+# that the file is c when using this snippet
+snippet dmoj "DMOJ template" "snip.line == 0 and snip.column == 3 and snip.buffer.options['filetype'] == 'c'" beA
+#include <stdio.h>
+
+int main()
+{
+	$0
+}
+endsnippet

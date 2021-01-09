@@ -1,0 +1,44 @@
+snippet dmoj "DMOJ template" "snip.line == 0 and snip.column == 3" beA
+#include <cstdio>
+$1
+
+using namespace std;
+
+int main()
+{
+	$0
+}
+endsnippet
+
+snippet cindmoj "DMOJ template with iostream" "snip.line == 0 and snip.column == 6" beA
+#include <iostream>
+$1
+
+using namespace std;
+
+int main()
+{
+	cin.sync_with_stdio(0);
+	cin.tie(0);
+	$0
+}
+endsnippet
+
+snippet pqueue "Priority queue of pairs which yields smallest" b
+priority_queue<pair<int, int>, vector<pair<int, int>>, greater<>> q;
+endsnippet
+
+snippet hash "Values for hashing lowercase strings" b
+const int base = 31;
+const int p = 1e9 + 9;
+long long hashval = 0;
+long long base_pow[$0];
+unordered_set<long long> hashes;
+endsnippet
+
+snippet hash2 "Values for a second hash of lowercase strings" b
+const int base2 = 29;
+long long hashval2 = 0;
+long long base_pow2[$0];
+unordered_set<long long> hashes2;
+endsnippet
