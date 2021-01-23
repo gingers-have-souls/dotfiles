@@ -174,6 +174,12 @@ alias n="nvim"
 alias cn='GIT_DIR=$HOME/.dotfiles.git GIT_WORK_TREE=$HOME nvim'
 # Current directory size
 alias cdsz="du -d 1 -h"
+# Running docker-compose with docker
+alias docker-compose='docker run --rm \
+	-v /var/run/docker.sock:/var/run/docker.sock \
+	-v "$PWD:$PWD" \
+	-w="$PWD" \
+	docker/compose:latest'
 
 # Theming section
 autoload -U compinit colors zcalc
