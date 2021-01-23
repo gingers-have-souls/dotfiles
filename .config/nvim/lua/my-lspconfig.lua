@@ -33,6 +33,9 @@ lspconfig.tsserver.setup{
 lspconfig.vimls.setup{
 	on_attach = custom_attach,
 }
+lspconfig.dockerls.setup{
+	on_attach = custom_attach,
+}
 lspconfig.svelte.setup{
 	on_attach = custom_attach,
 }
